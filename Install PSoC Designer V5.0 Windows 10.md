@@ -1,8 +1,9 @@
-# Successfully editing SARK100 Firmware in 2024
+# Successfully editing SARK100 Firmware in 2024 on Windows 10
+The manual for the SARK100 contains instructions on how to edit the firmware. Unfortunately, software environments have moved on a lot since those instructions were written and it is not easy to work out how to get things working. You'll need a copy of PSoC Designer V5.0 as mentioned in the manual, but also need to follow the instructions below.
 
-The TL:DR here is to install PSoC Designer V5.0 rather than any later version. For some reason although versions up to at least 5.4 will successfully build the code, the SARK100 will freeze or behave oddly once the firmware tries to write to the EEPROM.
+Don't be tempted to install later versions of PSoC Designer than V5.0. For some reason although versions up to at least 5.4 will successfully build the code, the SARK100 will freeze or behave oddly once the firmware tries to write to the EEPROM. It *may* be possible to fix this, but I've not been able to after spending whole days on it and scouring the Infineon Community Forum.
 
-It's important to get the source code from sourceforge rather than GitHub, because a crucial file is missing from the GitHub archives. The starting point I used was V13 from [SARK100 files at Sourceforge](https://sourceforge.net/projects/sark100swranaly/files/). The missing file is PSocConfig.xml which contains the "wiring diagram" that PSoC Designer needs plus a lot of necessary component parameters.
+It's important to get the SARK100 source code from Sourceforge rather than GitHub, because a crucial file is missing from the GitHub archives. The starting point I used was V13 from [SARK100 files at Sourceforge](https://sourceforge.net/projects/sark100swranaly/files/). The missing file is PSocConfig.xml which contains the "wiring diagram" that PSoC Designer needs plus a lot of necessary component parameters.
 
 ## How to install PSoC designer V5.0 under Windows 10
 What worked for me ...
