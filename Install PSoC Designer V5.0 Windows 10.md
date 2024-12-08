@@ -11,7 +11,7 @@ What worked for me ...
 
 2. Run regedit and find the key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem, and set the value of NtfsDisable8dot3NameCreation to 0
 
-Then,
+Then, in this order:
 1. Install SVG Viewer (zip file link is [here on Infineon Community Forum](https://community.infineon.com/t5/PSoC-5-3-1/Adobe-SVG-viewer-not-available-and-PD-5-4-SP1-won-t-work/m-p/77237#M10104)) otherwise things don't display properly and if I remember correctly the PD hangs on a script error that can't be fixed.
 2. Install [PSoCProgrammerSetup_3.24.2.b2254_RS](https://itools.infineon.com/archive/PSoCProgrammerSetup_3.24.2.b2254_RS.exe) (don't use a later version or PD will infinitely hang when launching on a couple of components).
 3. Install [PSoC_Designer_5.0_Service_Pack_6](https://itools.infineon.com/archive/PSoC_Designer_5.0_Service_Pack_6.zip)
