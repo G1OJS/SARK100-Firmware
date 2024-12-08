@@ -1,5 +1,5 @@
 # Successfully editing SARK100 Firmware in 2024 (on Windows 10)
-The [manual for the SARK100 (User Manual rev 0.5)](http://www.popular-hifi.com/shack/acc_sark100/SARK100.pdf) contains instructions on how to edit the firmware. Unfortunately, software environments have moved on a lot since those instructions were written and it is not easy to work out how to get things working. You'll need a copy of PSoC Designer V5.0 as mentioned in the manual, but also need to follow the instructions below.
+The full user manual for the SARK100 - available on [EA4FRB's website here](https://sites.google.com/view/sark100) - contains instructions on how to edit the firmware. Unfortunately, software environments have moved on a lot since those instructions were written and it is not easy to work out how to get things working. You'll need a copy of PSoC Designer V5.0 as mentioned in the manual, but also need to follow the instructions below.
 
 Don't be tempted to install later versions of PSoC Designer than V5.0. For some reason although versions up to at least 5.4 will successfully build the code, the SARK100 will freeze or behave oddly once the firmware tries to write to the EEPROM. It *may* be possible to fix this, but I've not been able to after spending whole days on it and scouring the Infineon Community Forum.
 
@@ -18,7 +18,7 @@ Then, in this order:
 
 Once it's installed, launch PSoC Designer, use open Project/Workspace (not file) and find and open SARK100_SwrAnalyzer_BL.app
 
-In order to program the SARK100, you'll need the Bootloader Host for the PC which can be found at Infineon [AN2100_Bootloader_PSoC_1](https://www.infineon.com/dgdl/Infineon-AN2100_Bootloader_PSoC_1-ApplicationNotes-v08_00-EN.zip?fileId=8ac78c8c7cdc391c017d0724b214493b) (it looks like an application note document, but it's a zip file with lots of things inside).
+In order to program the SARK100, you'll need the Bootloader Host for the PC which can be found on [EA4FRB's website here](https://sites.google.com/view/sark100) (TerminalProgram_v2, right at the bottom of the page). There's a similar one at Infineon [AN2100_Bootloader_PSoC_1](https://www.infineon.com/dgdl/Infineon-AN2100_Bootloader_PSoC_1-ApplicationNotes-v08_00-EN.zip?fileId=8ac78c8c7cdc391c017d0724b214493b) (it looks like an application note document, but it's a zip file with lots of things inside).
 
 ## If flashing the firmware goes wrong ...
 Twice I thought I'd broken it - here's how I fixed it.
