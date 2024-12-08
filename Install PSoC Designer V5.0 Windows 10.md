@@ -18,4 +18,8 @@ Then,
 
 Once it's installed, launch PSoC Designer, use open Project/Workspace (not file) and find and open SARK100_SwrAnalyzer_BL.app
 
+## If you can't obtain the files above ...
+
 I've made a copy of as much as I can [here](https://github.com/G1OJS/SARK100-Firmware/tree/4fab97640a3294f12039db623c3936002f6dfa6a/PSoC%20Designer%20V5%20installation%20files) and [here](https://github.com/G1OJS/SARK100-Firmware/tree/4fab97640a3294f12039db623c3936002f6dfa6a/SARK100%20Firmware)
+
+The only ones missing are the installers for PSoC Designer and PSoC Programmer, which are way too big to upload to GitHub.
