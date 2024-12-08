@@ -22,7 +22,11 @@ In order to program the SARK100, you'll need the Bootloader Host for the PC whic
 
 ## If flashing the firmware goes wrong ...
 Twice I thought I'd broken it - here's how I fixed it.
-1. Sometimes the flash fails
+
+If the flash fails and then the SARK100 won't work, you can't press the button to get the SARK to go into a state to accept any more uploads. Thankfully, a Power-On-Reset will do this, but you can't simply power cycle the SARK because that will break the USB connection and annoy the bootloader host app. So, open up the SARK's case and find JP3 (just to the right of the CY8C29466 chip). It doesn't have a header but for a one-off you need to briefly send the middle pin (which is connected to XRES) high. Vdd is nearby so that's easy with a bit of wire used to bridge the middle pin to the end one (the one with the square pad). If you're goingto be doing lots of updates, it might be worth installing a momentary pushbutton here!
+
+Two circumstances lead to this happening. One, you've made a change to the firmware that causes the SARK to hang, in which case you have to fix the problem and reflash as above. Two, you have a dodgy USB connection. Fixing this might be as simple as changing the USB cable, or simply trying again and sitting very still! But you can also look at the relevant COM port settings in Device Manager under Ports(COM&LPT), and try reducing the baud rate and/or reducing the USB Transfer Sizes under Advanced Settings. I have mine set to 2048 and it all seems stable.
+ 
 
 ## If you can't obtain the files above ...
 
