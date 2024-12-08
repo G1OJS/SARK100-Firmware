@@ -7,7 +7,7 @@ It's important to get the SARK100 source code from Sourceforge rather than GitHu
 
 ## How to install PSoC designer V5.0 under Windows 10
 What worked for me ...
-1. Note that the "make" routines in PSoC designer can't cope with paths that have a space in them *unless* "8dot3" file name creation is enabled in Windows (which provides a space-free versionb for PD to use). And, the install folder (which is below the one you can set in the installer) has a space in it! In my case, 8dot3 path names weren't enabled and I had to enable it and recreate the install locations (because otherwise they kept their previous path names). So, before you install anything!:
+1. Note that the "make" routines in PSoC designer can't cope with paths that have a space in them *unless* "8dot3" file name creation is enabled in Windows (which provides a space-free version for PD to use). And, the install folder (which is below the one you can set in the installer) has a space in it! In my case, 8dot3 path names weren't enabled and I had to enable it and recreate the install locations (because otherwise they kept their previous path names). So, before you install anything!:
 
 2. Run regedit and find the key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem, and set the value of NtfsDisable8dot3NameCreation to 0
 
