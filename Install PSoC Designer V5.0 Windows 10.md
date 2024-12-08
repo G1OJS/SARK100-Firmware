@@ -18,6 +18,8 @@ Then,
 
 Once it's installed, launch PSoC Designer, use open Project/Workspace (not file) and find and open SARK100_SwrAnalyzer_BL.app
 
+In order to program the SARK100, you'll need the Bootloader Host for the PC which can be found at Infineon [AN2100_Bootloader_PSoC_1](https://www.infineon.com/dgdl/Infineon-AN2100_Bootloader_PSoC_1-ApplicationNotes-v08_00-EN.zip?fileId=8ac78c8c7cdc391c017d0724b214493b) (it looks like an application note document, but it's a zip file with lots of things inside).
+
 ## If flashing the firmware goes wrong ...
 Twice I thought I'd broken it - here's how I fixed it.
 1. Sometimes the flash fails
