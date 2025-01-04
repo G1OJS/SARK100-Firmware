@@ -1,9 +1,22 @@
 # SARK100 Firmware Investigations
 
-Investigating mods to the SARK100 firmware.
+## Motivation
+This repository contains the results of a lot of work I've done investigating the SARK100 firmware, mainly for my own education & fun. My motivation was:
+- Try to improve the calibration routine & see if the analyser could be made
+- a) more accurate for high impedance loads
+- b) flatter across frequency
+- c) less noisy (in the sense of random variations in calculated outputs as frequency changes)
+- d) eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink.
+- Make the code more memory-efficient and potentially add new features.
 
-I mainly use my SARK100 to do frequency scans with the PC, and I've been looking at the calibration process and how it affects the data.
+I also wanted to avoid disturbing existing interfaces (e.g. to zPlots and other software) and not place too many demands on users during the calibration routine. Hence, the first version I've uploaded sticks with the requirement for 50, 150 and 274 ohm loads although it does also require a short circuit. Future versions may be based around other calibration loads.
 
-After working on understanding how the bridge voltages are used to calculate |Z|, Re(Z) and Im(Z) (and VSWR), which I intend to write up here, I've worked out how to [update the firmware from source code](https://g1ojs.github.io/SARK100-Firmware/Editing%20SARK100%20Firmware%20in%202024) which wasn't easy given the uC chip is decades old now.
+I've achieved some of these goals. The one that is elusive at the moment is the noise on the measurements, especially for higher impedance loads.
+
+## Applicable Hardware
+I developed this update to EA4FRb's V13 source code by testing on my "MR300" unit which uses the same firmware. This unit is produced by [LXQQFY.com](http://www.lxqqfy.com/e/product.php?id=MR300). The firmware should work on SARK100 as well as on MR100 and other variants of the SARK100 analyser.
+
+## Initial G1OJS Firmware
+Version 01 of my firmware is now on this site in [this folder](https://github.com/G1OJS/SARK100-Firmware/tree/0ff2cc11358580d340285746afb3c1943f339d39/SARK100%20Firmware%20G1OJS). If you want to play with the source code, download the .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://g1ojs.github.io/SARK100-Firmware/Editing%20SARK100%20Firmware%20in%202024). If you just want the firmware, just download the hex file. Either way, you'll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.
 
 More coming soon!
