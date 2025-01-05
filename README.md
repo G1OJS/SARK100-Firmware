@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "MR300/SARK100 2025 Firmware - G1OJS V01"
-permalink: /MR300-SARK100-Firmware-Readme/
 ---
 ![2025-01-05 Welcome screen](https://github.com/user-attachments/assets/fe105d5a-5c56-4316-a6f9-8a1caed08f84)
 
