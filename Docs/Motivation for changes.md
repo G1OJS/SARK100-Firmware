@@ -3,7 +3,7 @@ layout: default
 title: "Motivation for changes"
 permalink: /Motivation-for-changes/
 ---
-This page outlines the features of the V13 firmware that I wanted to try to improve. 
+NOTE - it is possible that the issues discussed below are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.
 
 # Artifacts and Noise in frequency sweeps
 The graph below shows a measurement taken using the V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using well-known formulas. This graph shows two of the features that I wanted to try to improve:
