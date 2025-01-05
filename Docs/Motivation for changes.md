@@ -5,5 +5,6 @@ permalink: /Motivation-for-changes/
 ---
 This page outlines the features of the V13 firmware that I wanted to try to improve. 
 
-![image](https://github.com/user-attachments/assets/e0edc303-e142-4d82-b10f-9e466b0fccd3)
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://github.com/user-attachments/assets/e0edc303-e142-4d82-b10f-9e466b0fccd3 "Fig 1: Measurement of a test load using V13 firmware")
+
 
