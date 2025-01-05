@@ -1,7 +1,7 @@
 # SARK100 2025 Firmware - G1OJS V01
 
 ## Motivation
-This repository contains the results of a lot of work I've done investigating the SARK100 firmware, mainly for my own education & fun. My motivation was:
+This repository contains the results of a lot of work I've done investigating the MR300 Antenna Analyser's firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
 - Try to improve the calibration routine & see if the analyser could be made:
   a) more accurate for high impedance loads
   b) flatter across frequency
