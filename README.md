@@ -17,7 +17,7 @@ I avoided disturbing existing interfaces (e.g. to zPlots and other software) and
 
 I've achieved some of these goals. The one that is elusive at the moment is the noise on the measurements, especially for higher impedance loads.
 
-For more information about the changes I made and why, start here: [Motivation for Changes](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/2bf2c7bf139f96d4e560272b82b2d76beb24555d/Docs/Motivation%20for%20changes.md)
+For more information about the changes I made and why, start here: [Motivation for Changes](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/2bf2c7bf139f96d4e560272b82b2d76beb24555d/Docs/Motivation%20for%20changes)
 
 ## Applicable Hardware
 I developed this update to EA4FRb's V13 SARK100 source code by testing on my "MR300" unit which uses the same firmware. This unit is produced by [LXQQFY.com](http://www.lxqqfy.com/e/product.php?id=MR300). The firmware should work on SARK100 as well as on MR100 and other variants of the SARK100 analyser, but I have no way of testing on these other devices.
