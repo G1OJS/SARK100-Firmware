@@ -30,8 +30,7 @@ Neither of these changes, however, addresses the measurement noise issue.
 
 ![image](https://github.com/user-attachments/assets/be8bcd01-b463-4b00-a03d-3ae0ae75316a)
 
-# Measurement Noise
-To be written.
+
 
 
 
