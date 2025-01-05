@@ -18,4 +18,4 @@ To be written.
 Both the inductance and capacitance modes show zero at 10MHz and above, and I wanted to find out if this could be fixed.
 # Changes Investigated & Used
 - [Interpolation and DDS Gain Settings](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/6a3ec528771b16a76533ab7f187c779037cf67ae/Docs/Compare_V01_V13_Noise_Artifacts.md)
-- [Zero datum for Va and Vz and piecewise linear interpolation](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/d47c1324b563133223e56954bc30b64a25ebdfc0/Docs/Zero%20datum%20for%20Va%20and%20Vz%20and%20piecewise%20linear%20interpolation.md)
+- [Zero datum for Va and Vz and piecewise linear interpolation](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/d47c1324b563133223e56954bc30b64a25ebdfc0/Docs/Zero%20datum%20for%20Va%20and%20Vz%20and%20piecewise%20linear%20interpolation.md) 
