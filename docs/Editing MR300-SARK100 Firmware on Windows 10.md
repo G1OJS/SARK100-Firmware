@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Successfully editing MR300/SARK100 Firmware on Windows 10"
+permalink: /EditingOnWindows10/
+---
 # Successfully editing MR300/SARK100 Firmware on Windows 10
 The full user manual for the SARK100 - available on [Melchor Varela (EA4FRB)'s website here](https://sites.google.com/view/sark100) - contains instructions on how to edit the firmware. Unfortunately, software environments have moved on a lot since those instructions were written and it is not easy to work out how to get things working. You'll need a copy of PSoC Designer V5.0 as mentioned in the manual, but also need to follow the instructions below.
 
