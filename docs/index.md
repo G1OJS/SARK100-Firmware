@@ -9,9 +9,10 @@ This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) 
     - make the results flatter across frequency
     - eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink
     - reduce measurement noise (in the sense of random variations in calculated outputs as frequency changes)
-- Make the code more memory-efficient and potentially add new features.
+- Make the code more memory-efficient and potentially add new features
+- Improve my understanding of RF directional bridges and their calibration
 
-**It is possible that some of all of these issues are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.**
+**It is possible that some of all of the issues I set out to address are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.**
 
 I avoided disturbing existing interfaces (e.g. to zPlots and other software) and for V01 kept the requirement for 50, 150 and 274 ohm loads during calibration, apart from adding the need for a short circuit load. Future versions may be based around other calibration loads.
 
@@ -28,4 +29,3 @@ My version of the firmware is now on this site in [this folder](https://github.c
 ## Credits
 With thanks to EA4FRB for designing the SARK100 hardware and Firmware and releasing this under the GPL license. I have released my version of the firmware under that same license, which is a requirement of that license itself.
 
-More coming soon!
