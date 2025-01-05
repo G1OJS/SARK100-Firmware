@@ -3,6 +3,8 @@ layout: default
 title: "Comparison of G1OJS V01 firmware with V13 firmware: Noise and Artifacts"
 permalink: /Comparison-V01-V13-Noise-Artifacts/
 ---
+NOTE - it is possible that the issues discussed below are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.
+
 # Steps and Noise in Frequency Sweeps
 ## Results of Changes
 The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using well-known formulas.
