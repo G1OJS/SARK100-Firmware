@@ -19,6 +19,8 @@ To overcome these effects, I first added linear interpolation between calibratio
 
 The graphs below show how the bridge supply voltage Vf (meaasured at the 'top' of the bridge) varies with frequency for a range of different load resistances. The vertical scales are in arbitrary units with 4 representing the maximum voltage that the ADC converers can measure, and are shown logarithmically. The first graph shows how the step changes in gain in the V13 software cause voltages to recover to higher values as they naturally fall with frequency. The lower graph shows the effect of removing these gain step changes, and roughly speaking the net effect is approximately 6dB lower output at the high frequency end. I have not yet noticed any effects on the quality of the measurements as a result of this, and feel that the benefits of removing the step artifacts favour keeping the gain flat across frequency.
 
+Notice also that the V13 firmware causes the Vf voltage to 'max out' the ADC measurement capabilty with a 1000 ohm load. This will result in measurement errors for high impedance loads, because Vf is used in the calculation of VSWR which then flows through to calculation of R and X.
+
 Neither of these changes, however, addresses the measurement noise issue.
 
 ![image](https://github.com/user-attachments/assets/08fa9269-fc2f-4012-aeac-60aac0aa8475)
