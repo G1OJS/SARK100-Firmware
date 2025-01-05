@@ -5,7 +5,7 @@
 ## Motivation
 This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) contains the results of a lot of work I've done investigating the [MR300 Antenna Analyser](http://www.lxqqfy.com/e/product.php?id=MR300)'s firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
 - Try to improve the calibration routine & see if the analyser could be made:
-  a) more accurate for high impedance loads
+  a) more accurate for high impedance loads 
   b) flatter across frequency
   c) less noisy (in the sense of random variations in calculated outputs as frequency changes)
   d) eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink.
