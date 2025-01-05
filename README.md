@@ -9,7 +9,9 @@ This repository contains the results of a lot of work I've done investigating th
   d) eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink.
 - Make the code more memory-efficient and potentially add new features.
 
-I also wanted to avoid disturbing existing interfaces (e.g. to zPlots and other software) and not place too many demands on users during the calibration routine. Hence, the first version I've uploaded sticks with the requirement for 50, 150 and 274 ohm loads although it does also require a short circuit. Future versions may be based around other calibration loads.
+It is possible that some of all of these issues are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.
+
+I avoided disturbing existing interfaces (e.g. to zPlots and other software) and for V01 kept the requirement for 50, 150 and 274 ohm loads during calibration, apart from adding the need for a short circuit load. Future versions may be based around other calibration loads.
 
 I've achieved some of these goals. The one that is elusive at the moment is the noise on the measurements, especially for higher impedance loads.
 
