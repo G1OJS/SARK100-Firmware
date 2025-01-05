@@ -2,7 +2,7 @@
 ![2025-01-05 Welcome screen crop](https://github.com/user-attachments/assets/346571c2-0c78-4ebe-9a6f-890d23aa224d)
 
 # Motivation
-This Github repository contains the results of a lot of work I've done investigating the [MR300 Antenna Analyser](http://www.lxqqfy.com/e/product.php?id=MR300)'s firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
+This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) contains the results of a lot of work I've done investigating the [MR300 Antenna Analyser](http://www.lxqqfy.com/e/product.php?id=MR300)'s firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
 - Try to improve the calibration routine & see if the analyser could be made:
   a) more accurate for high impedance loads
   b) flatter across frequency
@@ -10,7 +10,7 @@ This Github repository contains the results of a lot of work I've done investiga
   d) eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink.
 - Make the code more memory-efficient and potentially add new features.
 
-*It is possible that some of all of these issues are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.*
+**It is possible that some of all of these issues are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.**
 
 I avoided disturbing existing interfaces (e.g. to zPlots and other software) and for V01 kept the requirement for 50, 150 and 274 ohm loads during calibration, apart from adding the need for a short circuit load. Future versions may be based around other calibration loads.
 
