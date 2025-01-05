@@ -1,10 +1,5 @@
----
-layout: default
-title: "MR300/SARK100 2025 Firmware - G1OJS V01"
----
-![2025-01-05 Welcome screen](https://github.com/user-attachments/assets/fe105d5a-5c56-4316-a6f9-8a1caed08f84)
 
-
+![2025-01-05 Welcome screen crop](https://github.com/user-attachments/assets/346571c2-0c78-4ebe-9a6f-890d23aa224d)
 
 # Motivation
 This repository contains the results of a lot of work I've done investigating the MR300 Antenna Analyser's firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
