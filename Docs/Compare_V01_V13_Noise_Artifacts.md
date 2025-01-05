@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Comparison of G1OJS V01 firmware with V13 firmware"
-permalink: /Comparison-V01-V13/
+title: "Comparison of G1OJS V01 firmware with V13 firmware: Noise and Artifacts"
+permalink: /Comparison-V01-V13-Noise-Artifacts/
 ---
 # Steps and Noise in Frequency Sweeps
 ## Results of Changes
