@@ -1,4 +1,4 @@
-# Successfully editing SARK100 Firmware in 2024 (on Windows 10)
+# Successfully editing MR300/SARK100 Firmware in 2024 (on Windows 10)
 The full user manual for the SARK100 - available on [Melchor Varela (EA4FRB)'s website here](https://sites.google.com/view/sark100) - contains instructions on how to edit the firmware. Unfortunately, software environments have moved on a lot since those instructions were written and it is not easy to work out how to get things working. You'll need a copy of PSoC Designer V5.0 as mentioned in the manual, but also need to follow the instructions below.
 
 Don't be tempted to install later versions of PSoC Designer than V5.0. For some reason although versions up to at least 5.4 will successfully build the code, the SARK100 will freeze or behave oddly once the firmware tries to write to the EEPROM (which happens very shortly after power on!). It *may* be possible to fix this, but I've not been able to after spending whole days on it and scouring the Infineon Community Forum.
