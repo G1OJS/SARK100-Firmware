@@ -20,7 +20,10 @@ I've achieved some of these goals. The one that is elusive at the moment is the 
 ## Applicable Hardware
 I developed this update to EA4FRb's V13 SARK100 source code by testing on my "MR300" unit which uses the same firmware. This unit is produced by [LXQQFY.com](http://www.lxqqfy.com/e/product.php?id=MR300). The firmware should work on SARK100 as well as on MR100 and other variants of the SARK100 analyser, but I have no way of testing on these other devices.
 
-## Initial G1OJS Firmware
-Version 01 of my firmware is now on this site in [this folder](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/73c5250ae2730607a6a26db387411d7306f92c6b/SARK100%20Firmware%20G1OJS). If you want to play with the source code, download the .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/084848a0fb1b65663e27e136e638a727be7e2f5f/Docs/Editing%20MR300-SARK100%20Firmware%20on%20Windows%2010.md). If you just want the firmware, just download the hex file. Either way, you'll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.
+## Installing the G1OJS Firmware
+My version of the firmware is now on this site in [this folder](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/73c5250ae2730607a6a26db387411d7306f92c6b/SARK100%20Firmware%20G1OJS). If you want to play with the source code, download the .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/084848a0fb1b65663e27e136e638a727be7e2f5f/Docs/Editing%20MR300-SARK100%20Firmware%20on%20Windows%2010.md). If you just want the firmware, just download the hex file. Either way, you'll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.
+
+## Credits
+With thanks to EA4FRB for designing the SARK100 hardware and Firmware and relasing this under the GPL license. I have released my version of the firmware under that same license, which is a requirement of that license itself.
 
 More coming soon!
