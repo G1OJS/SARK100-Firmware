@@ -30,6 +30,6 @@ $V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$
 
 If we subtract the complex voltage at the top of the load from the midpoint voltage at the opposite side of the bridge, we have
 
-$V_r = | V_f - 2V_f frac{Z_l}{Z_l+50}| $
+$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $
 
 ~ Work in progress ~
