@@ -32,4 +32,8 @@ If we subtract the complex voltage at the top of the load from the midpoint volt
 
 $V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $
 
+Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtraction is a vector one because we don't take the modulus until after the subtraction.
+
+
+
 ~ Work in progress ~
