@@ -36,14 +36,13 @@ and
 
 $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
 
-To get at $V_r$ we note that if we stay with complex voltages a while longer, we can use (complex)
- $V_r = V_z - V_f$ and so the magnitude of $V_r$ 
-that we will measure is the magnitude of that difference, i.e.
+To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
 
-$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
+If we state (and we are free to do this) that $V_f$ is equal to 1+0j, then 
 
-Where the term on the right of the minus sign is the *complex* value of $V_z$ .
-Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtraction is a vector one because we don't take the modulus until after the subtraction.
+$$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| $$
+
+Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f = 1 $ .
 
 ## Working out Z
 
@@ -60,7 +59,10 @@ which gives us the magnitude of the unknown impedance.
 
 ### 2 - Complex Z
 So what about the phase of $V_z$ ? Or at least the magnitude of its reactance?
-If we look again at the equation for $V_r$ and remember that the voltages here are scalar quantities, we can divide through by $V_f$ to get:
+If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
+
+$$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{50-Z_l}{50+Z_l}| $$
+
 
 
 
