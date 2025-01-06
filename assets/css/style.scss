@@ -43,6 +43,8 @@ h4 {
       float: right;
     }
 
+table {border: none !important;}
+
 /* Ensure MathJax elements don't inherit table borders */
 .MathJax_Display table,
 .MathJax table {
