@@ -2,6 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+
+
+table {border: none !important;}
+td {border: none !important;}
+tr {border: none !important;}
+
 .page__title{
     font-size: 42px;
     font-weight: bold;
