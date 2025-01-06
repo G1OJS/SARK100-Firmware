@@ -42,6 +42,7 @@ that we will measure is the magnitude of that difference, i.e.
 
 $$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
 
+Where the term on the right of the minus sign is the *complex* value of $V_z$ .
 Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtraction is a vector one because we don't take the modulus until after the subtraction.
 
 ## Working out Z
