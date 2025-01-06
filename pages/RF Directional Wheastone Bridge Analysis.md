@@ -28,7 +28,7 @@ $V_a=2V_f\frac{50}{|Z_l+50|}$
 
 and 
 
-$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$
+$V_z=2V_f|\frac{Z_l}{Z_l+50}|$
 
 To get at $V_r$, we note that if we stay with complex voltages a while longer, we can use (complex) $V_r = V_z - V_f$ and so the magnitude of $V_r$ that we will measure is the magnitude of that difference, i.e.
 
@@ -49,6 +49,6 @@ So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$ which gives us the magnitude o
 So what about the phase of $V_z$? Or at least the magnitude of its reactance?
 If we look again at the equation for $V_r$ and remember that the voltages here are scalar quantities, we can divide through by $V_f$ to get:
 
-$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}|$
+
 
 ~ Work in progress ~
