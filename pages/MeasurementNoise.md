@@ -13,6 +13,6 @@ I have yet to find a way to reduce this noise other than using brute force avera
 
 
 
-![Vf 19 to 29 MHz noise](/assets/img/Vf%20with%20274%20ohm%20load%20-%2010MHz.png)
+![Vf 19 to 29 MHz noise](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Vf%20with%20274%20ohm%20load%20-%2010MHz.png)
 
-![Vf 19 to 21 MHz noise](/assets/img/Vf%20with%20274%20ohm%20load%20-%202MHz.png)
+![Vf 19 to 21 MHz noise](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Vf%20with%20274%20ohm%20load%20-%202MHz.png)
