@@ -18,7 +18,8 @@ The graph below shows a measurement taken using the V13 firmware via the pcLink 
 ## High impedance loads and flatness
 The figure below shows the uncorrected (calibration parameters not applied) results from a measurement of a 1000 ohm load. The very noticeable drop in measured impedance across frequency corresponds to the impedance of a small capacitance (around 10pF in order of magnitude) in parallel with the input, and is also noticeable on the open circuit load results. Were this a vector analyser, it would be relatively straightforward to determine the exact capacitance during calibration and remove it from the measured complex load impedance. This is not straightforward when the sign of Im(Z) is difficult to determine and Re(Z) is always positive. However, it seemed likely that *something* could be done to at least partially remove this effect, given the existing calibration routine and knowledge of the causes.
 
-![image](https://github.com/user-attachments/assets/53c558f9-de06-45b1-a283-3e0ba3ef6c38)
+![image](https://github.com/user-attachments/assets/d2089d87-d1e3-4f72-b899-287c43b7624b)
+
 
 ## Inductance and Capacitance modes show zero above 10MHz
 Both the inductance and capacitance modes show zero at 10MHz and above, and I wanted to find out if this could be fixed.
