@@ -9,7 +9,7 @@ The other voltages do vary in proportion, which reduces the noise feeding throug
 
 The noise is quite repeatable, seeming to indicate that it originates in microcontroller noise and intermodulation between various harmonics of clock frequencies.
 
-I have yet to find a way to reduce this noise other than using brute force averaging.
+I have yet to find a way to reduce this noise other than using brute force averaging. 
 
 ![Vf 19 to 29 MHz noise](https://github.com/user-attachments/assets/6729f280-c7e7-447e-a1ff-dcd1e3ae79ef)
 
