@@ -9,7 +9,7 @@ A detailed list of changes made in the G1OJS 01 version is here [V01-Overview](h
 
 # Issues addressed
 ## Artifacts and Noise in frequency sweeps
-The graph below shows a measurement taken using the V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using well-known formulas. This graph shows two of the features that I wanted to try to improve:
+The graph below shows a measurement taken using the V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using [well-known formulas](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/RF-Directional-Wheatstone-Bridge-Analysis/). This graph shows two of the features that I wanted to try to improve:
 1. Both the VSWR and R curves show step changes that are clearly artifacts and not representative of the true test load impedance. 
 2. The measurement is quite 'noisy', particularly at high impedances.
    
