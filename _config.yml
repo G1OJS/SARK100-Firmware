@@ -28,7 +28,7 @@ github_username:  G1OJS
 permalink: /:title/
 
 # top navigation
-#header_pages:
+header_pages:
   - index.md
 
 # Build settings
