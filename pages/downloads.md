@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Measurement Noise"
-permalink: /Measurement-Noise/
+title: "Downloads"
+permalink: /downloads/
 ---
 
 The download folders on this site are
