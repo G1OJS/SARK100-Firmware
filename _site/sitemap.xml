@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/EditingOnWindows10/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Interpolation-and-DDS-Gain-Settings/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Measurement-Noise/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/Motivation-for-changes/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/RF-Directional-Wheastone-Bridge-Analysis/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/V01-Overview/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ZerosAndInterpolation/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+</urlset>

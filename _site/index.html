@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=7e54e0b0cb3f3b754b38ab917d09d830571619c3">
+
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>G1OJS Updates to MR300 / SARK100 Firmware | G1OJS MR300 SARK100 Firmware</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="G1OJS Updates to MR300 / SARK100 Firmware" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="G1OJS MR300 SARK100 Firmware" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="G1OJS Updates to MR300 / SARK100 Firmware" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"G1OJS Updates to MR300 / SARK100 Firmware","name":"G1OJS MR300 SARK100 Firmware","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- this is from the head-custom file that contains elements that can be inserted into head blocks in some or all site pages -->
+
+<!-- page-specific content -->
+
+
+
+<!-- MathJax support -->
+
+<!-- end of MathJax support -->
+
+<!-- end of head-custom.html -->
+
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware">View on GitHub</a>
+          
+
+          <a href="https://g1ojs.github.io/">
+            <h1 id="project_title">G1OJS MR300 SARK100 Firmware</h1>
+          </a>
+          <h2 id="project_tagline">Investigating mods to the SARK100 firmware</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        
+          <p id="page-title" class="page__title" itemprop="headline">
+          G1OJS Updates to MR300 / SARK100 Firmware
+          </p>
+        
+        
+        
+        
+        <h1 id="g1ojs-updates-to-mr300--sark100-firmware">G1OJS Updates to MR300 / SARK100 Firmware</h1>
+
+<p><img src="https://github.com/user-attachments/assets/346571c2-0c78-4ebe-9a6f-890d23aa224d" alt="2025-01-05 Welcome screen crop" /></p>
+
+<h2 id="motivation">Motivation</h2>
+<p>This <a href="https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware">Github repository</a> contains the results of a lot of work I’ve done investigating the <a href="http://www.lxqqfy.com/e/product.php?id=MR300">MR300 Antenna Analyser</a>’s firmware (SARK100 firmware V13), mainly for my own education &amp; fun. My motivation was:</p>
+<ul>
+  <li>Try to improve the calibration routine &amp; see if I could:
+    <ul>
+      <li>get better accuracy for high impedance loads</li>
+      <li>make the results flatter across frequency</li>
+      <li>eliminate the random steps in calculated outputs (again as frequency changes) that I observed when using a frequency scan via pcLink</li>
+      <li>reduce measurement noise (in the sense of random variations in calculated outputs as frequency changes)</li>
+    </ul>
+  </li>
+  <li>Make the code more memory-efficient and potentially add new features</li>
+  <li>Improve my understanding of RF directional bridges and their calibration</li>
+</ul>
+
+<p><strong>It is possible that some of all of the issues I set out to address are a result of EA4FRB’s firmware being used on a device for which it was not designed. The analyser that I have is an ‘MR300’ which as I understand it is a clone of the original SARK100 device.</strong></p>
+
+<p>I avoided disturbing existing interfaces (e.g. to zPlots and other software) and for V01 kept the requirement for 50, 150 and 274 ohm loads during calibration, apart from adding the need for a short circuit load. Future versions may be based around other calibration loads.</p>
+
+<p>I’ve achieved some of the goals above. The one that is elusive at the moment is the noise on the measurements, especially for higher impedance loads.</p>
+
+<p>For more information about the changes I made and why, start here: <a href="https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Motivation-for-changes/">Motivation for Changes</a></p>
+
+<h2 id="applicable-hardware">Applicable Hardware</h2>
+<p>I developed this update to EA4FRb’s V13 SARK100 source code by testing on my “MR300” unit which uses the same firmware. This unit is produced by <a href="http://www.lxqqfy.com/e/product.php?id=MR300">LXQQFY.com</a>. The firmware should work on SARK100 as well as on MR100 and other variants of the SARK100 analyser, but I have no way of testing on these other devices.</p>
+
+<h2 id="installing-the-g1ojs-firmware">Installing the G1OJS Firmware</h2>
+<p>My version of the firmware is now on this site in <a href="https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/SARK100%20Firmware%20G1OJS">this folder</a>.</p>
+
+<p>If you want to play with the source code, download the .zip file and, if you need to, look at <a href="https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/">how to update the firmware from source code on Windows 10</a>. If you just want the firmware, just download the hex file. Either way, you’ll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.</p>
+
+<h2 id="credits">Credits</h2>
+<p>With thanks to EA4FRB for designing the SARK100 hardware and Firmware and releasing this under the GPL licence. I have released my version of the firmware under that same licence, which is a requirement of that licence itself.</p>
+
+
+        
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">G1OJS MR300 SARK100 Firmware maintained by <a href="https://github.com/G1OJS">G1OJS</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

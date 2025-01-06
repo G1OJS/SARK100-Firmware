@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=7e54e0b0cb3f3b754b38ab917d09d830571619c3">
+
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Interpolation and DDS Gain Settings | G1OJS MR300 SARK100 Firmware</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Interpolation and DDS Gain Settings" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Interpolation-and-DDS-Gain-Settings/" />
+<meta property="og:url" content="http://localhost:4000/Interpolation-and-DDS-Gain-Settings/" />
+<meta property="og:site_name" content="G1OJS MR300 SARK100 Firmware" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Interpolation and DDS Gain Settings" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Interpolation and DDS Gain Settings","url":"http://localhost:4000/Interpolation-and-DDS-Gain-Settings/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- this is from the head-custom file that contains elements that can be inserted into head blocks in some or all site pages -->
+
+<!-- page-specific content -->
+
+
+
+<!-- MathJax support -->
+
+<!-- end of MathJax support -->
+
+<!-- end of head-custom.html -->
+
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware">View on GitHub</a>
+          
+
+          <a href="https://g1ojs.github.io/">
+            <h1 id="project_title">G1OJS MR300 SARK100 Firmware</h1>
+          </a>
+          <h2 id="project_tagline">Investigating mods to the SARK100 firmware</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        
+          <p id="page-title" class="page__title" itemprop="headline">
+          Interpolation and DDS Gain Settings
+          </p>
+        
+        
+        
+        
+        <p>NOTE - it is possible that the issues discussed below are a result of EA4FRB’s firmware being used on a device for which it was not designed. The analyser that I have is an ‘MR300’ which as I understand it is a clone of the original SARK100 device.</p>
+
+<h1 id="interpolation-and-dds-gain-settings">Interpolation and DDS Gain Settings</h1>
+<h2 id="results-of-changes">Results of Changes</h2>
+<p>The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the “raw” command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using <a href="https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/RF-Directional-Wheastone-Bridge-Analysis/">well-known formulas</a>.</p>
+
+<p><img src="https://github.com/user-attachments/assets/9a6d0d5a-f941-49b1-9569-0c719bc3c68f" alt="Graph showing Z,R,X and VSWR with step changes in VSWR and R visible" title="Fig 1: Measurement of a test load using EA4FRB V13 firmware" />
+<img src="https://github.com/user-attachments/assets/9a08f153-6327-4376-ae42-e770c8551385" alt="image" title="Fig 2: Measurement of a test load using G1OJS V01 firmware" /></p>
+
+<p>It can be seen that the ‘step’ artifacts present in the V13 results are gone, however the measurement ‘noise’ remains.</p>
+
+<h2 id="changes-made">Changes Made</h2>
+<p>The reason for the step artifacts shown above seems to be a combination of a) the way that the V13 firmware compensates for the DDS output falling with frequency, and b) the calibration methodology using stepwise changes in correction parameters with increasing frequency. Either of these features in isolation can cause the steps, and the effects are worse in combination. When present together, the correction parameters not only vary in a stepwise manner, but when the DDS gain setting changes (again, this is stepwise) the “next” set of correction parameters not only pertain to the next frequency but also to a different DDS output level. This causes the changes to reflect nonlinearities in the voltage measurement circuits in addition to the step change in parameters.</p>
+
+<p>To overcome these effects, I first added linear interpolation between calibration parameters at the measurement frequency, and then investigated the effect of removing changes in DDS gain as frequency rises. It is hard to imagine an unwanted effect of introducing the interpolation other than extra memory and processor usage, but noise is a concern if measured voltages drop too much without compensating with increased DDS gain.</p>
+
+<p>The graphs below show how the bridge supply voltage Vf (meaasured at the ‘top’ of the bridge) varies with frequency for a range of different load resistances. The vertical scales are in arbitrary units with 4 representing the maximum voltage that the ADC converers can measure, and are shown logarithmically. The first graph shows how the step changes in gain in the V13 software cause voltages to recover to higher values as they naturally fall with frequency. The lower graph shows the effect of removing these gain step changes, and roughly speaking the net effect is approximately 6dB lower output at the high frequency end. I have not yet noticed any effects on the quality of the measurements as a result of this, and feel that the benefits of removing the step artifacts favour keeping the gain flat across frequency.</p>
+
+<p>Notice also that the V13 firmware causes the Vf voltage to ‘max out’ the ADC measurement capabilty with a 1000 ohm load. This will result in measurement errors for high impedance loads, because Vf is used in the calculation of VSWR which then flows through to calculation of R and X.</p>
+
+<p>Neither of these changes, however, addresses the measurement noise issue.</p>
+
+<p><img src="https://github.com/user-attachments/assets/08fa9269-fc2f-4012-aeac-60aac0aa8475" alt="image" /></p>
+
+<p><img src="https://github.com/user-attachments/assets/be8bcd01-b463-4b00-a03d-3ae0ae75316a" alt="image" /></p>
+
+
+        
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">G1OJS MR300 SARK100 Firmware maintained by <a href="https://github.com/G1OJS">G1OJS</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
