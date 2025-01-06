@@ -13,13 +13,12 @@ The graph below shows a measurement taken using the V13 firmware via the pcLink 
 1. Both the VSWR and R curves show step changes that are clearly artifacts and not representative of the true test load impedance. 
 2. The measurement is quite 'noisy', particularly at high impedances.
    
-![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://github.com/user-attachments/assets/9a6d0d5a-f941-49b1-9569-0c719bc3c68f "Fig 1: Measurement of a test load using V13 firmware")
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20V13.png)
 
 ## High impedance loads and flatness
 The figure below shows the uncorrected (calibration parameters not applied) results from a measurement of a 1000 ohm load. The very noticeable drop in measured impedance across frequency corresponds to the impedance of a small capacitance (around 10pF in order of magnitude) in parallel with the input, and is also noticeable on the open circuit load results. Were this a vector analyser, it would be relatively straightforward to determine the exact capacitance during calibration and remove it from the measured complex load impedance. This is not straightforward when the sign of Im(Z) is difficult to determine and Re(Z) is always positive. However, it seemed likely that *something* could be done to at least partially remove this effect, given the existing calibration routine and knowledge of the causes. The second figure shows the effect in the corrected output of the V13 firmware.
 
-![image](https://github.com/user-attachments/assets/d2089d87-d1e3-4f72-b899-287c43b7624b)
-![image](https://github.com/user-attachments/assets/9d0aace5-7c2e-4295-95e1-4753ea5d630f)
+![Graph showing measured impedance of a 1000 Ohm load from 1 to 60 MHz with impedance falling towards the high frequency end, assymptotic to a hyperbolic curve](/assets/img/_Z_%20for%201000%20Ohm%20load%2C%20V13%20firmware.png)
 
 
 
