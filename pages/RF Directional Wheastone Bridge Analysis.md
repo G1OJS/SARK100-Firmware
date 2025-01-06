@@ -28,7 +28,9 @@ and
 
 $V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$
 
-If we subtract the complex voltage at the top of the load from the midpoint voltage at the opposite side of the bridge, we have
+In these equations $\frac{1}{|Z_l+50|}$ gives the magnitude of the current flowing through the load and upper resistor if $2V_f$ is 1.0, and multiplying this by a) 50 and b) $|Z_L|$ gives the magnitude of the voltages relative to $2V_f$.
+
+To get at $V_r$, we note that if we stay with complex voltages a while longer, we can use (complex) $V_r = V_z - V_f$ and so the magnitude of $V_r$ that we will measure is
 
 $V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $
 
