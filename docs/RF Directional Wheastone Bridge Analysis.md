@@ -1,5 +1,6 @@
 ---
 layout: default
+mathjax: true
 title: "RF Directional Wheastone Bridge Analysis"
 permalink: /RF-Directional-Wheastone-Bridge-Analysis/
 ---
@@ -11,3 +12,5 @@ Much online material about Wheatstone bridges focusses on the case where the bri
 We can calculate the expected magnitude of these voltages as follows.
 
 1) Va and Vz are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. Hence, 
+
+$$Va=2Vf\frac{50}{|Zl+50|}$$ and $$Vz=2Vf\frac{|Zl|}{|Zl+50|}$$
