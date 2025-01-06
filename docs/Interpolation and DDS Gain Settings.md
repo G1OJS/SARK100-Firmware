@@ -7,7 +7,7 @@ NOTE - it is possible that the issues discussed below are a result of EA4FRB's f
 
 # Interpolation and DDS Gain Settings
 ## Results of Changes
-The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using [well-known formulas]({base-url}/RF-Directional-Wheastone-Bridge-Analysis/).
+The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using [well-known formulas]({base.url}/RF-Directional-Wheastone-Bridge-Analysis/).
 
 ![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://github.com/user-attachments/assets/9a6d0d5a-f941-49b1-9569-0c719bc3c68f "Fig 1: Measurement of a test load using EA4FRB V13 firmware")
 ![image](https://github.com/user-attachments/assets/9a08f153-6327-4376-ae42-e770c8551385 "Fig 2: Measurement of a test load using G1OJS V01 firmware")
