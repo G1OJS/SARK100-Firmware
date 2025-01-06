@@ -42,3 +42,17 @@ h4 {
       margin-right: auto;
       float: right;
     }
+
+/* Ensure MathJax elements don't inherit table borders */
+.MathJax_Display table,
+.MathJax table {
+    border: none !important;
+    background: none !important;
+}
+
+/* Optional: Fine-tune spacing if needed */
+.MathJax_Display table {
+    margin: 0;
+    padding: 0;
+}
+
