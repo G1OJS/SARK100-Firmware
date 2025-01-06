@@ -9,8 +9,8 @@ NOTE - it is possible that the issues discussed below are a result of EA4FRB's f
 ## Results of Changes
 The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using [well-known formulas](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/RF-Directional-Wheastone-Bridge-Analysis/).
 
-![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://github.com/user-attachments/assets/9a6d0d5a-f941-49b1-9569-0c719bc3c68f "Fig 1: Measurement of a test load using EA4FRB V13 firmware")
-![image](https://github.com/user-attachments/assets/9a08f153-6327-4376-ae42-e770c8551385 "Fig 2: Measurement of a test load using G1OJS V01 firmware")
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20V13.png "Fig 1: Measurement of a test load using EA4FRB V13 firmware")
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R eliminated](/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20G1OJS%20V01.png "Fig 2: Measurement of a test load using G1OJS V01 firmware")
 
 It can be seen that the 'step' artifacts present in the V13 results are gone, however the measurement 'noise' remains.
 
@@ -25,10 +25,10 @@ Notice also that the V13 firmware causes the Vf voltage to 'max out' the ADC mea
 
 Neither of these changes, however, addresses the measurement noise issue.
 
-![image](https://github.com/user-attachments/assets/08fa9269-fc2f-4012-aeac-60aac0aa8475)
+![image](/assets/img/Vf_%20Stepped%20DDS%20Gain%20(V13).png)
 
 
-![image](https://github.com/user-attachments/assets/be8bcd01-b463-4b00-a03d-3ae0ae75316a)
+![image](/assets/img/Vf_%20Flat%20DDS%20Gain%20(G1OJS%20V01).png)
 
 
 
