@@ -51,7 +51,11 @@ Looking at the equations for $V_a$ and $V_z$ we can see that they have the same 
 
 $$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$$
 
-So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$ which gives us the magnitude of the unknown impedance.
+So we can easily get 
+
+$$|Z_l| = 50 \frac{V_z}{V_a}$$ 
+
+which gives us the magnitude of the unknown impedance.
 
 ### 2 - Complex Z
 So what about the phase of $V_z$ ? Or at least the magnitude of its reactance?
