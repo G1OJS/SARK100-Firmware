@@ -12,4 +12,5 @@ The noise is quite repeatable, seeming to indicate that it originates in microco
 I have yet to find a way to reduce this noise other than using brute force averaging.
 
 ![Vf 19 to 29 MHz noise](https://github.com/user-attachments/assets/6729f280-c7e7-447e-a1ff-dcd1e3ae79ef)
-![Vf 19 to 29 MHz noise](https://github.com/user-attachments/assets/fe10ef70-c3bf-43b9-bdac-979b8217e63c)
+
+![Vf 19 to 21 MHz noise](https://github.com/user-attachments/assets/7c6f24bb-0f36-45a3-b144-004e68b00f7f)
