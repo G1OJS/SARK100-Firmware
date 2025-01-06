@@ -7,7 +7,7 @@ permalink: /downloads/
 The download folders on this site are
 - [PSoC Designer V5 Installation Files]("/PSoC Designer V5 installation files") (contains only the SVG viewer and links to the Infineon site)
 - [EA4FRB Firmware]("/SARK100 Firmware EA4FRB")
-- [G1OJS Firmware]("/SARK100 Firmware G1OJS")
+- [G1OJS Firmware]("/SARK100 Firmware G1OJS") 
 
 If you just want to load up the latest firmware, download the .hex file from the G1OJS folder plus the .zip file containing the firmware loader (SARK100_Firmware_Loader.zip). If you want to revert to the EA4FRB firmware, download the .hex file from the EA4FRB folder and follow the same process.
 
