@@ -9,6 +9,7 @@
 
 <!-- MathJax support -->
 {% if page.mathjax %}
+  <!-- Configuration must be set _before_ loading MathJax from the CDN. See https://github.com/mathjax/MathJax/issues/2852 -->
   <script>
   MathJax.Hub.Config({
     tex2jax: {
@@ -19,6 +20,7 @@
   });
   </script>
 
+  <!-- Enable Inline and Block Level Rendering-->
   <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"> </script>
 
 {% endif %}
