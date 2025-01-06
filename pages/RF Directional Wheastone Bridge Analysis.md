@@ -30,17 +30,17 @@ Multiplying this by 50 for the upper resistor and
 and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
 relative to $2V_f$ . Hence,
    
-$V_a=2V_f\frac{50}{|Z_l+50|}$
+$$V_a=2V_f\frac{50}{|Z_l+50|}$$
 
 and 
 
-$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$
+$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
 
 To get at $V_r$ we note that if we stay with complex voltages a while longer, we can use (complex)
  $V_r = V_z - V_f$ and so the magnitude of $V_r$ 
 that we will measure is the magnitude of that difference, i.e.
 
-$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $
+$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
 
 Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtraction is a vector one because we don't take the modulus until after the subtraction.
 
@@ -49,7 +49,7 @@ Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtr
 ### 1 - Magnitude of Z
 Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
 
-$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$
+$$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$$
 
 So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$ which gives us the magnitude of the unknown impedance.
 
