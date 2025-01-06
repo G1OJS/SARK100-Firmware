@@ -13,7 +13,7 @@ This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) 
 - Improve my understanding of RF directional bridges and their calibration
 
 **It is possible that some of all of the issues I set out to address are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device.**
-
+ 
 I avoided disturbing existing interfaces (e.g. to zPlots and other software) and for V01 kept the requirement for 50, 150 and 274 ohm loads during calibration, apart from adding the need for a short circuit load. Future versions may be based around other calibration loads.
 
 I've achieved some of the goals above. The one that is elusive at the moment is the noise on the measurements, especially for higher impedance loads.
