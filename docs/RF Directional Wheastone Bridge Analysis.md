@@ -13,4 +13,4 @@ We can calculate the expected magnitude of these voltages as follows.
 
 1) Va and Vz are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. Hence, 
 
-$$Va=2Vf\frac{50}{|Zl+50|}$$ and $$Vz=2Vf\frac{|Zl|}{|Zl+50|}$$
+$$V_a=2V_f\frac{50}{|Z_l+50|}$$ and $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
