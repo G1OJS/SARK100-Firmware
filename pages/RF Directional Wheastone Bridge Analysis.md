@@ -16,6 +16,8 @@ $V_z$ and $V_a$ are independent from each other because, whilst in vector terms 
 
 **From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.**
 
+## Expected Bridge Voltages
+
 ![Circuit diagram of a Wheatstone Bridge showing location of voltage measurements](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Generic%20Wheatstone%20Bridge.png)
 
 We can calculate the expected magnitude of these voltages as follows.
@@ -33,6 +35,17 @@ To get at $V_r$, we note that if we stay with complex voltages a while longer, w
 $V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $
 
 Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtraction is a vector one because we don't take the modulus until after the subtraction.
+
+## Working out $Z_l$
+
+Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$, so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$:
+
+$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$
+
+So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}
+
+So what about the phase of $V_z$? Or at least the magnitude of its reactance?
+
 
 
 
