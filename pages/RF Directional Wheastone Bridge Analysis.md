@@ -38,15 +38,17 @@ Notice that whilst we said that $V_f$ and $V_r$ are scalar quantities, the subtr
 
 ## Working out $Z_l$
 
+### 1 - Magnitude of Z
 Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$, so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$:
 
 $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$
 
-So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$
+So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$ which gives us the magnitude of the unknown impedance.
 
+### 2 - Complex Z
 So what about the phase of $V_z$? Or at least the magnitude of its reactance?
+If we look again at the equation for $V_r$ and remember that the voltages here are scalar quantities, we can divide through by $V_f$ to get:
 
-
-
+$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}| $
 
 ~ Work in progress ~
