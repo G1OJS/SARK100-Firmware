@@ -5,7 +5,11 @@ title: "RF Directional Wheastone Bridge Analysis"
 permalink: /RF-Directional-Wheastone-Bridge-Analysis/
 ---
 # Converting Bridge Voltages to Load Impedance
-Much online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced (Zl ~ 50 ohms in this case). However, in an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. When using detectors that respond to amplitude only, there are *three* independent voltages that can be measured, shown as Vr, Vz and Va. These three voltages are all *dependent* on Vf (or 2Vf, the generator voltage, if that's easier to visualise). Vz and Va are independent from each other because, whilst in vector terms Va + Vz = 2Vf, the magnitude of these quantities does not follow this rule if $Z_l$ is not a pure resistance. 
+Much online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). However, in an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. 
+
+The diagram below shows a generic case of such a bridge. 
+
+When using detectors that respond to amplitude only, there are *three* independent voltages that can be measured, shown as $V_r$ , $V_z$  and $V_a$ . These three voltages are all *dependent* on $V_f$ (or $2V_f$, the generator voltage, if that's easier to visualise). $V_z$ and $V_a$ are independent from each other because, whilst in vector terms $2V_f = V_z + V_a$, the magnitude of these quantities does not follow this rule if $Z_l$ is not a pure resistance. 
 
 ![image](https://github.com/user-attachments/assets/b849b05d-860f-44f5-8954-c11939967a87)
 
