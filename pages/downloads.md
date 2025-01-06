@@ -1,1 +1,16 @@
+---
+layout: default
+title: "Measurement Noise"
+permalink: /Measurement-Noise/
+---
 
+The download folders on this site are
+- [PSoC Designer V5 Installation Files]("/PSoC Designer V5 installation files") (contains only the SVG viewer and links to the Infineon site)
+- [EA4FRB Firmware]("/SARK100 Firmware EA4FRB")
+- [G1OJS Firmware]("/SARK100 Firmware G1OJS")
+
+If you just want to load up the latest firmware, download the .hex file from the G1OJS folder plus the .zip file containing the firmware loader (SARK100_Firmware_Loader.zip). If you want to revert to the EA4FRB firmware, download the .hex file from the EA4FRB folder and follow the same process.
+
+If you want to play with the source code, download the relevant .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/).
+
+To load new firmware, follow the instructions in the [SARK100 User Manual](https://drive.google.com/file/d/1kM88itq2omZWrUrTG7w75D_n5QEMQEQm/view) at page 71 (Appendix F). 
