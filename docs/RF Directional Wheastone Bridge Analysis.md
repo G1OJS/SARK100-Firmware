@@ -15,6 +15,6 @@ When using detectors that respond to amplitude only, there are *three* independe
 
 We can calculate the expected magnitude of these voltages as follows.
 
-1) Va and Vz are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. Hence, 
+1) $V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. Hence, 
 
 $$V_a=2V_f\frac{50}{|Z_l+50|}$$ and $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
