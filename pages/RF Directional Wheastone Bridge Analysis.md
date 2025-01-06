@@ -42,7 +42,7 @@ If we state (and we are free to do this) that $V_f$ is equal to 1+0j, then
 
 $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| $$
 
-Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f = 1 $ .
+Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f=1$ .
 
 ## Working out Z
 
@@ -62,6 +62,13 @@ So what about the phase of $V_z$ ? Or at least the magnitude of its reactance?
 If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{50-Z_l}{50+Z_l}| $$
+
+Remember that this was for the case where $V_f=1$ and our general equation is thus 
+
+$$V_r = V_f|\frac{50-Z_l}{50+Z_l}| $$
+
+
+
 
 
 
