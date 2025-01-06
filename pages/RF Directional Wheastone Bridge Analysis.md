@@ -28,7 +28,7 @@ $V_a=2V_f\frac{50}{|Z_l+50|}$
 
 and 
 
-$V_z=2V_f|\frac{Z_l}{Z_l+50}|$
+$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$
 
 To get at $V_r$, we note that if we stay with complex voltages a while longer, we can use (complex) $V_r = V_z - V_f$ and so the magnitude of $V_r$ that we will measure is the magnitude of that difference, i.e.
 
