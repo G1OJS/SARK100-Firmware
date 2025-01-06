@@ -49,6 +49,6 @@ So we can easily get $|Z_l| = 50 \frac{V_z}{V_a}$ which gives us the magnitude o
 So what about the phase of $V_z$? Or at least the magnitude of its reactance?
 If we look again at the equation for $V_r$ and remember that the voltages here are scalar quantities, we can divide through by $V_f$ to get:
 
-$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}| $
+$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}|$
 
 ~ Work in progress ~
