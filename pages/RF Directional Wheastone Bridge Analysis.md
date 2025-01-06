@@ -22,7 +22,11 @@ $V_z$ and $V_a$ are independent from each other because, whilst in vector terms 
 
 We can calculate the expected magnitude of these voltages as follows.
 
-$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor will be $\frac{1}{|Z_l+50|}$. Multiplying this by a) 50 and b) $|Z_L|$ gives the magnitude of the voltages relative to $2V_f$. Hence,
+$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. 
+If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
+will be $\frac{1}{|Z_l+50|}$ 
+
+Multiplying this by a) 50 and b) $|Z_L|$ gives the magnitude of the voltages relative to $2V_f$. Hence,
    
 $V_a=2V_f\frac{50}{|Z_l+50|}$
 
