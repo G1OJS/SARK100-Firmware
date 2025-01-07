@@ -93,16 +93,15 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 #### Method 2
 <details>
 <summary>Explanation</summary>
-   
-As we know $|Z_l|$, we can substitute $Z_l$ in the equation for $\frac{V_r}{V_f}$ with $|Z_l|{e}^{j\theta}$
+We want to find $Z_l=R+iX$ We don't know R and X, but we *do* know $R^2+X^2$ because we know $|Z_l|$
 
-$$\frac{V_r}{V_f}=|\frac{50-|Z_l|{e}^{j\theta}}{50+|Z_l|{e}^{j\theta}}| $$
+So we can rewrite what we want to know as 
 
-And we can write this even more directly related to the voltage magnitudes, because we can divide top and bottom of the right hand side
-by $|Z_L|$ , and $\frac{50}{|Z_L|}$ is $\frac{V_a}{V_z}$ 
+$$Z_l=R+i\sqrt{|Z_l|^2-R^2}$$
 
-If we call $\frac{V_a}{V_z}$ A and call $\frac{V_r}{V_f}$ B, we can write
+If we put this into the equation for $\frac{V_r}{V_f}$ instead of $Z_L$ we get
 
-$$B=|\frac{A-{e}^{j\theta}}{A+{e}^{j\theta}}| $$
+$$\frac{V_r}{V_f}=|\frac{50-R-i\sqrt{|Z_l|^2-R^2}}{50+R+i\sqrt{|Z_l|^2-R^2}}| $$
+
 
 
