@@ -102,7 +102,18 @@ $$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}| $$
 
 Once we have these two equations, we know the scalar quantity $|Z_l|$ and the relationship between the *complex* impedance, 50, and $\frac{V_r}{V_f}$
 
-As we know $|Z_l|$, we can substitute $Z_l$ in the second equation with $|Z_l|\exp(j\theta)$
+As we know $|Z_l|$, we can substitute $Z_l$ in the second equation with $|Z_l|{e}^{j\theta}$
+
+$$\frac{V_r}{V_f}=|\frac{50-|Z_l|{e}^{j\theta}}{50+|Z_l|{e}^{j\theta}}| $$
+
+It can be shown that if
+
+$$A=\frac{1-{e}^{j\theta}}{1+{e}^{j\theta}}$$ 
+
+Then 
+
+$$\theta=-j\log{\frac{1-A}{1+A}}$$ 
+
 
 
 
