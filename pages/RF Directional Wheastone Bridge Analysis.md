@@ -47,7 +47,7 @@ or
 
 $$\frac{V_r}{V_f}=|1 - 2 \frac{Z_l}{Z_l+50}| $$
 
-(we can pull $V_f$ out of the |mod| bars because $V_f$ and $2V_f$ have the same phase and so removing them doesn't invalidate the complex calculation)
+(we can pull $V_f$ out of the |mod| bars because $V_f$ and $2V_f$ have the same phase and so removing them doesn't invalidate the complex calculation. In other words we could set $V_f=1.0+0.0j$ without losing generality.)
 
 
 ## Getting the Load Impedance from the Voltages
