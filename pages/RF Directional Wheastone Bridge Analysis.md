@@ -1,12 +1,13 @@
 ---
 layout: default
 mathjax: true
-title: "RF Directional Wheastone Bridge Analysis"
-permalink: /RF-Directional-Wheastone-Bridge-Analysis/
+title: "Converting Bridge Voltages to Load Impedance"
+permalink: /BridgeVoltagesToImpedance/
 ---
+# Introduction
+Much of the online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). 
 
-# Converting Bridge Voltages to Load Impedance
-Much online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). However, in an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. 
+In an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. 
 
 ![Circuit diagram of a Wheatstone Bridge showing location of voltage measurements](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Generic%20Wheatstone%20Bridge.png)
 
@@ -14,7 +15,7 @@ When using detectors that respond to amplitude only, there are *three* independe
 
 **From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.**
 
-### Bridge Voltage Magnitudes
+# Bridge Voltage Magnitudes
 <details>
 <summary>Explanation</summary>
    
@@ -45,18 +46,22 @@ so our three equations are:
 </details>
 <table>
    <tr>
+      <th>Eq 1</th><th>Eq 2</th><th>Eq 3</th>
+   </tr>
+   <tr>
       <td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td>
       <td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td>
       <td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td>
    </tr>
 </table>
 
-### Calculating Impedance
+# Calculating Impedance
+## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
 Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. 
-
-For the complex impedance, if we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
+<br>
+To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$
 
@@ -66,13 +71,18 @@ So we have:
 
 <table>
    <tr>
+      <th>Eq 4</th><th>Eq 5</th>
+   </tr>
+   <tr>
       <td>$$\frac{V_r}{V_f}=|\frac{Z_l-50}{Z_l+50}|$$</td>
       <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
    </tr>
 </table>
 There are at least two ways to get from here to the complex load impedance.
 
-#### Method 1 Work in progress
+## Step 2 - Calculating the Load Impedance 
+
+### Method 1 Work in progress
 <details>
 <summary>Explanation</summary>
 
@@ -90,7 +100,7 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
 </details>
 
-#### Method 2
+### Method 2
 <details>
 <summary>Explanation</summary>
 If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as 
