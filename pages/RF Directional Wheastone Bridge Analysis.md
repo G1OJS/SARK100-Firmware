@@ -102,6 +102,9 @@ which means
 
 $$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{R^2+50^2-100R+X^2}{R^2+50^2+100R+X^2}$$
 
+We already know $|Z|^2$ so we can use this instead of $R^2+X^2$ :
+
+$$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{|Z|^2+50^2-100R}{|Z|^2+50^2+100R}$$
 
 
 
