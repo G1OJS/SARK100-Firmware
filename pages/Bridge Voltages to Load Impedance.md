@@ -43,7 +43,7 @@ $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
 </details>
 <table>
    <tr>
-      <th>Eq 1</th><th>Eq 2</th><th>Eq 3</th>
+      <th>Eq 1</th><th>Eq 2</th>
    </tr>
    <tr>
       <td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td>
