@@ -92,17 +92,14 @@ And we can write this even more directly related to the voltage magnitudes, beca
 
 $$\frac{V_r}{V_f}=|\frac{\frac{V_a}{V_z}-{e}^{j\theta}}{\frac{V_a}{V_z}+{e}^{j\theta}}| $$
 
-It can be shown that if
-
-$$A=\frac{B-{e}^{j\theta}}{B+{e}^{j\theta}}$$ 
-
-Then 
-
-$$\theta=-j\log{\frac{B-AB}{1+A}}$$ 
+It can be shown that if $A=\frac{B-{e}^{j\theta}}{B+{e}^{j\theta}}$ then $\theta=-j\log{\frac{B-AB}{1+A}}$
 
 So we can write 
 
 $$\theta=-j\log{\frac{\frac{V_a}{V_z}-\frac{V_a}{V_z}\frac{V_r}{V_f}}{1+\frac{V_r}{V_f}}}$$ 
 
+which simplifies to
+
+$$-j\log_e{\frac{V_a}{V_z}\frac{V_f-V_r}{V_f+V_r}}$$
 
 
