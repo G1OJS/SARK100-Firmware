@@ -6,19 +6,17 @@ permalink: /RF-Directional-Wheastone-Bridge-Analysis/
 ---
 
 # Converting Bridge Voltages to Load Impedance
-Much online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). However, in an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. 
+Much online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). However, in an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. 
 
-The diagram below shows a generic case of such a bridge. 
 ![Circuit diagram of a Wheatstone Bridge showing location of voltage measurements](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Generic%20Wheatstone%20Bridge.png)
 
-When using detectors that respond to amplitude only, there are *three* independent voltages that can be measured, shown as $V_r$ , $V_z$  and $V_a$ . These three voltages are all *dependent* on $V_f$ (or $2V_f$, the generator voltage, if that's easier to visualise). 
-
-$V_z$ and $V_a$ are independent from each other because, whilst in vector terms $2V_f = V_z + V_a$, the magnitude of these quantities does not follow this rule if $Z_l$ is not a pure resistance. 
+When using detectors that respond to amplitude only, there are *three* independent voltages that can be measured, shown as $V_r$ , $V_z$  and $V_a$ . These three voltages are all *dependent* on $V_f$ (or $2V_f$, the generator voltage, if that's easier to visualise). $V_z$ and $V_a$ are independent from each other because, whilst in vector terms $2V_f = V_z + V_a$, the magnitude of these quantities does not follow this rule if $Z_l$ is not a pure resistance. 
 
 **From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.**
 
+### Bridge Voltages
 <details>
-<summary>Bridge Voltages</summary>
+<summary>Explanation</summary>
 We can calculate the expected magnitude of these voltages as follows.
 
 $V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. 
@@ -42,14 +40,18 @@ potential divider maths again to get the midpoint voltage. Then, with complex-va
 
 $$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|  \tag{3} $$
 
-</details>
 so our three equations are:
+</details>
+
 
 $$V_a=2V_f\frac{50}{|Z_l+50|}, V_z=2V_f\frac{|Z_l|}{|Z_l+50|}, V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
 
+### Calculating Impedance
+There are at least two ways to get from these bridge voltage magnitudes to the complex load impedance.
 
+#### Method 1
 <details>
-<summary>Method 1</summary>
+<summary>Explanation</summary>
 Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
 
 $$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$$
@@ -81,8 +83,9 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
 </details>
 
+#### Method 2
 <details>
-<summary>Method 2</summary>
+<summary>Explanation</summary>
 Just as in Method 1, it is relatively trivial to get to 
 
 $$|Z_l| = 50 \frac{V_z}{V_a}$$ 
