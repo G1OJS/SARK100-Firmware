@@ -44,9 +44,10 @@ $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| $$
 
 Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f=1$ .
 
+## Getting the Load Impedance from the Voltages
+
 <details>
-<summary>
-## Working out Z</summary>
+<summary>Method 1</summary>
 
 ### 1 - Magnitude of Z
 Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
