@@ -47,16 +47,9 @@ so our three equations are:
 $$V_a=2V_f\frac{50}{|Z_l+50|}, V_z=2V_f\frac{|Z_l|}{|Z_l+50|}, V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
 
 ### Calculating Impedance
-Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
+Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. 
 
-$$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$$
-
-So we can easily get 
-
-$$|Z_l|=50\frac{V_z}{V_a}$$ 
-
-which gives us the magnitude of the unknown impedance. What about the phase of $V_z$ ? Or at least the magnitude of its reactance?
-If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
+For the complex impedance, if we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 $$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{50-Z_l}{50+Z_l}| $$
 
