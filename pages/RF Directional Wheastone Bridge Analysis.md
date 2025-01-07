@@ -100,6 +100,9 @@ Then
 
 $$\theta=-j\log{\frac{B-AB}{1+A}}$$ 
 
+So we can write 
+
+$$\theta=-j\log{\frac{\frac{V_a}{V_z}-\frac{V_a}{V_z}\frac{V_r}{V_f}}{1+\frac{V_r}{V_f}}}$$ 
 
 
 
