@@ -90,15 +90,15 @@ $$\frac{V_r}{V_f}=|\frac{50-|Z_l|{e}^{j\theta}}{50+|Z_l|{e}^{j\theta}}| $$
 
 And we can write this even more directly related to the voltage magnitudes, because $\frac{50}{|Z_L|}$ is $\frac{V_a}{V_z}$
 
-$$\frac{V_r}{V_f}=|\frac{\frac{V_a}{V_z}-{e}^{j\theta}}{\frac{V_a}{V_z}-{e}^{j\theta}}| $$
+$$\frac{V_r}{V_f}=|\frac{\frac{V_a}{V_z}-{e}^{j\theta}}{\frac{V_a}{V_z}+{e}^{j\theta}}| $$
 
 It can be shown that if
 
-$$A=\frac{1-{e}^{j\theta}}{1+{e}^{j\theta}}$$ 
+$$A=\frac{B-{e}^{j\theta}}{B+{e}^{j\theta}}$$ 
 
 Then 
 
-$$\theta=-j\log{\frac{1-A}{1+A}}$$ 
+$$\theta=-j\log{\frac{B-AB}{1+A}}$$ 
 
 
 
