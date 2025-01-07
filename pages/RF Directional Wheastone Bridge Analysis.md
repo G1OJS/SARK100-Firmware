@@ -88,18 +88,11 @@ As we know $|Z_l|$, we can substitute $Z_l$ in the equation for $\frac{V_r}{V_f}
 
 $$\frac{V_r}{V_f}=|\frac{50-|Z_l|{e}^{j\theta}}{50+|Z_l|{e}^{j\theta}}| $$
 
-And we can write this even more directly related to the voltage magnitudes, because $\frac{50}{|Z_L|}$ is $\frac{V_a}{V_z}$
+And we can write this even more directly related to the voltage magnitudes, because we can divide top and bottom of the right hand side
+by $|Z_L|$ , and $\frac{50}{|Z_L|}$ is $\frac{V_a}{V_z}$ 
 
-$$\frac{V_r}{V_f}=|\frac{\frac{V_a}{V_z}-{e}^{j\theta}}{\frac{V_a}{V_z}+{e}^{j\theta}}| $$
+If we call $\frac{V_a}{V_z}$ A and call $\frac{V_r}{V_f}$ B, we can write
 
-It can be shown that if $A=\frac{B-{e}^{j\theta}}{B+{e}^{j\theta}}$ then $\theta=-j\log{\frac{B-AB}{1+A}}$
-
-So we can write 
-
-$$\theta=-j\log{\frac{\frac{V_a}{V_z}-\frac{V_a}{V_z}\frac{V_r}{V_f}}{1+\frac{V_r}{V_f}}}$$ 
-
-which simplifies to
-
-$$-j\log_e{\frac{V_a}{V_z}\frac{V_f-V_r}{V_f+V_r}}$$
+$$B=|\frac{A-{e}^{j\theta}}{A+{e}^{j\theta}}| $$
 
 
