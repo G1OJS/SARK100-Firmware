@@ -100,11 +100,9 @@ $$\frac{V_r}{V_f}=|\frac{R+iX-50}{R+iX+50}|$$
 
 which means
 
-$$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2}$$
+$$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{R^2+50^2-100R+X^2}{R^2+50^2+100R+X^2}$$
 
-$$(\frac{V_r}{V_f})^2=\frac{A+B}{A-B}$$
 
-where $A=R^2+2iRX-X^2+2500$ and $B=100(R+iX)$
 
 
 
