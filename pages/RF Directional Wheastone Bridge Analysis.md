@@ -110,6 +110,19 @@ Which can be solved to give
 
 $$R = \frac{|Z|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
 
+Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance.
+
+We can rewrite these equations to use the bridge voltages directly:
+
+</detail>
+
+<table>
+   <tr>
+      <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
+      <td>$$X = \sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
+   </tr>
+</table>
+
 
 
 
