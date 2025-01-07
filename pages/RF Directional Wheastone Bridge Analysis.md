@@ -93,15 +93,18 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 #### Method 2
 <details>
 <summary>Explanation</summary>
-We want to find $Z_l=R+iX$ We don't know R and X, but we *do* know $R^2+X^2$ because we know $|Z_l|$
+We want to find $Z_l=R+iX$ 
 
-So we can rewrite what we want to know as 
+Because we already know $|Z_l|$, we can rewrite what we want to know as 
 
 $$Z_l=R+i\sqrt{|Z_l|^2-R^2}$$
 
 If we put this into the equation for $\frac{V_r}{V_f}$ instead of $Z_L$ we get
 
 $$\frac{V_r}{V_f}=|\frac{50-R-i\sqrt{|Z_l|^2-R^2}}{50+R+i\sqrt{|Z_l|^2-R^2}}| $$
+
+We now have one equation with one unknown: R.
+
 
 
 
