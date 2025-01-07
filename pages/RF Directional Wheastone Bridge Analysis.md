@@ -72,7 +72,7 @@ So we have:
 </table>
 There are at least two ways to get from here to the complex load impedance.
 
-#### Method 1
+#### Method 1 Work in progress
 <details>
 <summary>Explanation</summary>
 
@@ -90,7 +90,7 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
 </details>
 
-#### Method 2
+#### Method 2 Work in progress
 <details>
 <summary>Explanation</summary>
 We want to find $Z_l=R+iX$ 
