@@ -44,7 +44,8 @@ $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| $$
 
 Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f=1$ .
 
-## Working out Z
+<details>
+<summary>## Working out Z</summary>
 
 ### 1 - Magnitude of Z
 Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
@@ -77,7 +78,7 @@ $$VSWR=\frac{1+\rho}{1-\rho}$$
 
 Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
-
+</details>
 
 
 
