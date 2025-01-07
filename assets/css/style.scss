@@ -3,11 +3,6 @@
 
 @import "{{ site.theme }}";
 
-
-table {border: none !important;}
-td {border: none !important;}
-tr {border: none !important;}
-
 .page__title{
     font-size: 42px;
     font-weight: bold;
@@ -49,18 +44,5 @@ h4 {
       float: right;
     }
 
-table {border: none !important;}
 
-/* Ensure MathJax elements don't inherit table borders */
-.MathJax_Display table,
-.MathJax table {
-    border: none !important;
-    background: none !important;
-}
-
-/* Optional: Fine-tune spacing if needed */
-.MathJax_Display table {
-    margin: 0;
-    padding: 0;
-}
 
