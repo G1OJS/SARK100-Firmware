@@ -65,9 +65,17 @@ $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{
 
 Remember that this was for the case where $V_f=1$ and our general equation is thus 
 
-$$V_r = V_f|\frac{50-Z_l}{50+Z_l}| $$
+$$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}| $$
 
+The right hand side of this equation is recognizable as the magnitude of the complex reflection coefficient:
 
+$$|\frac{50-Z_l}{50+Z_l}|=|\Gamma|=\rho$$
+
+And VSWR can be calculated as
+
+$$VSWR=\frac{1+\rho}{1-\rho}$$
+
+Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
 
 
