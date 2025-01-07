@@ -43,6 +43,10 @@ potential divider maths again to get the midpoint voltage. Then, with complex-va
 $$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|  \tag{3} $$
 
 </details>
+so our three equations are:
+
+$$V_a=2V_f\frac{50}{|Z_l+50|}, V_z=2V_f\frac{|Z_l|}{|Z_l+50|}, V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
+
 
 <details>
 <summary>Method 1</summary>
