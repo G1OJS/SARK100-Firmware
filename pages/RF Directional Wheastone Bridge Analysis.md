@@ -86,8 +86,23 @@ $$VSWR=\frac{1+\rho}{1-\rho}$$
 
 Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
+~ Work in progress ~
+
 </details>
 
+<details>
+<summary>Method 2</summary>
+Just as in Method 1, it is relatively trivial to get to 
+
+$$|Z_l| = 50 \frac{V_z}{V_a}$$ 
+
+and with a little more thought
+
+$$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}| $$
+
+Once we have these two equations, we know the scalar quantity $|Z_l|$ and the relationship between the *complex* impedance, 50, and $\frac{V_r}{V_f}$
+
+As we know $|Z_l|$, we can substitute $Z_l$ in the second equation with $|Z_l|\exp(j\theta)$
 
 
-~ Work in progress ~
+
