@@ -43,8 +43,13 @@ $$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|$$
 
 so our three equations are:
 </details>
-
-$$V_a=2V_f\frac{50}{|Z_l+50|}, V_z=2V_f\frac{|Z_l|}{|Z_l+50|}, V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
+<table>
+   <tr>
+      <td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td>
+      <td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td>
+      <td>$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|$$</td>
+   </tr>
+</table>
 
 ### Calculating Impedance
 <details>
@@ -59,8 +64,12 @@ So we have:
 
 </details>
 
-$$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}|, and \frac{V_z}{V_a}=\frac{|Z_l|}{50} $$
-
+<table>
+   <tr>
+      <td>$$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}|$$</td>
+      <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
+   </tr>
+</table>
 There are at least two ways to get from here to the complex load impedance.
 
 #### Method 1
