@@ -103,7 +103,9 @@ If we put this into the equation for $\frac{V_r}{V_f}$ instead of $Z_L$ we get
 
 $$\frac{V_r}{V_f}=|\frac{50-R-i\sqrt{|Z_l|^2-R^2}}{50+R+i\sqrt{|Z_l|^2-R^2}}| $$
 
-We now have one equation with one unknown: R.
+We now have one equation with one unknown (R). If we write $\frac{V_r}{V_f}$ as x and solve for R we get:
+
+$$R=\frac{x^2(-2500-|Z_l|^2)+2x(2500-|Z_l|^2)-|Z_l|^2-2500}{100(x^2-1)}$$
 
 
 
