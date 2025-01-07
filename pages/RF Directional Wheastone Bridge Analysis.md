@@ -54,8 +54,6 @@ $$\frac{V_r}{V_f}=|1 - 2 \frac{Z_l}{Z_l+50}| $$
 
 <details>
 <summary>Method 1</summary>
-
-### 1 - Magnitude of Z
 Looking at the equations for $V_a$ and $V_z$ we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with 50 and $|Z_l|$ :
 
 $$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$$
@@ -64,10 +62,7 @@ So we can easily get
 
 $$|Z_l| = 50 \frac{V_z}{V_a}$$ 
 
-which gives us the magnitude of the unknown impedance.
-
-### 2 - Complex Z
-So what about the phase of $V_z$ ? Or at least the magnitude of its reactance?
+which gives us the magnitude of the unknown impedance. What about the phase of $V_z$ ? Or at least the magnitude of its reactance?
 If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 $$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{50-Z_l}{50+Z_l}| $$
