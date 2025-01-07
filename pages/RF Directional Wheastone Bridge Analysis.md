@@ -36,10 +36,10 @@ $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
 
 To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
 
-On the left of the bridge we have $V_f$ which is simply half of the generator voltage, and on the right we use
-potential divider maths again to get the midpoint voltage. Then, with complex-valued calculations inside the |mod| bars, we have
+On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
+Then, with complex-valued calculations inside the |mod| bars, we have
 
-$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|$$
+$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
 
 so our three equations are:
 </details>
@@ -47,7 +47,7 @@ so our three equations are:
    <tr>
       <td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td>
       <td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td>
-      <td>$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}|$$</td>
+      <td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td>
    </tr>
 </table>
 
@@ -58,7 +58,7 @@ Looking at equations 1 and 2, we can see that they have the same denominator, an
 
 For the complex impedance, if we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
-$$\frac{V_r}{V_f} = | 1 - 2 \frac{Z_l}{Z_l+50}| = | \frac{(Z_l+50) -2Z_l}{Z_l+50}| = |\frac{50-Z_l}{50+Z_l}| $$
+$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$
 
 So we have:
 
@@ -66,7 +66,7 @@ So we have:
 
 <table>
    <tr>
-      <td>$$\frac{V_r}{V_f}=|\frac{50-Z_l}{50+Z_l}|$$</td>
+      <td>$$\frac{V_r}{V_f}=|\frac{Z_l-50}{Z_l+50}|$$</td>
       <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
    </tr>
 </table>
@@ -78,7 +78,7 @@ There are at least two ways to get from here to the complex load impedance.
 
 The final right hand side of the equation for $\frac{V_r}{V_f}$ is recognizable as the magnitude of the complex reflection coefficient:
 
-$$|\frac{50-Z_l}{50+Z_l}|=|\Gamma|=\rho$$
+$$|\frac{Z_l-50}{Z_l+50}|=|\Gamma|=\rho$$
 
 And VSWR can be calculated as
 
@@ -101,11 +101,11 @@ $$Z_l=R+i\sqrt{|Z_l|^2-R^2}$$
 
 If we put this into the equation for $\frac{V_r}{V_f}$ instead of $Z_L$ we get
 
-$$\frac{V_r}{V_f}=|\frac{50-R-i\sqrt{|Z_l|^2-R^2}}{50+R+i\sqrt{|Z_l|^2-R^2}}| $$
+$$\frac{V_r}{V_f}=|\frac{R+i\sqrt{|Z_l|^2-R^2}-50}{R+i\sqrt{|Z_l|^2-R^2}+50}| $$
 
 We now have one equation with one unknown (R). If we write $\frac{V_r}{V_f}$ as x and solve for R we get:
 
-$$R=\frac{x^2(-2500-|Z_l|^2)+2x(2500-|Z_l|^2)-|Z_l|^2-2500}{100(x^2-1)}$$
+
 
 
 
