@@ -93,17 +93,13 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 #### Method 2 Work in progress
 <details>
 <summary>Explanation</summary>
-We want to find $Z_l=R+iX$ 
+If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as 
 
-Because we already know $|Z_l|$, we can rewrite what we want to know as 
+$$\frac{V_r}{V_f}=|\frac{R+iX-50}{R+iX+50}|$$
 
-$$Z_l=R+i\sqrt{|Z_l|^2-R^2}$$
+which means
 
-If we put this into the equation for $\frac{V_r}{V_f}$ instead of $Z_L$ we get
-
-$$\frac{V_r}{V_f}=|\frac{R+i\sqrt{|Z_l|^2-R^2}-50}{R+i\sqrt{|Z_l|^2-R^2}+50}| $$
-
-We now have one equation with one unknown (R). If we write $\frac{V_r}{V_f}$ as x and solve for R we get:
+$$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2}$$
 
 
 
