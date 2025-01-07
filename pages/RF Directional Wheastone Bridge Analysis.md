@@ -90,7 +90,7 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 
 </details>
 
-#### Method 2 Work in progress
+#### Method 2
 <details>
 <summary>Explanation</summary>
 If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as 
@@ -114,7 +114,7 @@ Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to ge
 
 We can rewrite these equations to use the bridge voltages directly:
 
-</detail>
+</details>
 
 <table>
    <tr>
