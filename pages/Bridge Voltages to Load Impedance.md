@@ -19,9 +19,9 @@ When using detectors that respond to amplitude only, there are *three* independe
 <details>
 <summary>Explanation</summary>
 <p>We can calculate the expected magnitude of these voltages as follows.</p>
-$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex. 
-If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
-will be $\frac{1}{|Z_l+50|}$ 
+<p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
+<p>If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
+will be $\frac{1}{|Z_l+50|}$ </p>
 
 Multiplying this by 50 for the upper resistor and 
 and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
