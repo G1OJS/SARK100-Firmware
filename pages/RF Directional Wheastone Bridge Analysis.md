@@ -38,11 +38,17 @@ $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
 
 To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
 
-If we state (and we are free to do this) that $V_f$ is equal to 1+0j, then 
+On the left of the brideg we have $V_f$ which is simply half of the generator voltage and on the right we use
+potential divider maths again to get the midpoint voltage. So, with complex-valued calculations inside the |mod| bars, we have
 
-$$V_r = | 1 - 2 \frac{Z_l}{Z_l+50}| $$
+$$V_r = | V_f - 2V_f \frac{Z_l}{Z_l+50}| $$
 
-Where the term on the right of the minus sign is the *complex* value of $V_z$ with $V_f=1$ .
+or 
+
+$$\frac{V_r}{V_f}=|1 - 2 \frac{Z_l}{Z_l+50}| $$
+
+(we can pull $V_f$ out of the |mod| bars because $V_f$ and $2V_f$ have the same phase and so removing them doesn't invalidate the complex calculation)
+
 
 ## Getting the Load Impedance from the Voltages
 
