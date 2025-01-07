@@ -23,24 +23,24 @@ When using detectors that respond to amplitude only, there are *three* independe
 <p>If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
 will be $\frac{1}{|Z_l+50|}$ </p>
 
-Multiplying this by 50 for the upper resistor and 
+<p>Multiplying this by 50 for the upper resistor and 
 and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
-relative to $2V_f$ . Hence,
+relative to $2V_f$ . Hence,</p>
    
 $$V_a=2V_f\frac{50}{|Z_l+50|}$$
 
-and 
+<p>and</p> 
 
 $$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$
 
-To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
+<p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .</p>
 
-On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
-Then, with complex-valued calculations inside the |mod| bars, we have
+<p>On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage.</p> 
+<p>Then, with complex-valued calculations inside the |mod| bars, we have</p>
 
 $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
 
-so our three equations are:
+<p>so our three equations are:</p>
 </details>
 <table>
    <tr>
@@ -57,13 +57,13 @@ so our three equations are:
 ## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
-Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. 
-<br>
-To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
+<p>Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. </p>
+
+<p>To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:</p>
 
 $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$
 
-So we have:
+<p>So we have:</p>
 
 </details>
 
@@ -76,7 +76,7 @@ So we have:
       <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
    </tr>
 </table>
-There are at least two ways to get from here to the complex load impedance.
+<p>There are at least two ways to get from here to the complex load impedance.</p>
 
 ## Step 2 - Calculating the Load Impedance 
 
@@ -84,15 +84,15 @@ There are at least two ways to get from here to the complex load impedance.
 <details>
 <summary>Explanation</summary>
 
-The final right hand side of the equation for $\frac{V_r}{V_f}$ is recognizable as the magnitude of the complex reflection coefficient:
+<p>The final right hand side of the equation for $\frac{V_r}{V_f}$ is recognizable as the magnitude of the complex reflection coefficient:</p>
 
 $$|\frac{Z_l-50}{Z_l+50}|=|\Gamma|=\rho$$
 
-And VSWR can be calculated as
+<p>And VSWR can be calculated as</p>
 
 $$VSWR=\frac{1+\rho}{1-\rho}$$
 
-Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
+<p>Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).</p>
 
 ~ Work in progress ~
 
@@ -101,30 +101,33 @@ Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).
 ### Method 2
 <details>
 <summary>Explanation</summary>
-If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as 
+<p>If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as </p>
 
 
 $$\frac{V_r}{V_f}=|\frac{R+iX-50}{R+iX+50}|$$
 
-which means
+<p>which means</p>
 
 $$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{R^2+50^2-100R+X^2}{R^2+50^2+100R+X^2}$$
 
-We already know $|Z|^2$ so we can use this instead of $R^2+X^2$ :
+<p>We already know $|Z|^2$ so we can use this instead of $R^2+X^2$ :</p>
 
 $$(\frac{V_r}{V_f})^2= \frac{|Z|^2+50^2-100R}{|Z|^2+50^2+100R}$$
 
-Which can be solved to give
+<p>Which can be solved to give</p>
 
 $$R = \frac{|Z|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
 
-Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance.
+<p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance.</p>
 
-We can rewrite these equations to use the bridge voltages directly:
+<p>We can rewrite these equations to use the bridge voltages directly:</p>
 
 </details>
 
 <table>
+   <tr>
+      <th>Re(Z)</th><th>Im(Z)</th>
+   </tr>
    <tr>
       <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
       <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
