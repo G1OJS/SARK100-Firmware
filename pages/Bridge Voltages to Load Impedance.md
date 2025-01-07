@@ -129,7 +129,7 @@ We can rewrite these equations to use the bridge voltages directly:
 <table>
    <tr>
       <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
-      <td>$$X = \sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
+      <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
    </tr>
 </table>
 
