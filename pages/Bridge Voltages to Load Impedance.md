@@ -71,7 +71,7 @@ $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
     <td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td>
    </tr>
 </table>
-</div>div>
+</div>
 
 # Calculating Impedance
 ## Step 1 - three voltages to two voltage ratios
