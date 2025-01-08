@@ -160,9 +160,11 @@ Alternatively,
 <p>So our equation from above is </p>
 $$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho^2$$
 
-<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$</p>
+<p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so$\rho^2$ is 
+   
+$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{|Z_l|^2+2500-100R}{|Z_l|^2+2500+100R}$$ </p>
 
-<p>so$\rho^2$ is related to VSWR by </p>
+<p>Which can be rearranged to give</p>
 
 
 
