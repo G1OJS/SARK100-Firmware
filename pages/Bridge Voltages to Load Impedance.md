@@ -87,15 +87,28 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 
 </details>
 
+<div  style='float:left'>
 <table>
    <tr>
-      <th>Eq 4</th><th>Eq 5</th>
+      <th>Eq 4</th>
    </tr>
    <tr>
       <td>$$\frac{V_r}{V_f}=|\frac{Z_l-50}{Z_l+50}|$$</td>
+   </tr>
+</table>
+</div>
+
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Eq 5</th>
+   </tr>
+   <tr>
       <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
    </tr>
 </table>
+</div>
+   
 <p>There are at least two ways to get from here to the complex load impedance.</p>
 
 ## Step 2 - Calculating the Load Impedance 
@@ -144,15 +157,27 @@ $$R = \frac{|Z|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$
 
 </details>
 
+<div  style='float:left'>
 <table>
    <tr>
-      <th>Re(Z)</th><th>Im(Z)</th>
+      <th>Re(Z)</th>
    </tr>
    <tr>
       <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
+   </tr>
+</table>
+</div>
+
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Im(Z)</th>
+   </tr>
+   <tr>
       <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
    </tr>
 </table>
+</div>
 
 
 
