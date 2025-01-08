@@ -89,11 +89,15 @@ As the main display now combines SWR, |Z|, R and X into one view, I needed to ma
 - Check if changing Vz cal to 50-274 instead of current 50-150 gives better overall results. 
    (Current scheme is Vr 150-274, Vz 50-150, Va1 50-150, Va2 150-274 Could also try Va2 150-1000 or 274-1000, or a value like 470R instead of 1000R)
 - Consider adding a correction factor for Vr / VSWR - it's sometimes too low & affects R calculation
+- Scrap the rezero and instead do piecewise linear to take Vz down to zero ohms and Va up to 1000 - or even open (saves user a cal load)
+- Convert SIG display to dBm
 - Look closer at limits of applicability of L and C calculations.
 - Improve LCD display on pcLink
 - Look at band limits. What if we make them not contiguous? Better? Worse? Good for scanning (faster)?
 - Argument for setmeasurecalcdisplay - use descriptive #defs rather than literals
 - Investigate adding a variable-output VFO mode.
+
+
 
 
 
