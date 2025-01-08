@@ -110,16 +110,16 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 </div>
 
 ## Step 2 - Calculating the Load Impedance 
-<details>
-<summary>Explanation</summary>
 <p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
 
 $$|\frac{R-50+jX}{R+50+jX}|$$</td>
 
 Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
-$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}$$</td>
+$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}$$</td>
 
+<details>
+<summary>Explanation</summary>
 <p>Which can be solved to give</p>
 
 $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
