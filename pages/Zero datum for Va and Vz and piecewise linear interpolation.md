@@ -13,3 +13,26 @@ It is clear that the analyser struggles to represent loads of this impedance, ev
 ![Graph showing measured impedance of a 1000 Ohm load from 1 to 60 MHz with impedance falling towards the high frequency end, assymptotic to a hyperbolic curve](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Z%20for%201000%20Ohm%20load%20V13%20firmware.png)
 
 I've tried two other approaches to remedy this and improve accuracy at higher impedances, and both have helped a little but not solved the issue completely. The first is to note that Va becomes much smaller than Vz at high impedances, and hence any errors in Va will become more significant. The input capacitance tends to ensure that even with an open circuit, Va is not zero. In fact, Va becomes quite significant at higher frequencies. Vz has a similar behaviour on short circuit loads.
+
+The graph below shows the behaviour of Vz and Va with Short and Open loads. These both rise to almost 10% of full scale voltage.
+
+![behaviour of Vz and Va with Short and Open loads](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/b96c821dc7653f381a1337e88544e11b3ccaf0b2/assets/img/Uncorrected%20Vz%20and%20Va%20with%20Short%20and%20Open%20Loads%20.png)
+
+I added code in the calibration routine to record these voltages and subtract them from measured voltages before corrections are applied (this is the simplest way to do it given the flow of the calibration routine). I also added an extra segment to the calibration model for Va, so that it uses more appropriate values above a certain impedance. This effectively conbverts the linear correction model to a piecewise linear model with two linear segments. In version V01, I kept the highest impedance calibration load at 274 Ohms, but experiments have shown that changing this to a higher impedance, or adding an extra high impedance load, may have benefits.
+
+Th there are 4 combinations of changes that can be applied for rezeroing:
+- No rezeroing
+- Rezero Va only
+- Rezero Vz only
+- Rezero both Va and Vz
+
+The rezeroing of Va and Vz interacts with the calibration model, as the false zeros are subtracted prior to calculating and applying the correction factors. Applying, or not applying, the two-step calibration model to Va, makes 8 total cases. 
+The graphs below show measurements of 5 Ohm and 1000 Ohm loads, after calibration, for each of these 8 cases except the "Rezero Vz only" case, as the effect of this is primarily on the low impedance measurements and can be seen in the "Rezero Vz and Va" cases.
+
+None of these cases shows a perfect result, but rezeroing both Va and Vz and using the piecewise linear calibration for Va seems to offer a good compromise. This is what is implemented in V01.
+
+### Effect of rezeroing with linear calibration for Va
+![Effect of rezeroing with linear calibration for Va](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/3bdada7c84b4b8daab444093ee92d41f2cf199b7/assets/img/Linear%20Va%20cal%20summary.PNG)
+
+### Effect of rezeroing with piecewise linear calibration for Va
+![Effect of rezeroing with piecewise linear calibration for Va](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/3bdada7c84b4b8daab444093ee92d41f2cf199b7/assets/img/Extended%20linear%20Va%20cal%20summary.PNG)
