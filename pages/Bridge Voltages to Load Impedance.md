@@ -187,7 +187,8 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 </div>
 <div  style='clear:both'></div>
 
-Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ 
+<p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ </p>
+
 <details>
 <summary>Explanation</summary>
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$
