@@ -122,7 +122,7 @@ $$|\frac{R-50+jX}{R+50+jX}|=\rho$$</td>
 
 Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
-$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\frac{R(R-100)+2500+X^2}{(R(R+100)+2500+X^2}=\rho$$</td>
+$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho$$</td>
 
 
 ~ Work in progress ~
@@ -141,13 +141,13 @@ $$\frac{V_r}{V_f}=|\frac{R+iX-50}{R+iX+50}|$$
 
 $$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{R^2+50^2-100R+X^2}{R^2+50^2+100R+X^2}$$
 
-<p>We already know $|Z|^2$ so we can use this instead of $R^2+X^2$ :</p>
+<p>We already know $|Z_l|^2$ so we can use this instead of $R^2+X^2$ :</p>
 
-$$(\frac{V_r}{V_f})^2= \frac{|Z|^2+50^2-100R}{|Z|^2+50^2+100R}$$
+$$(\frac{V_r}{V_f})^2= \frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}$$
 
 <p>Which can be solved to give</p>
 
-$$R = \frac{|Z|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
+$$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
 
 <p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance.</p>
 
