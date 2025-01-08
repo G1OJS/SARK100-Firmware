@@ -73,7 +73,7 @@ $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
 </table>
 </div>
 
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 # Calculating Impedance
 ## Step 1 - three voltages to two voltage ratios
@@ -111,7 +111,7 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 </table>
 </div>
 <br>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 
 ## Step 2 - Calculating the Load Impedance 
@@ -135,7 +135,7 @@ Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 <p>But $R^2+X^2 = |Z_l|^2$ so </p>
 
@@ -149,7 +149,7 @@ Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 
 <p>Which can be solved to give</p>
@@ -172,7 +172,7 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 
 <div  style='float:left'>
@@ -185,7 +185,7 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ 
 <details>
@@ -221,7 +221,7 @@ So, with an interim step of calculating VSWR, we have:
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 
 where 
@@ -236,7 +236,7 @@ where
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
 <div  style='float:left'>
 <table>
@@ -248,5 +248,5 @@ where
    </tr>
 </table>
 </div>
-<div  style='clear:both'>
+<div  style='clear:both'></div>
 
