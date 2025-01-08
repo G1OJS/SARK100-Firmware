@@ -120,8 +120,6 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 <p>The final right hand side of Eq4 is recognizable as the magnitude of the complex reflection 
    coefficient $|\frac{Z_l-50}{Z_l+50}|=|\Gamma|=\rho$ , which is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ and $\rho=\frac{VSWR-1}{VSWR+1}$ </p>
 
-<p>We can rearrange Eq4 to give $VSWR=\frac{V_f-V_r}{V_f+V_r}$, and use VSWR along with $|Z|$ to calculate R (and then X) as follows.</p>
-
 The RHS of Eq4 with $Z_l = R+jX$ is 
 
 $$|\frac{R-50+jX}{R+50+jX}|=\rho$$</td>
