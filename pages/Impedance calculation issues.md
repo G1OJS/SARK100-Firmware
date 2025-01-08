@@ -1,7 +1,7 @@
 ---
 layout: default
 mathjax: true
-title: "Issues with Calculating Load Impedance from Bridge Voltages"
+title: "Issues with Calculating the Complex Load Impedance In Unbalanced RF Wheatstone Bridges"
 permalink: /LoadImpCalcIssues/
 ---
 
