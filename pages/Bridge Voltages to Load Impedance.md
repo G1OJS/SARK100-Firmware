@@ -207,7 +207,7 @@ $$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$
 
 $$VSWR = \frac{V_f-V_r}{V_f+V_r}$$
 
-So, with an interim step of calculating VSWR, we have:
+<p>So, with an interim step of calculating VSWR, we have:</p>
 
 </details>
 
