@@ -193,7 +193,7 @@ $$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$
 
 <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
-$$VSWR = \frac{V_f=V_r}{V_f+V_r}$$
+$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$
 
 So, with an interim step of calculating VSWR, we have:
 
