@@ -16,7 +16,7 @@ I've tried two other approaches to remedy this and improve accuracy at higher im
 
 The graph below shows the behaviour of Vz and Va with Short and Open loads. These both rise to almost 10% of full scale voltage.
 
-![behaviour of Vz and Va with Short and Open loads](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/b96c821dc7653f381a1337e88544e11b3ccaf0b2/assets/img/Uncorrected%20Vz%20and%20Va%20with%20Short%20and%20Open%20Loads%20.png)
+![behaviour of Vz and Va with Short and Open loads](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Uncorrected%20Vz%20and%20Va%20with%20Short%20and%20Open%20Loads%20.png)
 
 I added code in the calibration routine to record these voltages and subtract them from measured voltages before corrections are applied (this is the simplest way to do it given the flow of the calibration routine). I also added an extra segment to the calibration model for Va, so that it uses more appropriate values above a certain impedance. This effectively conbverts the linear correction model to a piecewise linear model with two linear segments. In version V01, I kept the highest impedance calibration load at 274 Ohms, but experiments have shown that changing this to a higher impedance, or adding an extra high impedance load, may have benefits.
 
@@ -32,7 +32,7 @@ The graphs below show measurements of 5 Ohm and 1000 Ohm loads, after calibratio
 None of these cases shows a perfect result, but rezeroing both Va and Vz and using the piecewise linear calibration for Va seems to offer a good compromise. This is what is implemented in V01.
 
 ### Effect of rezeroing with linear calibration for Va
-![Effect of rezeroing with linear calibration for Va](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/3bdada7c84b4b8daab444093ee92d41f2cf199b7/assets/img/Linear%20Va%20cal%20summary.PNG)
+![Effect of rezeroing with linear calibration for Va](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Linear%20Va%20cal%20summary.PNG)
 
 ### Effect of rezeroing with piecewise linear calibration for Va
-![Effect of rezeroing with piecewise linear calibration for Va](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/3bdada7c84b4b8daab444093ee92d41f2cf199b7/assets/img/Extended%20linear%20Va%20cal%20summary.PNG)
+![Effect of rezeroing with piecewise linear calibration for Va](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Extended%20linear%20Va%20cal%20summary.PNG)
