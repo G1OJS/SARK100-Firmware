@@ -6,7 +6,7 @@ permalink: /contents/
 
 # Generically applicable material
 - [Converting Bridge Voltages to Complex Load Impedance](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltagesToImpedance)
-- [Issues with calculating the Complex Load Impedance in RF Wheatstone Bridges](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5c7ad7d91b3ad63fecb7ce2b6dd4fa352a8ad47a/pages/Impedance%20calculation%20issues.md)
+- [Issues with calculating the Complex Load Impedance in Unbalanced RF Wheatstone Bridges](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5c7ad7d91b3ad63fecb7ce2b6dd4fa352a8ad47a/pages/Impedance%20calculation%20issues.md)
 
 # Specific to Firmware Updates
 - [Editing PSoC Firmware on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/)
