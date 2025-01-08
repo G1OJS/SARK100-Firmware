@@ -18,7 +18,6 @@ permalink: /contents/
 - [V01 Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/V01-Overview/)
 
 # Pages to be added / written
- - Attempts to solve the frequency sag (rezeroing and extended linear model)
  - Smith chart overview of |Z| and |Gamma| intersections
  - General scalar bridge issues
  - 
