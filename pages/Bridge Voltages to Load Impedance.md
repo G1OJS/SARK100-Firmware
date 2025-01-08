@@ -159,7 +159,9 @@ Alternatively,
 
 $$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho$$
 
-<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ </p>
+<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ , which in terms of the LHS above is</p>
+
+$$VSWR=\frac{|Z_l|^2+50^2}{100R}$$
 
 
 
