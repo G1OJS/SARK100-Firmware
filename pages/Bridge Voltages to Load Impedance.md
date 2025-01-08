@@ -110,16 +110,26 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 </div>
 
 ## Step 2 - Calculating the Load Impedance 
+<details>
+<summary>Explanation</summary>
+   
 <p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
 
 $$|\frac{R-50+jX}{R+50+jX}|$$</td>
 
 Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
-$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}$$</td>
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Eq6</th>
+   </tr>
+   <tr>
+      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}$$</td>
+   </tr>
+</table>
+</div>
 
-<details>
-<summary>Explanation</summary>
 <p>Which can be solved to give</p>
 
 $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
@@ -157,7 +167,7 @@ Alternatively,
 <summary>Explanation</summary>
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$</p>
 
-<p>So our equation from above is </p>
+<p>So Eq6 from above is </p>
 $$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho^2$$
 
 <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so$\rho^2$ is 
@@ -165,9 +175,6 @@ $$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho^2$$
 $$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{|Z_l|^2+2500-100R}{|Z_l|^2+2500+100R}$$ </p>
 
 <p>Which can be rearranged to give</p>
-
-
-
 </details>
 
 <div  style='float:left'>
