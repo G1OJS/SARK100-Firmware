@@ -22,6 +22,8 @@ permalink: /V01-Overview/
     - Signal Strength
 - Press "Band"
     - Band advances to next band
+    - now includes 60m band
+    - audible BEEP marks cycle back from 6m to 160m
 - Press "Config"
     - PC Link
     - Idle Timeout
