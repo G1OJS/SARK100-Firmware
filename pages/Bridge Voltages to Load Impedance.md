@@ -155,6 +155,13 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 Alternatively, 
 <details>
 <summary>Explanation</summary>
+<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$, as is our rearranged equation from above:</p>
+
+$$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho$$
+
+<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ </p>
+
+
 
 </details>
 
