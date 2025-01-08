@@ -117,13 +117,19 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 <details>
 <summary>Explanation</summary>
 
-<p>The final right hand side of the equation for $\frac{V_r}{V_f}$ is recognizable as the magnitude of the complex reflection coefficient:</p>
+<p>The final right hand side of Eq4 is recognizable as the magnitude of the complex reflection 
+   coefficient $|\frac{Z_l-50}{Z_l+50}|=|\Gamma|=\rho$ , which is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ and $\rho=\frac{VSWR-1}{VSWR+1}$ </p>
 
-$$|\frac{Z_l-50}{Z_l+50}|=|\Gamma|=\rho$$
+<p>We can rearrange Eq4 to give $VSWR=\frac{V_f-V_r}{V_f+V_r}$, and use VSWR along with $|Z|$ to calculate R (and then X) as follows.</p>
 
-<p>And is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ and $\rho=\frac{VSWR-1}{VSWR+1}$ </p>
+The RHS of Eq4 with $Z_l = R+jX$ is 
 
-<p>Once we know VSWR as well as |Z|, we can calculate Re(Z) and Im(Z).</p>
+$$|\frac{R-50+jX}{R+50+jX}|=\rho$$</td>
+
+Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
+
+$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{(R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\rho$$</td>
+
 
 ~ Work in progress ~
 
