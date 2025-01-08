@@ -13,7 +13,7 @@ The familiar lines on the Smith Chart show the intersecting loci of constant rea
 
 <img alt='Figure showing concentric circles of constant |Gamma| together with loci of constant |Z|' src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/8639cfaa215562dc22150d9b16aa0739d18e51b3/assets/img/Figure_2%20ModZ%20and%20ModG.png'></img>
 
-<p>|Z| ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
+<p>\|Z\| ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
 and open circuit point on the right, respectively. |Gamma| ranges from 0.1 to 0.75, representing a VSWR of ~1.22 to 7.0.</p>
 
 <p>The diagram is symmetric when reflected in the X axis, becaue there are, in general, two values of complex impedance satisfying |Gamma| = A and |Z| = B that are distinguished only by changing the sign of X, which corresponds to reflection in the x axis of the chart.</p>
@@ -24,7 +24,7 @@ and open circuit point on the right, respectively. |Gamma| ranges from 0.1 to 0.
 
 To summarise, the issues we have to address include:
 - How to calibrate out the offsets and nonlinearities in the detectors for $V_f, V_r, V_z, V_a$ (each of which will be different and vary with frequency and load impedance)
-- What to do when R appears to be greater than |Z|
+- What to do when R appears to be greater than \|Z\|
 - What to do about the uncertainty of the sign of X
 
 
