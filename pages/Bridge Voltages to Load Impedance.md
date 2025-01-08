@@ -129,6 +129,18 @@ Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the
    </tr>
 </table>
 </div>
+<p>But $R^2+X^2 = |Z_l|^2$ so </p>
+
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Eq7</th>
+   </tr>
+   <tr>
+      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}$$</td>
+   </tr>
+</table>
+</div>
 
 <p>Which can be solved to give</p>
 
@@ -167,12 +179,12 @@ Alternatively,
 <summary>Explanation</summary>
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$</p>
 
-<p>So Eq6 from above is </p>
-$$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho^2$$
+<p>So Eq7 from above is </p>
+$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}=\rho^2$$
 
 <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so$\rho^2$ is 
    
-$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{|Z_l|^2+2500-100R}{|Z_l|^2+2500+100R}$$ </p>
+$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}$$ </p>
 
 <p>Which can be rearranged to give</p>
 </details>
