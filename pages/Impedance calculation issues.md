@@ -13,3 +13,24 @@ The familiar lines on the Smith Chart show the intersecting loci of constant rea
 
 ![Figure showing concentric circles of constant |Gamma| together with loci of constant |Z|](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/8639cfaa215562dc22150d9b16aa0739d18e51b3/assets/img/Figure_2%20ModZ%20and%20ModG.png)
 
+|Z| ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
+and open circuit point on the right, respectively. |Gamma| ranges from 0.1 to 0.75, representing a VSWR of ~1.22 to 7.0.
+
+The diagram is symmetric when reflected in the X axis, becaue there are, in general, two values of complex impedance satisfying |Gamma| = A and |Z| = B that are distinguished only by changing the sign of X, which corresponds to reflection in the x axis of the chart.
+
+Note that these loci are *not* orthogonal. In other words they don't always intersect at right angles and in fact become parallel when the reactance of the load is zero (i.e. lies on the x axis). For impedances in this region, a small change in meaasured |Gamma| or/and |Z| will lead to a large change in X compared to what happens for impedances with larger reactances. 
+
+Worse than this, however, is that if |Gamma| contains errors such that $|\gamma| < \frac{|Z_l-Z_0|}{|Z_L+Z_0|}$ , the loci will not intersect at all. When this happens, it appears that R > |Z|. This is a physical impossibility, which begs the question of how to present these numbers on a display value or on a chart, and if we then try to calculate X we will find that it takes an imaginary value because it becomes the square root of a negative quantity; another quandry for presentation. The easiest way around this is to (quietly!) enforce the condition that R<|Z| and calculate X from the 'capped' value of R. This makes everything appear fine, but doesn't address the underlying issue.
+
+To summarise, the issues we have to address include:
+- How to calibrate out the offsets and nonlinearities in the detectors for $V_f, V_r, V_z, V_a$ (each of which will be different and vary with frequency and load impedance)
+- What to do when R appears to be greater than |Z|
+- What to do about the uncertainty of the sign of X
+
+
+
+
+
+
+
+
