@@ -112,7 +112,7 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 ## Step 2 - Calculating the Load Impedance 
 <details>
 <summary>Explanation</summary>
-The RHS of Eq4 with $Z_l = R+jX$ is 
+<p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
 
 $$|\frac{R-50+jX}{R+50+jX}|$$</td>
 
@@ -124,7 +124,7 @@ $$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}
 
 $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
 
-<p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance.</p>
+<p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.</p>
 
 <p>We can rewrite these equations to use the bridge voltages directly:</p>
 
@@ -152,6 +152,30 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 </table>
 </div>
 
+Alternatively, 
+<details>
+<summary>Explanation</summary>
 
+</details>
 
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Re(Z)</th>
+   </tr>
+   <tr>
+      <td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td>
+   </tr>
+</table>
+</div>
 
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Im(Z)</th>
+   </tr>
+   <tr>
+      <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
+   </tr>
+</table>
+</div>
