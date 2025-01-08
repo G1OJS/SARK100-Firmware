@@ -41,16 +41,28 @@ $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
 
 <p>so our three equations are:</p>
 </details>
+<div style='float:left'>
 <table>
    <tr>
-      <th>Eq 1</th><th>Eq 2</th>
+      <th>Eq 1</th>
    </tr>
    <tr>
       <td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td>
+   </tr>
+</table>
+</div>
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>Eq 2</th>
+   </tr>
+   <tr>
       <td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td>
    </tr>
 </table>
+</div>
 
+<div  style='float:left'>
 <table>
    <tr>
       <th>Eq 3</th>
@@ -59,6 +71,7 @@ $$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$
     <td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td>
    </tr>
 </table>
+</div>div>
 
 # Calculating Impedance
 ## Step 1 - three voltages to two voltage ratios
