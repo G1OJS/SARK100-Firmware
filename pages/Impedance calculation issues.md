@@ -11,7 +11,7 @@ Whichever form of equation is used to calculate R (either direct from bridge vol
 
 The familiar lines on the Smith Chart show the intersecting loci of constant real part and constant imaginary part of the complex impedance, but they don't immediately convey the magnitude of that impedance. The diagram below shows the two magnitude loci and their intersections, within a circle representing the boundary of a Smith Chart.
 
-<img alt='Figure showing concentric circles of constant |Gamma| together with loci of constant |Z|' src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/8639cfaa215562dc22150d9b16aa0739d18e51b3/assets/img/Figure_2%20ModZ%20and%20ModG.png'></img>
+<img alt='Figure showing concentric circles of constant \|Gamma\| together with loci of constant \|Z\|' src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/8639cfaa215562dc22150d9b16aa0739d18e51b3/assets/img/Figure_2%20ModZ%20and%20ModG.png'></img>
 
 <p>\|Z\| ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
 and open circuit point on the right, respectively. |Gamma| ranges from 0.1 to 0.75, representing a VSWR of ~1.22 to 7.0.</p>
