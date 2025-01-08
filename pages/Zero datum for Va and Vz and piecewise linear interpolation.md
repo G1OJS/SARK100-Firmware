@@ -32,8 +32,7 @@ The graphs below show measurements of 5 Ohm and 1000 Ohm loads, after calibratio
 None of these cases shows a perfect result, but rezeroing both Va and Vz and using the piecewise linear calibration for Va seems to offer a good compromise. This is what is implemented in V01.
 
 **Signifcant portions of these graphs show R greater than Mod Z. 
-This is an artifact of measurement errors and is discussed [here]()**
-
+This is an artifact of measurement errors and is discussed [here](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/)**
 ### Effect of rezeroing with linear calibration for Va
 ![Effect of rezeroing with linear calibration for Va](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Linear%20Va%20cal%20summary.PNG)
 
