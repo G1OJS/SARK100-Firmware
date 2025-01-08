@@ -110,6 +110,7 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
 </div>
 
 ## Step 2 - Calculating the Load Impedance 
+R and X can be calculated directly from the bridge voltage measurements as 
 <details>
 <summary>Explanation</summary>
    
@@ -174,17 +175,17 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 </table>
 </div>
 
-Alternatively, 
+Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ 
 <details>
 <summary>Explanation</summary>
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$
 
 <p>So Eq7 from above is </p>
-$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}=\rho^2$$
+<p>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}=\rho^2$$</p>
 
 <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
-$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}$$ </p>
+$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$ </p>
 
 <p>Which can be rearranged to give</p>
 
@@ -217,7 +218,7 @@ where
       <th>VSWR</th>
    </tr>
    <tr>
-      <td>$$VSWR = \frac{V_f=V_r}{V_f+V_r}$$</td>
+      <td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td>
    </tr>
 </table>
 </div>
