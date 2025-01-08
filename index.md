@@ -30,5 +30,5 @@ My version of the firmware is now on this site in [this folder](https://github.c
 If you want to play with the source code, download the .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/). If you just want the firmware, just download the hex file. Either way, you'll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.
 
 ## Credits
-With thanks to EA4FRB for designing the SARK100 hardware and Firmware and releasing this under the GPL licence. I have released my version of the firmware under that same licence, which is a requirement of that licence itself.
+With thanks to EA4FRB for designing the SARK100 hardware and Firmware and releasing this under the [GPL licence](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/LICENSE). I have released my version of the firmware under [that same licence](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/LICENSE), which is a requirement of that licence itself.
 
