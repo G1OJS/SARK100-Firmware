@@ -177,16 +177,25 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 Alternatively, 
 <details>
 <summary>Explanation</summary>
-<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$</p>
+<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$
 
 <p>So Eq7 from above is </p>
 $$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}=\rho^2$$
 
-<p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so$\rho^2$ is 
+<p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
 $$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}$$ </p>
 
 <p>Which can be rearranged to give</p>
+
+$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$
+
+<p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
+
+$$VSWR = \frac{V_f=V_r}{V_f+V_r}$$
+
+So, with an interim step of calculating VSWR, we have:
+
 </details>
 
 <div  style='float:left'>
@@ -196,6 +205,19 @@ $$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=
    </tr>
    <tr>
       <td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td>
+   </tr>
+</table>
+</div>
+
+where 
+
+<div  style='float:left'>
+<table>
+   <tr>
+      <th>VSWR</th>
+   </tr>
+   <tr>
+      <td>$$VSWR = \frac{V_f=V_r}{V_f+V_r}$$</td>
    </tr>
 </table>
 </div>
