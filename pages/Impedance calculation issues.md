@@ -11,7 +11,7 @@ Whichever form of equation is used to calculate R (either direct from bridge vol
 
 The familiar lines on the Smith Chart show the intersecting loci of constant real part and constant imaginary part of the complex impedance, but they don't immediately convey the magnitude of that impedance. The diagram below shows the two magnitude loci and their intersections, within a circle representing the boundary of a Smith Chart.
 
-<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Figure_2%20ModZ%20and%20ModG.png' alt='Figure showing concentric circles of constant mod gamma together with loci of constant mod z' ></img>
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Figure_2%20ModZ%20and%20ModG.png' alt='Figure showing concentric circles of constant mod gamma together with loci of constant mod z' >
 
 <p> $|Z|$ ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
 and open circuit point on the right, respectively. $|\Gamma|$ ranges from 0.1 to 0.75, representing a VSWR of ~1.22 to 7.0.</p>
@@ -24,7 +24,7 @@ and open circuit point on the right, respectively. $|\Gamma|$ ranges from 0.1 to
 
 To summarise, the issues we have to address include:
 - How to calibrate out the offsets and nonlinearities in the detectors for $V_f, V_r, V_z, V_a$ (each of which will be different and vary with frequency and load impedance)
-- What to do when R appears to be greater than $|Z|$
+- What to do when R appears to be greater than mod Z
 - What to do about the uncertainty of the sign of X
 
 
