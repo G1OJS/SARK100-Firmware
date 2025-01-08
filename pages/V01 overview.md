@@ -4,10 +4,48 @@ title: "V01 Overview"
 permalink: /V01-Overview/
 ---
 # Screenshots and Changes to Menus 
-To be written
+## A new main screen layout
+![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/b025f2b346053747c077ba8f7086d2bd708f0df0/assets/img/2025-01-05%20Main%20screen%2050%20Ohms.png)
 
-# New Calibration approach
-To be written
+## One or more values over range
+![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/b025f2b346053747c077ba8f7086d2bd708f0df0/assets/img/2025-01-05%20Overrange.png)
+
+## 'Dizzling' turned off
+![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/b025f2b346053747c077ba8f7086d2bd708f0df0/assets/img/2025-01-05%20Dizzling%20off.png)
+
+## Menu Structure & Key Presses
+- Press "Mode"
+    - Main screen
+    - Main screen Dizzling off (can be used as a VFO)
+    - Measure Capacitance
+    - Measure Inductance
+    - Signal Strength
+- Press "Band"
+    - Band advances to next band
+- Press "Config"
+    - PC Link
+    - Idle Timeout
+    - Calibrate
+    - Firmware Load
+- Press "Scan"
+    - Scan routine (auto step)
+
+- Press "UP"
+    - Increase frequency, Increase frequency step, escape depending on context
+    - Long press / hold down = increase frequency quickly without measuring
+- Press "Down"
+    - Decrease frequency, Decrease frequency step, or confirm depending on context
+    - Long press / hold down = decrease frequency quickly without measuring
+- Press "Config"
+    - Select next value according to context
+- Press "UP" and "DOWN" together
+    - Enter & exit increment-setting mode
+
+# New Calibration Routine
+From the user's perspective, the calibration routing follows the same process as in V13, except that:
+- A short circuit load is required in addition to the 50, 150 and 274 ohm loads
+- Progress is indicated by the frequency displayed
+- On completion, the unit automatically reboots
 
 # Changes from EA4FRB V13
 
