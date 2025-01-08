@@ -158,9 +158,11 @@ Alternatively,
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$</p>
 
 <p>So our equation from above is </p>
-$$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=(\rho)^2$$
+$$\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho^2$$
 
-<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$ 
+<p>$\rho$ is related to VSWR by $VSWR=\frac{1+\rho}{1-\rho}$</p>
+
+<p>so$\rho^2$ is related to VSWR by </p>
 
 
 
