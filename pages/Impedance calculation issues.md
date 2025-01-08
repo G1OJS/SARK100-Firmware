@@ -11,12 +11,12 @@ Whichever form of equation is used to calculate R (either direct from bridge vol
 
 The familiar lines on the Smith Chart show the intersecting loci of constant real part and constant imaginary part of the complex impedance, but they don't immediately convey the magnitude of that impedance. The diagram below shows the two magnitude loci and their intersections, within a circle representing the boundary of a Smith Chart.
 
-<img src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/8639cfaa215562dc22150d9b16aa0739d18e51b3/assets/img/Figure_2%20ModZ%20and%20ModG.png' alt='Figure showing concentric circles of constant mod gamma together with loci of constant mod z' ></img>
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Figure_2%20ModZ%20and%20ModG.png' alt='Figure showing concentric circles of constant mod gamma together with loci of constant mod z' ></img>
 
 <p> $|Z|$ ranges from a normalised value of 0.1 to 10, (5 ohms to 500 Ohms in a 50 ohm system). These extremes show loci centred around the familiar short circuit point on the left, 
 and open circuit point on the right, respectively. $|\Gamma|$ ranges from 0.1 to 0.75, representing a VSWR of ~1.22 to 7.0.</p>
 
-<p>The diagram is symmetric when reflected in the X axis, becaue there are, in general, two values of complex impedance satisfying $|\Gamma| = A$ and $|Z| = B$ that are distinguished only by changing the sign of X, which corresponds to reflection in the x axis of the chart.</p>
+<p>The diagram is symmetric when reflected in the X axis, becaue there are, in general, two values of complex impedance satisfying $|\Gamma|=A$ and $|Z|=B$ that are distinguished only by changing the sign of X, which corresponds to reflection in the x axis of the chart.</p>
 
 <p>Note that these loci are *not* orthogonal. In other words they don't always intersect at right angles and in fact become parallel when the reactance of the load is zero (i.e. lies on the x axis). For impedances in this region, a small change in meaasured |Gamma| or/and |Z| will lead to a large change in X compared to what happens for impedances with larger reactances. </p>
 
