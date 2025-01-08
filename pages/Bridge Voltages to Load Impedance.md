@@ -191,7 +191,7 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 
 <details>
 <summary>Explanation</summary>
-<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$
+<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ </p>
 
 <p>So Eq7 from above is </p>
 <p>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}=\rho^2$$</p>
