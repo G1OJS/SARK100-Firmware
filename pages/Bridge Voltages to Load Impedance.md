@@ -118,7 +118,7 @@ R and X can be calculated directly from the bridge voltage measurements as
    
 <p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
 
-$$|\frac{R-50+jX}{R+50+jX}|$$</td>
+$$|\frac{R-50+jX}{R+50+jX}|$$
 
 Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
