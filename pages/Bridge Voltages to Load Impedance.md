@@ -108,42 +108,17 @@ $$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+
    </tr>
 </table>
 </div>
-   
-<p>There are at least two ways to get from here to the complex load impedance.</p>
 
 ## Step 2 - Calculating the Load Impedance 
-
-### Method 1 Work in progress
 <details>
 <summary>Explanation</summary>
 The RHS of Eq4 with $Z_l = R+jX$ is 
 
-$$|\frac{R-50+jX}{R+50+jX}|=\rho$$</td>
+$$|\frac{R-50+jX}{R+50+jX}|$$</td>
 
 Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
-$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}=\rho$$</td>
-
-
-~ Work in progress ~
-
-</details>
-
-### Method 2
-<details>
-<summary>Explanation</summary>
-<p>If we express the unknown impedance as $Z_l=R+iX$ we can write the equation for $\frac{V_r}{V_f}$ as </p>
-
-
-$$\frac{V_r}{V_f}=|\frac{R+iX-50}{R+iX+50}|$$
-
-<p>which means</p>
-
-$$(\frac{V_r}{V_f})^2=\frac{(R-50)^2+X^2}{(R+50)^2+X^2} = \frac{R^2+50^2-100R+X^2}{R^2+50^2+100R+X^2}$$
-
-<p>We already know $|Z_l|^2$ so we can use this instead of $R^2+X^2$ :</p>
-
-$$(\frac{V_r}{V_f})^2= \frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}$$
+$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}=\frac{|Z_l|^2+50^2-100R}{|Z_l|^2+50^2+100R}$$</td>
 
 <p>Which can be solved to give</p>
 
