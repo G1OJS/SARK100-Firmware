@@ -64,7 +64,7 @@ The major changes I've made to source code are
 - Capacitance and inductance calculations now work above 10MHz, and show measured resistance alongside capacitance / inductance
 - Added 0.1 ohm display resolution for values of R,X,Z below 10 (also added to pcLink output for all values). Display now 1dp for all quantities, pcLink has 2dp but only SWR has 2dp precision.
 
-As the main display now combines SWR, |Z|, R and X into one view, I needed to make another change as follows. As in V13, "dizzling" is used to determine the sign of the reactance. Whilst dizzling is active, the unit can't be used as a VFO for other experiments (because the frequency toggles constantly up and down). However, pressing the mode key moves the unit into a non-dizzling mode equivalent to the previous "SWR" mode, but with all elements of the display retained. Instead of changing the display, a simple "#" is placed where the sign of the reactance would normally show. 
+As the main display now combines SWR, mod Z, R and X into one view, I needed to make another change as follows. As in V13, "dizzling" is used to determine the sign of the reactance. Whilst dizzling is active, the unit can't be used as a VFO for other experiments (because the frequency toggles constantly up and down). However, pressing the mode key moves the unit into a non-dizzling mode equivalent to the previous "SWR" mode, but with all elements of the display retained. Instead of changing the display, a simple "#" is placed where the sign of the reactance would normally show. 
 
 
 ## Other changes
@@ -72,7 +72,7 @@ As the main display now combines SWR, |Z|, R and X into one view, I needed to ma
 - Calibration now done at selected frequencies to avoid spurii
 - Available DDS gain settings table modified to provide finer steps for DDS gain setting during calibration
 - Source code refactored to reduce memory usage & potentially allow more functions to be added
-- Fixed display errors caused by SWR being lower than implied by |Z|
+- Fixed display errors caused by SWR being lower than implied by mod Z
 - G1OJS Callsign in welcome screen
 - Removed delay following change of band
 - Changed "OFF" to "SIG"
