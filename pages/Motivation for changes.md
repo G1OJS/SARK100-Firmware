@@ -27,6 +27,4 @@ The figure below shows the uncorrected (calibration parameters not applied) resu
 
 ## Inductance and Capacitance modes show zero above 10MHz
 Both the inductance and capacitance modes show zero at 10MHz and above, and I wanted to find out if this could be fixed.
-# Changes Investigated & Used
-- [Interpolation and DDS Gain Settings](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Interpolation-and-DDS-Gain-Settings/)
-- [Zero datum for Va and Vz and piecewise linear interpolation](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/ZerosAndInterpolation/)
+
