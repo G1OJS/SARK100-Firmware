@@ -27,7 +27,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   will be $\frac{1}{|Z_l+50|}$ 
 
   Multiplying this by 50 for the upper resistor and 
-  and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
+  and $|Z_l|$ for the unknown load gives the magnitude of the voltages 
   relative to $2V_f$ . Hence, 
   <div class='equation'>
     <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
@@ -140,7 +140,7 @@ We can rewrite these equations to use the bridge voltages directly:
 </div>
 <div  style='clear:both'><br></div>
 
-Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ 
+Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_l|$ 
 
 <details>
   <summary>Explanation</summary>
