@@ -17,7 +17,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Generic%20Wheatstone%20Bridge.png' alt='Circuit diagram of a Wheatstone Bridge showing location of voltage measurements'>
 
-** From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise. **
+**From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.**
 
 # Bridge Voltage Magnitudes
 <details>
@@ -69,8 +69,8 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 </div>
 <div  style='clear:both'><br></div>
 
-<h1>Calculating Impedance</h1>
-<h2>Step 1 - three voltages to two voltage ratios</h2> 
+# Calculating Impedance
+## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
 Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
@@ -95,7 +95,7 @@ So we have:
 <div  style='clear:both'><br></div>
 
 
-<h2>Step 2 - Calculating the Load Impedance </h2> 
+## Step 2 - Calculating the Load Impedance
 R and X can be calculated directly from the bridge voltage measurements as 
 <details>
 <summary>Explanation</summary>
