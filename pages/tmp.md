@@ -72,7 +72,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 ## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
-Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with <span></span>$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
+Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with <span><span>$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
 
 To get the complex impedance, we need an equation that contains it directly rather than inside <span>|mod|</span> bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
