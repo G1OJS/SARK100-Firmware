@@ -141,7 +141,7 @@ We can rewrite these equations to use the bridge voltages directly:
 </div>
 <div  style='clear:both'><br></div>
 
-Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_l|$ 
+<p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_l|$ </p>
 
 <details>
   <summary>Explanation</summary>
