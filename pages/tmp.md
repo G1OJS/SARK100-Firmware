@@ -165,7 +165,7 @@ Alternatively, we can calculate VSWR and then derive R and X from VSWR and <span
   Which can be rearranged to give
 
   <div class='equation'>
-    <table class='equation'><tr><td>$$R = (2500+whichZ_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+    <table class='equation'><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
