@@ -175,7 +175,7 @@ R and X can be calculated directly from the bridge voltage measurements as
   </div>
   <div  style='clear:both'></div>
 
-  <p>So, with an interim step of calculating VSWR, we have:</p>
+  <p> So, with an interim step of calculating VSWR, we have:</p>
 
 </details>
 
@@ -194,5 +194,4 @@ R and X can be calculated directly from the bridge voltage measurements as
 </div>
 <div  style='clear:both'></div>
 
-</html>
 
