@@ -46,7 +46,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then <span>$|V_f - V_z|$</span> .
 
   On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
-  Then, with complex-valued calculations inside the <span>|mod|<span> bars, we have
+  Then, with complex-valued calculations inside the <span>|mod|</span> bars, we have
 
   <div class='equation'>
     <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
@@ -72,7 +72,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 ## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
-Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with <span><span>$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
+Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with <span>$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
 
 To get the complex impedance, we need an equation that contains it directly rather than inside <span>|mod|</span> bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
@@ -128,7 +128,7 @@ Which can be solved to give
 </div>
 <div  style='clear:both'><br></div>
 
-Now that we know $R$ as well as <span>$|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$</span> to get the complex impedance and VSWR.
+Now that we know $R$ as well as <span>$|Z_l|$</span>, we can use <span>$X=\sqrt(|Z_l|^2-R^2)$</span> to get the complex impedance and VSWR.
 
 We can rewrite these equations to use the bridge voltages directly:
 
@@ -142,7 +142,7 @@ We can rewrite these equations to use the bridge voltages directly:
 </div>
 <div  style='clear:both'><br></div>
 
-Alternatively, we can calculate VSWR and then derive R and X from VSWR and <span></span>$|Z_l|$ </span>
+Alternatively, we can calculate VSWR and then derive R and X from VSWR and <span>$|Z_l|$ </span>
 
 <details>
   <summary>Explanation</summary>
