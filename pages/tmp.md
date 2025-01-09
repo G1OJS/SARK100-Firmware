@@ -24,10 +24,10 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   We can calculate the expected magnitude of these voltages as follows.
   $V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.
   If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
-  will be $\frac{1}{|Z_l+50|}$ 
+  will be <span>$\frac{1}{|Z_l+50|}$</span> 
 
   Multiplying this by 50 for the upper resistor and 
-  and $|Z_l|$ for the unknown load gives the magnitude of the voltages 
+  and <span>$|Z_l|$</span> for the unknown load gives the magnitude of the voltages 
   relative to $2V_f$ . Hence, 
   <br>
   <div class='equation'>
@@ -42,10 +42,10 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   </div>
   <div  style='clear:both'><br></div>
 
-  To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
+  To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then <span>$|V_f - V_z|$</span> .
 
   On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
-  Then, with complex-valued calculations inside the |mod| bars, we have
+  Then, with complex-valued calculations inside the <span>|mod|<span> bars, we have
 
   <div class='equation'>
     <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
@@ -71,9 +71,9 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 ## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
-Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. 
+Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with <span></span>$\frac{V_z}{V_a}=\frac{|Z_l|}{50}$</span> which gives us the magnitude of the unknown impedance. 
 
-To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
+To get the complex impedance, we need an equation that contains it directly rather than inside <span>|mod|</span> bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 <div class='equation'>
   <table><tr><td>$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$</td></tr></table>
@@ -105,14 +105,14 @@ The RHS of Eq4 with $Z_l = R+jX$ is
 </div>
 <div  style='clear:both'><br></div>
 
-Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
+Squaring the modulus <span>$|a+jb|$</span> gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
 <div class='equation'>
   <table><tr><td>Eq6</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
-But $R^2+X^2 = |Z_l|^2$ so 
+But <span>$R^2+X^2 = |Z_l|^2$</span> so 
 
 <div class='equation'>
   <table><tr><td>Eq7</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
@@ -127,7 +127,7 @@ Which can be solved to give
 </div>
 <div  style='clear:both'><br></div>
 
-Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.
+Now that we know $R$ as well as <span>$|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$</span> to get the complex impedance and VSWR.
 
 We can rewrite these equations to use the bridge voltages directly:
 
@@ -141,7 +141,7 @@ We can rewrite these equations to use the bridge voltages directly:
 </div>
 <div  style='clear:both'><br></div>
 
-<p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_l|$ </p>
+Alternatively, we can calculate VSWR and then derive R and X from VSWR and <span></span>$|Z_l|$ </span>
 
 <details>
   <summary>Explanation</summary>
@@ -164,7 +164,7 @@ We can rewrite these equations to use the bridge voltages directly:
   Which can be rearranged to give
 
   <div class='equation'>
-    <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+    <table><tr><td>$$R = (2500+whichZ_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
