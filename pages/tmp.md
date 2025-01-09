@@ -36,8 +36,6 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
-  <div  style='clear:both'></div>
-  <p>and</p> 
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
