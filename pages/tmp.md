@@ -69,34 +69,20 @@ relative to $2V_f$ . Hence, </p>
 
 <p>To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:</p>
 
-$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$
+<div style='float:left'>
+  <table><tr><td>$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$</td></tr></table>
+</div>
 
 <p>So we have:</p>
 
 </details>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Eq 4</th>
-   </tr>
-   <tr>
-      <td>$$\frac{V_r}{V_f}=|\frac{Z_l-50}{Z_l+50}|$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>Eq4</td><td>$$\frac{V_r}{V_f}=|\frac{Z_l-50}{Z_l+50}|$$</td></tr></table>
 </div>
-
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Eq 5</th>
-   </tr>
-   <tr>
-      <td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>Eq5</td><td>$$\frac{V_z}{V_a}=\frac{|Z_l|}{50} $$</td></tr></table>
 </div>
-<br>
 <div  style='clear:both'></div>
 
 
@@ -107,40 +93,30 @@ R and X can be calculated directly from the bridge voltage measurements as
    
 <p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
 
-<p>$$|\frac{R-50+jX}{R+50+jX}|$$</p>
+<div style='float:left'>
+  <table><tr><td>$$|\frac{R-50+jX}{R+50+jX}|$$</td></tr></table>
+</div>
 
 <p>Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives</p>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Eq6</th>
-   </tr>
-   <tr>
-      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>Eq6</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
 <p>But $R^2+X^2 = |Z_l|^2$ so </p>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Eq7</th>
-   </tr>
-   <tr>
-      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>Eq7</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
 
 <p>Which can be solved to give</p>
 
-$$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$
+<div style='float:left'>
+  <table><tr><td>$$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
+</div>
 
 <p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.</p>
 
@@ -148,28 +124,11 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 
 </details>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Re(Z)</th>
-   </tr>
-   <tr>
-      <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
-<div  style='clear:both'></div>
-
-
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Im(Z)</th>
-   </tr>
-   <tr>
-      <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
@@ -179,61 +138,46 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
 <summary>Explanation</summary>
 <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ </p>
 
-<p>So Eq7 from above is </p>
-<p>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</p>
+<p>So Eq7 from the explanation above (expand it if it's closed) is </p>
+<div style='float:left'>
+  <table><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</td></tr></table>
+</div>
 
 <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
-$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$ </p>
+<div style='float:left'>
+  <table><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
+</div>
 
 <p>Which can be rearranged to give</p>
 
-$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$
+<div style='float:left'>
+  <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+</div>
 
 <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
-$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$
+<div style='float:left'>
+  <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+</div>
 
 <p>So, with an interim step of calculating VSWR, we have:</p>
 
 </details>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Re(Z)</th>
-   </tr>
-   <tr>
-      <td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
-
 
 where 
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>VSWR</th>
-   </tr>
-   <tr>
-      <td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td>
-   </tr>
-</table>
+<div style='float:left'>
+  <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
 </div>
-<div  style='clear:both'></div>
+<div style='float:left'>
+  <table><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
+</div>
 
-<div  style='float:left'>
-<table>
-   <tr>
-      <th>Im(Z)</th>
-   </tr>
-   <tr>
-      <td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td>
-   </tr>
-</table>
-</div>
 <div  style='clear:both'></div>
 
