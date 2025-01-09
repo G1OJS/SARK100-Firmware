@@ -86,10 +86,12 @@ As the main display now combines SWR, mod Z, R and X into one view, I needed to 
 - Source code - changed some variable names and function names to make them more descriptive (e.g. including reference to units such as Hz, kHz)
 
 ## Ideas for next version
+- Scrap the rezero and instead do piecewise linear to take Vz down to zero ohms and Va up to 1000 - or even open (saves user a cal load)
 - Check if changing Vz cal to 50-274 instead of current 50-150 gives better overall results. 
    (Current scheme is Vr 150-274, Vz 50-150, Va1 50-150, Va2 150-274 Could also try Va2 150-1000 or 274-1000, or a value like 470R instead of 1000R)
+- Combine the above and split both Va and Vz cal into >50 Ohms and <50 ohms.
 - Consider adding a correction factor for Vr / VSWR - it's sometimes too low & affects R calculation
-- Scrap the rezero and instead do piecewise linear to take Vz down to zero ohms and Va up to 1000 - or even open (saves user a cal load)
+
 - Convert SIG display to dBm
 - Look closer at limits of applicability of L and C calculations.
 - Improve LCD display on pcLink
