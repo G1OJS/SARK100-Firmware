@@ -1,22 +1,11 @@
+---
+layout: default
+mathjax: true
+title: "Converting Bridge Voltages to Load Impedance"
+permalink: /tmp/
+---
 
-<html>
-    <script>
-    MathJax = {
-      tex: {
-        inlineMath: [ ['$', '$'], ['¬','¬'] ]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-    </script>
-    <!-- Enable Inline and Block Level Rendering-->
-    <script
-      type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-    </script>
-  
-<h1>Introduction</h1>
+# Introduction
   
 Much of the online material about Wheatstone bridges focusses on the case where the bridge is balanced, or nearly balanced (¬Z_l¬ ~ 50 ohms in this case). 
 In an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. 
@@ -28,9 +17,9 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Generic%20Wheatstone%20Bridge.png' alt='Circuit diagram of a Wheatstone Bridge showing location of voltage measurements'>
 
-<strong>From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.</strong>
+** From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise. **
 
-<h1>Bridge Voltage Magnitudes</h1>
+# Bridge Voltage Magnitudes
 <details>
   <summary>Explanation</summary>
   
