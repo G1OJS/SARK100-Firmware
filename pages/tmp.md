@@ -1,6 +1,7 @@
 ---
 layout: default
 mathjax: true
+permalink: /tmp/
 ---
 # Introduction
 Much of the online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). 
