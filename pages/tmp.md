@@ -31,12 +31,14 @@ relative to $2V_f$ . Hence, </p>
 <div style='float:left'>
   <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>and</p> 
 
 <div style='float:left'>
   <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .</p>
 
@@ -46,6 +48,7 @@ relative to $2V_f$ . Hence, </p>
 <div style='float:left'>
   <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>so our three equations are:</p>
 </details>
@@ -58,7 +61,6 @@ relative to $2V_f$ . Hence, </p>
 <div  style='float:left'>
   <table><tr><td>Eq3</td><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
 </div>
-
 <div  style='clear:both'></div>
 
 # Calculating Impedance
@@ -72,6 +74,7 @@ relative to $2V_f$ . Hence, </p>
 <div style='float:left'>
   <table><tr><td>$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>So we have:</p>
 
@@ -96,6 +99,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div style='float:left'>
   <table><tr><td>$$|\frac{R-50+jX}{R+50+jX}|$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives</p>
 
@@ -117,6 +121,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div style='float:left'>
   <table><tr><td>$$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.</p>
 
@@ -142,24 +147,28 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div style='float:left'>
   <table><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
 <div style='float:left'>
   <table><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>Which can be rearranged to give</p>
 
 <div style='float:left'>
   <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
 <div style='float:left'>
   <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
 </div>
+<div  style='clear:both'></div>
 
 <p>So, with an interim step of calculating VSWR, we have:</p>
 
