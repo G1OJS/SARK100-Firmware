@@ -33,17 +33,15 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   <p>Multiplying this by 50 for the upper resistor and 
   and  $\vert Z_l\vert $ for the unknown load gives the magnitude of the voltages 
   relative to $2V_f$. Hence, </p>
-
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
-  and 
-  <br>
+  <div  style='clear:both'></div>
+  <p>and</p> 
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $\vert V_f - V_z\vert $ .</p>
 
@@ -53,7 +51,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p>so our three equations are:</p>
   
@@ -68,7 +66,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 <div  style='float:left'>
   <table style='border:none;'><tr><td style='border:none;'>Eq3</td><td style='border:none;'>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 # Calculating Impedance
 ## Step 1 - three voltages to two voltage ratios
@@ -82,7 +80,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$\frac{V_r}{V_f} = \vert  2 \frac{Z_l}{Z_l+50} - 1 \vert  = \vert  \frac{2Z_l - (Z_l+50)}{Z_l+50}\vert  = \vert \frac{Z_l-50}{Z_l+50}\vert  $$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>So we have:</p>
 
@@ -94,7 +92,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>Eq5</td><td style='border:none;'>$$\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50} $$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 
 ## Step 2 - Calculating the Load Impedance
@@ -107,21 +105,21 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$\vert \frac{R-50+jX}{R+50+jX}\vert $$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>Squaring the modulus $\vert a+jb\vert $gives $a^2+b^2$, so squaring top and bottom of the equation above gives</p>
 
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>Eq6</td><td style='border:none;'>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>But $R^2+X^2 = \vert Z_l\vert ^2$so </p>
 
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>Eq7</td><td style='border:none;'>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 
 <p>Which can be solved to give</p>
@@ -129,7 +127,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$R = \frac{\vert Z_l\vert ^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>Now that we know $R$ as well as $\vert Z_l\vert $, we can use $X=\sqrt(\vert Z_l\vert ^2-R^2)$to get the complex impedance and VSWR.</p>
 
@@ -143,7 +141,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $\vert Z_l\vert $ </p>
 
@@ -156,28 +154,28 @@ R and X can be calculated directly from the bridge voltage measurements as
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}=\rho^2$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p> $\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is </p>
    
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p>Which can be rearranged to give</p>
 
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
   <div class='equation'>
     <table style='border:none;'><tr><td style='border:none;'>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
   </div>
-  <div  style='clear:both'><br></div>
+  <div  style='clear:both'></div>
 
   <p>So, with an interim step of calculating VSWR, we have:</p>
 
@@ -186,7 +184,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 <p>where</p> 
 
@@ -196,7 +194,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
-<div  style='clear:both'><br></div>
+<div  style='clear:both'></div>
 
 </html>
 
