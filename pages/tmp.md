@@ -21,37 +21,37 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 <details>
   <summary>Explanation</summary>
   
-  <p>We can calculate the expected magnitude of these voltages as follows.</p>
-  <p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
-  <p>If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
-  will be $\frac{1}{|Z_l+50|}$ </p>
+  We can calculate the expected magnitude of these voltages as follows.
+  $V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.
+  If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
+  will be $\frac{1}{|Z_l+50|}$ 
 
-  <p>Multiplying this by 50 for the upper resistor and 
+  Multiplying this by 50 for the upper resistor and 
   and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
-  relative to $2V_f$ . Hence, </p>
+  relative to $2V_f$ . Hence, 
   <div class='equation'>
     <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>and</p> 
+  and 
 
   <div class='equation'>
   <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .</p>
+  To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .
 
-  <p>On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage.</p> 
-  <p>Then, with complex-valued calculations inside the |mod| bars, we have</p>
+  On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
+  Then, with complex-valued calculations inside the |mod| bars, we have
 
   <div class='equation'>
     <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>so our three equations are:</p>
+  so our three equations are:
   
 </details>
 
@@ -70,16 +70,16 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 ## Step 1 - three voltages to two voltage ratios
 <details>
 <summary>Explanation</summary>
-<p>Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. </p>
+Looking at equations 1 and 2, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{|Z_l|}{50}$ which gives us the magnitude of the unknown impedance. 
 
-<p>To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:</p>
+To get the complex impedance, we need an equation that contains it directly rather than inside |mod| bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 <div class='equation'>
   <table><tr><td>$$\frac{V_r}{V_f} = | 2 \frac{Z_l}{Z_l+50} - 1 | = | \frac{2Z_l - (Z_l+50)}{Z_l+50}| = |\frac{Z_l-50}{Z_l+50}| $$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
-<p>So we have:</p>
+So we have:
 
 </details>
 
@@ -97,21 +97,21 @@ R and X can be calculated directly from the bridge voltage measurements as
 <details>
 <summary>Explanation</summary>
    
-<p>The RHS of Eq4 with $Z_l = R+jX$ is </p>
+The RHS of Eq4 with $Z_l = R+jX$ is 
 
 <div class='equation'>
   <table><tr><td>$$|\frac{R-50+jX}{R+50+jX}|$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
-<p>Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives</p>
+Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
 <div class='equation'>
   <table><tr><td>Eq6</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
-<p>But $R^2+X^2 = |Z_l|^2$ so </p>
+But $R^2+X^2 = |Z_l|^2$ so 
 
 <div class='equation'>
   <table><tr><td>Eq7</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
@@ -119,16 +119,16 @@ R and X can be calculated directly from the bridge voltage measurements as
 <div  style='clear:both'></div>
 
 
-<p>Which can be solved to give</p>
+Which can be solved to give
 
 <div class='equation'>
   <table><tr><td>$$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'></div>
 
-<p>Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.</p>
+Now that we know $R$ as well as $|Z_l|$, we can use $X=\sqrt(|Z_l|^2-R^2)$ to get the complex impedance and VSWR.
 
-<p>We can rewrite these equations to use the bridge voltages directly:</p>
+We can rewrite these equations to use the bridge voltages directly:
 
 </details>
 
@@ -140,41 +140,41 @@ R and X can be calculated directly from the bridge voltage measurements as
 </div>
 <div  style='clear:both'></div>
 
-<p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ </p>
+Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ 
 
 <details>
   <summary>Explanation</summary>
   
-  <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ </p>
+  Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ 
 
-  <p>So Eq7 from the explanation above (expand it if it's closed) is </p>
+  So Eq7 from the explanation above (expand it if it's closed) is 
   <div class='equation'>
     <table><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
+  $\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
   <div class='equation'>
     <table><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>Which can be rearranged to give</p>
+  Which can be rearranged to give
 
   <div class='equation'>
     <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
+  VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give
 
   <div class='equation'>
     <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
-  <p>So, with an interim step of calculating VSWR, we have:</p>
+  So, with an interim step of calculating VSWR, we have:
 
 </details>
 
