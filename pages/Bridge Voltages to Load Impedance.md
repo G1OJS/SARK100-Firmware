@@ -131,7 +131,7 @@ Squaring the modulus $|a+jb|$ gives $a^2+b^2$, so squaring top and bottom of the
       <th>Eq6</th>
    </tr>
    <tr>
-      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{(R^2+100R+2500+X^2}$$</td>
+      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td>
    </tr>
 </table>
 </div>
