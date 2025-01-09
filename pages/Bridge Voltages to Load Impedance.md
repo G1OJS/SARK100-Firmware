@@ -145,7 +145,7 @@ R and X can be calculated directly from the bridge voltage measurements as
       <th>Eq7</th>
    </tr>
    <tr>
-      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{(|Z_l|^2+100R+2500}$$</td>
+      <td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td>
    </tr>
 </table>
 </div>
