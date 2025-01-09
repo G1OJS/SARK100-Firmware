@@ -112,7 +112,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 </div>
 <div  style='clear:both'></div>
 
-<p>But $R^2+X^2 = \vert Z_l\vert ^2$so </p>
+<p>But $R^2+X^2 = \vert Z_l\vert ^2$ so </p>
 
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>Eq7</td><td style='border:none;'>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
@@ -134,7 +134,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 </details>
 
 <div class='equation'>
-  <table style='border:none;'><tr><td style='border:none;'>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td style='border:none;'>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
