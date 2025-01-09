@@ -3,9 +3,10 @@ layout: default
 mathjax: true
 permalink: /tmp/
 ---
-# Introduction
-Much of the online material about Wheatstone bridges focusses on the case where the bridge is balanced, or near balanced ($Z_l$ ~ 50 ohms in this case). 
-
+<html>
+<h1>Introduction</h1>
+  
+Much of the online material about Wheatstone bridges focusses on the case where the bridge is balanced, or nearly balanced ($Z_l$ ~ 50 ohms in this case). 
 In an instrument that uses a bridge with fixed reference resistors to measure unknown impedance values, we need to work out the unknown impedance from measurements on an unbalanced bridge. The diagram below shows a generic case of such a bridge. 
 
 When using detectors that respond to amplitude only, there are *three* independent voltages that can be measured, shown as $V_r$ , $V_z$  and $V_a$ . 
@@ -193,4 +194,6 @@ where
   <table class='equation'><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
+
+</html>
 
