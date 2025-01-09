@@ -25,7 +25,8 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   
   We can calculate the expected magnitude of these voltages as follows.
   
-  $V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.
+  <p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
+  
   If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
   will be $\frac{1}{\vert Z_l+50\vert }$ 
 
