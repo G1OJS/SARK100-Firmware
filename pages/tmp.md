@@ -35,13 +35,13 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   relative to $2V_f$. Hence, 
   <br>
   <div class='equation'>
-    <table class='equation'><tr><td>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
   and 
   <br>
   <div class='equation'>
-    <table class='equation'><tr><td>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
@@ -51,7 +51,7 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   Then, with complex-valued calculations inside the $\vert mod\vert $ bars, we have
 
   <div class='equation'>
-    <table class='equation'><tr><td>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
+    <table style='border:none;'><tr><td>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
@@ -60,13 +60,13 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 </details>
 
 <div class='equation'>
-  <table class='equation'><tr><td>Eq1</td><td>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq1</td><td>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
 </div>
 <div  style='float:left'>
-  <table class='equation'><tr><td>Eq2</td> <td>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq2</td> <td>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
 </div>
 <div  style='float:left'>
-  <table class='equation'><tr><td>Eq3</td><td>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq3</td><td>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -79,7 +79,7 @@ Looking at equations 1 and 2, we can see that they have the same denominator, an
 To get the complex impedance, we need an equation that contains it directly rather than inside \vert mod\vert bars. If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$\frac{V_r}{V_f} = \vert  2 \frac{Z_l}{Z_l+50} - 1 \vert  = \vert  \frac{2Z_l - (Z_l+50)}{Z_l+50}\vert  = \vert \frac{Z_l-50}{Z_l+50}\vert  $$</td></tr></table>
+  <table style='border:none;'><tr><td>$$\frac{V_r}{V_f} = \vert  2 \frac{Z_l}{Z_l+50} - 1 \vert  = \vert  \frac{2Z_l - (Z_l+50)}{Z_l+50}\vert  = \vert \frac{Z_l-50}{Z_l+50}\vert  $$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -88,10 +88,10 @@ So we have:
 </details>
 
 <div class='equation'>
-  <table class='equation'><tr><td>Eq4</td><td>$$\frac{V_r}{V_f}=\vert \frac{Z_l-50}{Z_l+50}\vert $$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq4</td><td>$$\frac{V_r}{V_f}=\vert \frac{Z_l-50}{Z_l+50}\vert $$</td></tr></table>
 </div>
 <div class='equation'>
-  <table class='equation'><tr><td>Eq5</td><td>$$\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50} $$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq5</td><td>$$\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50} $$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -104,21 +104,21 @@ R and X can be calculated directly from the bridge voltage measurements as
 The RHS of Eq4 with $Z_l = R+jX$ is 
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$\vert \frac{R-50+jX}{R+50+jX}\vert $$</td></tr></table>
+  <table style='border:none;'><tr><td>$$\vert \frac{R-50+jX}{R+50+jX}\vert $$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
 Squaring the modulus $\vert a+jb\vert $gives $a^2+b^2$, so squaring top and bottom of the equation above gives
 
 <div class='equation'>
-  <table class='equation'><tr><td>Eq6</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq6</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{R^2-100R+2500+X^2}{R^2+100R+2500+X^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
 But $R^2+X^2 = \vert Z_l\vert ^2$so 
 
 <div class='equation'>
-  <table class='equation'><tr><td>Eq7</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
+  <table style='border:none;'><tr><td>Eq7</td><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -126,7 +126,7 @@ But $R^2+X^2 = \vert Z_l\vert ^2$so
 Which can be solved to give
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$R = \frac{\vert Z_l\vert ^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$R = \frac{\vert Z_l\vert ^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -137,10 +137,10 @@ We can rewrite these equations to use the bridge voltages directly:
 </details>
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td></tr></table>
 </div>
 <div class='equation'>
-  <table class='equation'><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
@@ -153,28 +153,28 @@ Alternatively, we can calculate VSWR and then derive R and X from VSWR and $\ver
 
   So Eq7 from the explanation above (expand it if it's closed) is 
   <div class='equation'>
-    <table class='equation'><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}=\rho^2$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}=\rho^2$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
   $\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
   <div class='equation'>
-    <table class='equation'><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{\vert Z_l\vert ^2-100R+2500}{\vert Z_l\vert ^2+100R+2500}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
   Which can be rearranged to give
 
   <div class='equation'>
-    <table class='equation'><tr><td>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
   VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give
 
   <div class='equation'>
-    <table class='equation'><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+    <table style='border:none;'><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
@@ -183,17 +183,17 @@ Alternatively, we can calculate VSWR and then derive R and X from VSWR and $\ver
 </details>
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$R = (2500+\vert Z_l\vert ^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
 where 
 
 <div class='equation'>
-  <table class='equation'><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
 </div>
 <div class='equation'>
-  <table class='equation'><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
+  <table style='border:none;'><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
 <div  style='clear:both'><br></div>
 
