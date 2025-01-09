@@ -44,8 +44,8 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 
   To get at <span>$V_r$</span> we simply note that in *vector* terms, <span>$V_r = V_f - V_z$</span> , and the magnitude <span>$V_r$</span> is then <span>$|V_f - V_z|$</span> .
 
-  On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
-  Then, with complex-valued calculations inside the <span>|mod|</span> bars, we have
+  On the left of the bridge we have <span>$V_f$</span>, and on the right we use potential divider maths again to get the midpoint voltage. 
+  Then, with complex-valued calculations inside the <span>$|mod|$</span> bars, we have
 
   <div class='equation'>
     <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
