@@ -19,39 +19,42 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 
 # Bridge Voltage Magnitudes
 <details>
-<summary>Explanation</summary>
-<p>We can calculate the expected magnitude of these voltages as follows.</p>
-<p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
-<p>If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
-will be $\frac{1}{|Z_l+50|}$ </p>
+  <summary>Explanation</summary>
+  
+  <p>We can calculate the expected magnitude of these voltages as follows.</p>
+  <p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
+  <p>If, for example, $2V_f$ is 1.0, the magnitude of the current flowing through the load and upper resistor 
+  will be $\frac{1}{|Z_l+50|}$ </p>
 
-<p>Multiplying this by 50 for the upper resistor and 
-and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
-relative to $2V_f$ . Hence, </p>
-<div class='equation'>
-  <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <p>Multiplying this by 50 for the upper resistor and 
+  and $|Z_L|$ for the unknown load gives the magnitude of the voltages 
+  relative to $2V_f$ . Hence, </p>
+  <div class='equation'>
+    <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>and</p> 
+  <p>and</p> 
 
-<div class='equation'>
+  <div class='equation'>
   <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .</p>
+  <p>To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then $|V_f - V_z|$ .</p>
 
-<p>On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage.</p> 
-<p>Then, with complex-valued calculations inside the |mod| bars, we have</p>
+  <p>On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage.</p> 
+  <p>Then, with complex-valued calculations inside the |mod| bars, we have</p>
 
-<div class='equation'>
-  <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <div class='equation'>
+    <table><tr><td>$$V_r = | 2V_f \frac{Z_l}{Z_l+50} - V_f|$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>so our three equations are:</p>
+  <p>so our three equations are:</p>
+  
 </details>
+
 <div class='equation'>
   <table><tr><td>Eq1</td><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
 </div>
@@ -140,37 +143,38 @@ R and X can be calculated directly from the bridge voltage measurements as
 <p>Alternatively, we can calculate VSWR and then derive R and X from VSWR and $|Z_L|$ </p>
 
 <details>
-<summary>Explanation</summary>
-<p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ </p>
+  <summary>Explanation</summary>
+  
+  <p>Note that the RHS of Eq4 is the magnitude of the reflection coefficient, or $\rho$ </p>
 
-<p>So Eq7 from the explanation above (expand it if it's closed) is </p>
-<div class='equation'>
-  <table><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <p>So Eq7 from the explanation above (expand it if it's closed) is </p>
+  <div class='equation'>
+    <table><tr><td>$$\frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}=\rho^2$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
+  <p>$\rho$ is related to VSWR by $\rho=\frac{VSWR-1}{VSWR+1}$ so $\rho^2$ is 
    
-<div class='equation'>
-  <table><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <div class='equation'>
+    <table><tr><td>$$\frac{(VSWR^2+1)-2VSWR}{(VSWR^2+1)+2VSWR} = \frac{(R-50)^2+X^2}{(R+50)^2+X^2}=\frac{|Z_l|^2-100R+2500}{|Z_l|^2+100R+2500}$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>Which can be rearranged to give</p>
+  <p>Which can be rearranged to give</p>
 
-<div class='equation'>
-  <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <div class='equation'>
+    <table><tr><td>$$R = (2500+|Z_l|^2)\frac{VSWR}{50(VSWR^2+1)}$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
+  <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
-<div class='equation'>
-  <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
-</div>
-<div  style='clear:both'></div>
+  <div class='equation'>
+    <table><tr><td>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
 
-<p>So, with an interim step of calculating VSWR, we have:</p>
+  <p>So, with an interim step of calculating VSWR, we have:</p>
 
 </details>
 
@@ -187,6 +191,5 @@ where
 <div class='equation'>
   <table><tr><td>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
 </div>
-
 <div  style='clear:both'></div>
 
