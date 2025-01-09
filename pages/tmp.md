@@ -29,13 +29,14 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   Multiplying this by 50 for the upper resistor and 
   and $|Z_l|$ for the unknown load gives the magnitude of the voltages 
   relative to $2V_f$ . Hence, 
+  <br>
   <div class='equation'>
     <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
-
+ 
   and 
-
+  <br>
   <div class='equation'>
   <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
   </div>
