@@ -168,7 +168,7 @@ $$R = \frac{|Z_l|^2+50^2}{100}\frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2
       <th>Re(Z)</th>
    </tr>
    <tr>
-      <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-(\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
+      <td>$$R = \frac{(50\frac{V_z}{V_a})^2+50^2}{100}  \frac{1-\frac{V_r}{V_f})^2}{1+(\frac{V_r}{V_f})^2}$$</td>
    </tr>
 </table>
 </div>
