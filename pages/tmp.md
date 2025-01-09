@@ -29,21 +29,20 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 
   Multiplying this by 50 for the upper resistor and 
   and <span> $|Z_l|$ </span> for the unknown load gives the magnitude of the voltages 
-  relative to $2V_f$ . Hence, 
+  relative to <span>$2V_f$</span>. Hence, 
   <br>
   <div class='equation'>
     <table><tr><td>$$V_a=2V_f\frac{50}{|Z_l+50|}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
- 
   and 
   <br>
   <div class='equation'>
-  <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
+    <table><tr><td>$$V_z=2V_f\frac{|Z_l|}{|Z_l+50|}$$</td></tr></table>
   </div>
   <div  style='clear:both'><br></div>
 
-  To get at $V_r$ we simply note that in *vector* terms, $V_r = V_f - V_z$ , and the magnitude $V_r$ is then <span>$|V_f - V_z|$</span> .
+  To get at <span>$V_r$</span> we simply note that in *vector* terms, <span>$V_r = V_f - V_z$</span> , and the magnitude <span>$V_r$</span> is then <span>$|V_f - V_z|$</span> .
 
   On the left of the bridge we have $V_f$, and on the right we use potential divider maths again to get the midpoint voltage. 
   Then, with complex-valued calculations inside the <span>|mod|</span> bars, we have
