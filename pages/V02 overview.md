@@ -68,6 +68,7 @@ From the user's perspective, the calibration routing follows the same process as
  4. Added power (mV & dBm) display to Sig level mode
  5. Added message to Capacitance display when reactance is zero
  6. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM to verify backwards compatibility of Scan Raw output
+ 7. Dizzling offset now 10% of display frequency (was previously 1MHz)
 
 ## UI changes
 1. Display changes to match changes above
