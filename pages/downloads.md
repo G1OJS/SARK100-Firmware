@@ -5,7 +5,7 @@ permalink: /downloads/
 ---
 
 The download folders on this site are
-- [PSoC Designer V5 Installation Files](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/PSoC%20Designer%20V5%20installation%20files") (contains only the SVG viewer and links to the Infineon site)
+- [PSoC Designer V5 Installation Files](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/PSoC%20Designer%20V5%20installation%20files) (contains only the SVG viewer and links to the Infineon site)
 - [EA4FRB Firmware V13](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/SARK100%20Firmware%20EA4FRB)
 - [G1OJS Firmware](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/SARK100%20Firmware%20G1OJS)
 
