@@ -4,7 +4,7 @@
 ## Key benefits of the latest version (G1OJS V02)
 - 60m band now included
 - Numeric power meter (mV and dBm) replaces the bar graph
-- Calibration remains more accurate over a wider range of loads
+- Calibration remains more accurate over a wider range of loads and frequencies
 - Calibration based on E12 resistor loads plus 50 ohms (10, 50, 220, 560).
 - Scan mode has automatic step size and searches up and down from minimum SWR (less likely to report on local minimum)
 
