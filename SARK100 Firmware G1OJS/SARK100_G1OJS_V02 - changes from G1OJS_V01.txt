@@ -1,0 +1,25 @@
+Calculation changes
+ 1. New calibration routine with standard resistors (E12+50ohms): 10,50,220,560
+	- Removed G1OJS_V01 routine which was based on EA4FRB_V13
+	- Replaced with new routine which applies simple correction factors to the ratios Vr/Vf and Vz/Va
+	- Linearises a wider range of impedances
+	- Uses less memory (space for more features!)
+ 2. Refactored measurement routine to measure ratios rather than individual voltages
+	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
+	- Future version may revert to outputting all individual voltages as this is useful for development & debugging
+	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
+ 3. New treatment of measurement errors leading to R being aparrently greater than |Z|: swap R and |Z| before calculating X
+ 4. Added power (mV & dBm) display to Sig level mode
+ 5. Added message to Capacitance display when reactance is zero
+ 6. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM
+
+UI changes
+1. Display changes to match changes above
+
+
+Ideas for next version
+1. Add variable-output VFO mode
+2. Add calibration routine for power level meter
+3. Revert to 4 individual voltage outputs for Scan Raw
+
+
