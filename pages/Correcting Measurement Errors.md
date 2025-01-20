@@ -44,7 +44,9 @@ $$R_t = R_{t1} + (R_{t2}-R_{t1})\frac{R_m - R_{c1}}{R_{c2}-R_{c1}}$$
 
 Where everything with a 1 or 2 in the subscript is a calibration measurement (m) or true known value (t) (e.g. VSWR=1.0:1 when Rl=50 Ohms). The formula looks a lot more complicated than it is; it simply asks a particular measured value how far it is proportionally along the line between two adjacent calibration measurement results, and then says "If you're two thirds along the line between these measured calibration points, then you in reality are two thirds of the way along the line between these true values and your true value is therefore ....". 
 
-The results of this approach are shown in the two graphs below.
+Having said that the function is relatively simple, implementing it in integer arithmetic and being mindful of overflows and divide by zeros is all kinds of fun!
+
+The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown in this [page to be written].
 
 |Vz/Va|Vr/Vf|
 |-------|-------|
