@@ -25,7 +25,7 @@ I developed this update to EA4FRb's V13 SARK100 source code by testing on my "MR
 ## Installing the G1OJS Firmware
 My versions of the firmware are now on this site in [this folder](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/tree/main/SARK100%20Firmware%20G1OJS).
 
-The folder contains a .txt file for each version, outling the changes from the previous version. I'm developing more detail about the changes on this site, alongside generic material.
+The folder contains a .txt file for each version, outling the changes from the previous version. I'm developing more detail about the changes on this site, alongside generic material. See the Site Contents link in the header above for more details.
 
 If you want to play with the source code, download the .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/). If you just want the firmware, just download the hex file. Either way, you'll need the bootloader software (SARK100_Firmware_Loader.zip) to send the firmware to the hardware unit.
 
