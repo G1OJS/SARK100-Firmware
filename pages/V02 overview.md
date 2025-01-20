@@ -76,9 +76,10 @@ From the user's perspective, the calibration routing follows the same process as
 1. Display changes to match changes above
 
 ## Ideas for next version
-1. Add variable-output VFO mode
+1. Add a VFO mode with variable output level
 2. Add calibration routine for power level meter
 3. Revert to 4 individual voltage outputs for Scan Raw
+4. Display a brief message "Dizzling off"/"Dizzling on" when changing between the first two modes.
 
 
 
