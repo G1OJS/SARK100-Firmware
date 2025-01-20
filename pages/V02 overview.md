@@ -66,7 +66,7 @@ From the user's perspective, the calibration routing follows the same process as
 	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
 	- Future version may revert to outputting all individual voltages as this is useful for development & debugging
 	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
- 3. New treatment of measurement errors leading to R being aparrently greater than mod Z: swap R and |Z| before calculating X
+ 3. New treatment of measurement errors leading to R being aparrently greater than mod Z:  swap R and mod Z before calculating X
  4. Added power (mV & dBm) display to Sig level mode
  5. Added message to Capacitance display when reactance is zero
  6. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM to verify backwards compatibility of Scan Raw output
