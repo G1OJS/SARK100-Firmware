@@ -16,6 +16,8 @@ permalink: /V02-Overview/
 ## New Power Meter
 ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Power%20Meter.png)
 
+**NOTE** - the dBm calculation uses integer maths and an approximation for the logarithm to save memory, so will not exactly match the mV reading in all cases.
+
 ## Menu Structure & Key Presses
 - Press "Mode"
     - Main screen
