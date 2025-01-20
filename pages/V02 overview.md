@@ -8,10 +8,13 @@ permalink: /V02-Overview/
 ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Main%20screen%2050%20Ohms.png)
 
 ## Over range indicators
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%2V02%20Overrange.png)
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Overrange.png)
 
 ## 'Dizzling' turned off
 ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Dizzling%20off.png)
+
+## New Power Meter
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Power%20Meter.png)
 
 ## Menu Structure & Key Presses
 - Press "Mode"
@@ -45,7 +48,7 @@ permalink: /V02-Overview/
 
 # New Calibration Routine
 From the user's perspective, the calibration routing follows the same process as in V13, except that:
-- A short circuit load is required in addition to the 50, 150 and 274 ohm loads
+- The loads needed are based on E12 resistors (plus 50 Ohms): 10, 50, 220, and 560 Ohms
 - Progress is indicated by the frequency displayed
 - On completion, the unit automatically reboots
 
@@ -69,7 +72,7 @@ From the user's perspective, the calibration routing follows the same process as
 ## UI changes
 1. Display changes to match changes above
 
-##Ideas for next version
+## Ideas for next version
 1. Add variable-output VFO mode
 2. Add calibration routine for power level meter
 3. Revert to 4 individual voltage outputs for Scan Raw
