@@ -54,6 +54,8 @@ From the user's perspective, the calibration routing follows the same process as
 - Progress is indicated by the frequency displayed
 - On completion, the unit automatically reboots
 
+The methodology for correcting measurement errors by using calibration data is described here: [Correcting measurement errors with calibration data](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/CorrectingMeasurementErrors/). This page covers both the techniques used in EA4FRB's V13, and my V01 and V02.
+
 # Changes from G1OJS V01
 
 ## Calculation changes
