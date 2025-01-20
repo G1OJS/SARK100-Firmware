@@ -5,13 +5,13 @@ permalink: /V02-Overview/
 ---
 # Screenshots and Changes to Menus 
 ## Main screen layout
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Main%20screen%2050%20Ohms.png)
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Main%20screen%2050%20Ohms.png)
 
 ## Over range indicators
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Overrange.png)
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%2V02%20Overrange.png)
 
 ## 'Dizzling' turned off
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Dizzling%20off.png)
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Dizzling%20off.png)
 
 ## Menu Structure & Key Presses
 - Press "Mode"
