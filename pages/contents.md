@@ -11,6 +11,7 @@ permalink: /contents/
 # Specific to Firmware Updates
 - [Editing PSoC Firmware on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/)
 - [Motivation for changes](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Motivation-for-changes/)
+- [Downloads](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/downloads/)
 
 #### G1OJS V02
 - [V02 Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/V02-Overview/)
