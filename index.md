@@ -1,6 +1,13 @@
 
 ![2025-01-05 Welcome screen crop](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Welcome%20screen%20crop.png)
 
+## Key benefits of the latest version
+- 60m band now included
+- Numeric power meter (mV and dBm) replaces the bar graph
+- Calibration remains more accurate over a wider range of loads
+- Calibration based on E12 resistor loads plus 50 ohms (10, 50, 220, 560).
+- Scan mode has automatic step size and searches up and down from minimum SWR (less likely to report on local minimum)
+
 ## Motivation
 This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) contains the results of a lot of work I've done investigating the [MR300 Antenna Analyser](http://www.lxqqfy.com/e/product.php?id=MR300)'s firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
 - Try to improve the calibration routine & see if I could:
