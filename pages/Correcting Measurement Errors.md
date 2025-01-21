@@ -58,6 +58,8 @@ The graphs below show the final measured impedance results from V13 and G1OJS V0
 
 The graphs show the percent error in the R and X measurement, calculated with reference to the magnitude of Z load. The load impedances here are 50, 5, 25, 274 and 1000 ohms.
 
+The steps visible in these graphs are a reflection of the output precision used by the pcLink 'scan' command for R and X, which is in whole numbers of Ohms.
+
 It can be seen that in most cases the percent error in the G1OJS V02 output is lower than that in the V13 output. However that's not true in all cases at all frequencies. To get a fuller assessment of the effect of using approach 2, it would be necessary to repeat this analysis at many more load resistances and probably reactances too. However, other trials I've done using pcLink's 'scanr' output - which provides raw voltages and allows external calculation of R and X with greater resolution, give me confidence that approach 2 gives better results overall (also note the improvements in measured vs true ratios described above for the two approaches).
 
 Of course, selection of the 'best' calibration approach and set of calibration loads depends on the use case; it makes a difference whether accuracy close to 50 ohms is important, or reasonable accuracy across a wide impedance range is needed, for example. 
