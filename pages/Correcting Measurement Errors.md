@@ -53,6 +53,25 @@ The results of this approach are shown in the two graphs below; not perfect, but
 |-------|-------|
 |![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected.PNG)|
 
+# Approach 2 vs Approach 1: Effect on final results
+The graphs below show the final measured impedance results from V13 and G1OJS V02, obtained via the pcLink 'scan' command, which outputs VSWR, R, X and Z across the serial link. This gives an end-to-end comparison of the algorithms in V13 and G1OJS V02.
+
+The load impedances here are 50, 5, 25, 274 and 1000 ohms.
+
+It can be seen that in most cases the percent error in the G1OJS V02 output is lower than that in the V13 output. However that's not true in all cases at all frequencies. To get a fuller assessment of the effect of using approach 2, it would be necessary to repeat this analysis at many more load resistances and probably reactances too.
+
+One thing to note is that the V13 code limits measured VSWR to 20 before calculating X, which explains the relatively smooth and low error for the reactance trace in the 1000 ohm graph (1000 ohms happens to have a true VSWR of exactly 20!).
+
+
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%2050%20Ohms.PNG) 
+
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%205%20Ohms.PNG) 
+
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%2025%20Ohms.PNG) 
+
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%20274%20Ohms.PNG) 
+
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%201000%20Ohms.PNG) 
 
 
 
