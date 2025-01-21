@@ -12,7 +12,8 @@ The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load imp
 
 |Vz/Va|Vr/Vf|
 |-------|-------|
-|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Errors%20Uncorrected.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Errors%20Uncorrected.PNG)|
+|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Errors%20Uncorrected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Errors%20Uncorrected.PNG)|
+
 
 The ratio Va/Vz, which gives us the magnitude of the load impedance, falls significantly at higher frequencies and load resistances. Similarly the ratio increases significantly at lower frequencies and lower load resistances. The behaviour with Vr/Vf is less in magnitude but slightly more complicated; there is an overall scale factor where Vr/Vf measured is less than expected, and some variations with load impedance and frequency.
 
@@ -31,7 +32,7 @@ However, the behaviours seen in the uncorrected graphs above remain, almost undi
 
 |Vz/Va|Vr/Vf|
 |-------|-------|
-|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%20V13.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
+|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%20V13%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
 
 # Approach #2: Correcting bridge ratios
 Whilst I had a little success with offsets and frequency interpolation in my V01 code, I was sure that something better could be done and my mind kept going back to the two required and independent paths from bridge voltages to complex load impedance: the ratio $V_z/V_a$ and the ratio $V_r/V_f$. I was drawn to the idea of correcting these ratios instead of the component voltages, firstly because that's two problems instead of three, and secondly because I realised that working with these ratios immediately eliminates a lot of the noise that is common to all four voltages (see the graphs at the end of the page [Interpolation and DDS Gain Settings](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Interpolation-and-DDS-Gain-Settings)).
@@ -50,7 +51,7 @@ The results of this approach are shown in the two graphs below; not perfect, but
 
 |Vz/Va|Vr/Vf|
 |-------|-------|
-|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected.PNG)|
+|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected.PNG)|
 
 
 
