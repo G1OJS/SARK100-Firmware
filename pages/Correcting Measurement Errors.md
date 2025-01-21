@@ -56,9 +56,11 @@ The results of this approach are shown in the two graphs below; not perfect, but
 # Approach 2 vs Approach 1: Effect on final results
 The graphs below show the final measured impedance results from V13 and G1OJS V02, obtained via the pcLink 'scan' command, which outputs VSWR, R, X and Z across the serial link. This gives an end-to-end comparison of the algorithms in V13 and G1OJS V02.
 
-The load impedances here are 50, 5, 25, 274 and 1000 ohms.
+The graphs show the percent error in the R and X measurement, calculated with reference to the magnitude of Z load. The load impedances here are 50, 5, 25, 274 and 1000 ohms.
 
-It can be seen that in most cases the percent error in the G1OJS V02 output is lower than that in the V13 output. However that's not true in all cases at all frequencies. To get a fuller assessment of the effect of using approach 2, it would be necessary to repeat this analysis at many more load resistances and probably reactances too.
+It can be seen that in most cases the percent error in the G1OJS V02 output is lower than that in the V13 output. However that's not true in all cases at all frequencies. To get a fuller assessment of the effect of using approach 2, it would be necessary to repeat this analysis at many more load resistances and probably reactances too. However, other trials I've done using pcLink's 'scanr' output - which provides raw voltages and allows external calculation of R and X with greater resolution, give me confidence that approach 2 gives better results overall (also note the improvements in measured vs true ratios described above for the two approaches).
+
+Of course, selection of the 'best' calibration approach and set of calibration loads depends on the use case; it makes a difference whether accuracy close to 50 ohms is important, or reasonable accuracy across a wide impedance range is needed, for example. 
 
 One thing to note is that the V13 code limits measured VSWR to 9.99 and Z to 2000 ohms before calculating R and X as a functions of VSWR and Z, which explains the relatively smooth and lower error result for the V13 reactance trace in the 1000 ohm graph; the V13 code is internally 'maxing out' on intermediate steps in the calculation of R and X.
 
