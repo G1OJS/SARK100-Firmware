@@ -8,10 +8,9 @@ Calculation changes
 	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
 	- Future version may revert to outputting all individual voltages as this is useful for development & debugging
 	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
- 3. New treatment of measurement errors leading to R being aparrently greater than |Z|: swap R and |Z| before calculating X
- 4. Added power (mV & dBm) display to Sig level mode
- 5. Added message to Capacitance display when reactance is zero
- 6. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM
+ 3. Added power (mV & dBm) display to Sig level mode
+ 4. Added message to Capacitance display when reactance is zero
+ 5. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM
 
 UI changes
 1. Display changes to match changes above
@@ -20,6 +19,5 @@ UI changes
 Ideas for next version
 1. Add variable-output VFO mode
 2. Add calibration routine for power level meter
-3. Revert to 4 individual voltage outputs for Scan Raw
 
 
