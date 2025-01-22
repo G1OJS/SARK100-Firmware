@@ -68,12 +68,10 @@ The methodology for correcting measurement errors by using calibration data is d
 	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
 	- Future version may revert to outputting all individual voltages as this is useful for development & debugging
 	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
- 3. New treatment of measurement errors leading to R being aparrently greater than mod Z:  swap R and mod Z before calculating X
-    	- This may be reverted to capping R at mod Z in a future version as it introduces errors in X due to interaction with integer arithmetic
- 5. Added power (mV & dBm) display to Sig level mode
- 6. Added message to Capacitance display when reactance is zero
- 7. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM to verify backwards compatibility of Scan Raw output
- 8. Dizzling offset now 10% of display frequency (was previously 1MHz)
+ 3. Added power (mV & dBm) display to Sig level mode
+ 4. Added message to Capacitance display when reactance is zero
+ 5. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM to verify backwards compatibility of Scan Raw output
+ 6. Dizzling offset now 10% of display frequency (was previously 1MHz)
 
 ## UI changes
 1. Display changes to match changes above
@@ -81,8 +79,7 @@ The methodology for correcting measurement errors by using calibration data is d
 ## Ideas for next version
 1. Add a VFO mode with variable output level
 2. Add calibration routine for power level meter
-3. Revert to capping R at mod Z before calculating X
-4. Display a brief message "Dizzling off"/"Dizzling on" when changing between the first two modes.
+3. Display a brief message "Dizzling off"/"Dizzling on" when changing between the first two modes.
 
 
 
