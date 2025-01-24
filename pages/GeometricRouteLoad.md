@@ -57,9 +57,9 @@ $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L
 # Final Steps
 Looking back to the diagram showing the triangle and the circles, we can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$ !
 
-And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so:
+And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so, writing VSWR as S and $ \vert Z_L \vert$ as Z :
 
-$$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
+$$X_L^2 = \frac{1}{4A^2}(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z) $$
 
 Finally, we can write the length 2A in terms of VSWR:
 
@@ -67,11 +67,11 @@ $$2A=R_b+R_a=S+\frac{1}{S}$$
 
 So 
 
-$$X_L^2 = \frac{(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert)}{(S+\frac{1}{S})^2} $$
+$$X_L^2 = \frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
 
 or
 
-$$X_L = \frac{\sqrt{(S+\vert Z_L \vert)(S-\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\vert Z_L \vert+\frac{1}{S})}}{S+\frac{1}{S}} $$
+$$X_L = \frac{\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}}{S+\frac{1}{S}} $$
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
 
