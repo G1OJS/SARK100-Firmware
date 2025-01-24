@@ -55,7 +55,7 @@ so
 $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
 # Final Steps
-Looking back to the diagram showing the triangle and the circles, we can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$, and we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so, writing VSWR as S and $ \vert Z_L \vert$ as Z :
+Looking back to the diagram showing the triangle and the circles, we can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$, and we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so, writing VSWR as S and $\vert$ $Z_L$ $\vert$ as Z :
 
 $$X_L^2 = \frac{1}{4A^2}(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z) $$
 
