@@ -48,7 +48,7 @@ $$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
 
 Whare a,b and c are the three lengths of the triangle's sides. Let's substitute our known lengths for a,b,c, and get rid of the square root by squaring both expressions for area above to get:
 
-$$area^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) = \frac{1}{4}A^2X_L^2$$
+$$area^2 = \frac{1}{4}A^2X_L^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
 so 
 
@@ -59,7 +59,7 @@ Looking back to the diagram showing the triangle and the circles, we can easily 
 
 And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so:
 
-$$X_L^2 = \frac{4}{A^2}(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
+$$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
 
 Finally, we can write the length A in terms of VSWR:
 
