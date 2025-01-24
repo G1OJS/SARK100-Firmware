@@ -75,8 +75,10 @@ This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with
 
 As we have $X_L$ and $ \vert Z_L \vert$, and $R_L=\sqrt{ \vert Z_L \vert-X_L}$, we have the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$.
 
+# Numeric Examples
+The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various load impedances, and then calculation of the load impedance using only those 'measured' quantities. It is not a mathematical proof, but does give examples to show that the eqation above works.
 
-
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig5.PNG'>
 
 
 
