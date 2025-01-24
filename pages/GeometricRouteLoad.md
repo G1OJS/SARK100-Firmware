@@ -75,10 +75,12 @@ $$2A=R_b+R_a=S+\frac{1}{S}$$
 
 $$ X_L^2 =\frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
 
-<p>or</p>
+<p>This equation is still defined only for normalised impedance, however. So if mod Gamma is measured in a 50 Ohm system we need to ensure that S and Z are in the correct relative proportions in the final equation. An easy way to do this is to convert the measured mod Z to normalised values for use in the equation above, and then multiply the result by $Z_0$. This gives us our final equation
 
 <div class='HighlightBox'>
-$$X_L = \frac{1}{S+\frac{1}{S}}\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
+$$X_L = Z_0\frac{1}{S+\frac{1}{S}}\sqrt{(S+Z_n)(S-Z_n)(Z_n-\frac{1}{S})(Z_n+\frac{1}{S})}$$
+  where
+$$Z_n = \frac{|Z|}{Z_0}$$
 </div>
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
