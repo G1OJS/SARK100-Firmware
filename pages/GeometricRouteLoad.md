@@ -28,7 +28,7 @@ where we've got the reciprocal value for $R_a$ by simply flipping the usual frac
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
 
-Now, we know the distance from the origin to our load impedance is $\vert Z_L \vert$, and we also now know that the distance from the origin to the centre of the $\vert \Gamma \vert$ circle is $\frac{R_a+R_b}{2}$, and the distance from there to the load impedance is simply the radius of the $\vert \Gamma \vert$ circle. So we have the lengths of all three sides of a triangle:
+Now, we know the distance from the origin to our load impedance is $\vert Z_L \vert$, and we also now know that the distance from the origin to the centre of the $\vert \Gamma \vert$ circle is $\frac{R_a+R_b}{2}$, and the distance from there to the load impedance is simply the radius of the $\vert \Gamma \vert$ circle, which is $\frac{R_b-R_a}{2}$. So we have the lengths of all three sides of a triangle:
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig3.PNG'>
 
@@ -53,15 +53,14 @@ Let's substitute our known lengths for a,b,c, and get rid of the square root by 
 
 $$area^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) = \frac{1}{4}A^2X_L^2$$
 
-so
+so 
 
 $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
 #### Step 2
+Look back to the diagram showing the triangle and the circles. We can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$ !
 
-We can write $A+B$ and $A_B$ in terms of $\vert \Gamma \vert$ as follows:
+So, can write the equation for $X_L^2$ above using the expressions we had for $R_a$ and $R_b$:
 
-$$A+B = 
 
-$$A = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}$$ and $$R_b=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
 
