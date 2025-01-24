@@ -70,7 +70,9 @@ $$X_L^2 = \frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
 
 or
 
+<div class='HighlightBox'>
 $$X_L = (\frac{1}{S+\frac{1}{S}})\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
+</div>
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
 
