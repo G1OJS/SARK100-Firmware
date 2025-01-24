@@ -43,7 +43,9 @@ We can find also find the area of this triangle from the three known side length
 
 $$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
 
-Whare a,b and c are the three lengths of the triangle's sides. Let's substitute our known lengths for a,b,c, and get rid of the square root by squaring both expressions for area above to get:
+Whare a,b and c are the three lengths of the triangle's sides. 
+
+So **we can use the triangle's area to link mod(Z) and mod(Gamma) to our load reactance**. Let's substitute our known lengths for a,b,c, and get rid of the square root by squaring both expressions for area above to get:
 
 $$area^2 = \frac{1}{4}A^2X_L^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
