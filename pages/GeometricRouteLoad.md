@@ -78,14 +78,13 @@ $$ X_L^2 =\frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
 <p>This equation is still defined only for normalised impedance, however. So if mod Gamma is measured in a 50 Ohm system we need to ensure that S and Z are in the correct relative proportions in the final equation. An easy way to do this is to convert the measured mod Z to normalised values for use in the equation above, and then multiply the result by $Z_0$. This gives us our final equation
 
 <div class='HighlightBox'>
-$$X_L = Z_0\frac{1}{S+\frac{1}{S}}\sqrt{(S+Z_n)(S-Z_n)(Z_n-\frac{1}{S})(Z_n+\frac{1}{S})}$$
-  where
-$$Z_n = \frac{|Z|}{Z_0}$$
+$$X_L = \frac{Z_0}{S+\frac{1}{S}}\sqrt{(S+Z_n)(S-Z_n)(Z_n-\frac{1}{S})(Z_n+\frac{1}{S})}$$
+  where $Z_n = \frac{|Z|}{Z_0}$
 </div>
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
 
-As we have $X_L$ and $\vert$ $Z_L$ $\vert$, and $R_L=\sqrt{ \vert Z_L \vert-X_L}$, we have the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$.
+As we have $X_L$ and $\vert$ $Z_L$ $\vert$, and $R_L=\sqrt{ \vert Z_L \vert-X_L}$, we have the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$ .
 
 # Numeric Examples
 The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various load impedances, and then calculation of the load impedance using only those 'measured' quantities. It is not a mathematical proof, but does give examples to show that the eqation above works.
