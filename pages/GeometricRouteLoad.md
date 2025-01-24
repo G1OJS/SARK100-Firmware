@@ -46,9 +46,9 @@ We can find also find the area of this triangle from the three known side length
 
 $$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
 
-We can use this together with our equation for area using $X_L$ to write down an expression for $X_L^2$. It's convenient to square both formulas to get:
+Whare a,b and c are the three lengths of the triangle's sides. We can use this together with our equation for area using $X_L$ to write down an expression for $X_L^2$. It's convenient to square both formulas to get:
 
-$$area^2 = \frac{\frac{1}{16}(a+b+c)(b+c-a)(a+c-b)(a+b-c)}{\frac{1}{4}AX_L}$$
+$$area^2 = \frac{1}{16}(a+b+c)(b+c-a)(a+c-b)(a+b-c) = \frac{1}{4}AX_L$$
 
 
 
