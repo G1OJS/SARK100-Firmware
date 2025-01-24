@@ -19,7 +19,7 @@ Next, let's add a circle capturing all points that have the same magnitude of **
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModGamma.PNG'>
 
-<p>In normalised units - $ Z_0 $ = 1 Ohm - , </p>
+<p>In units of normalised impedance </p>
 
 $$ \vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
 
