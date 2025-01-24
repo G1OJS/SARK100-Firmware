@@ -12,9 +12,7 @@ Calculating the complex load impedance from $\vert Z_L \vert$ and $\vert \Gamma 
 ## Magnitude of the Load Impedance
 Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on the complex impedance plane, see diagram below. We can easily add a circle that captures all impedance values that have the same magnitude $\vert Z \vert$ as our unknown load. This circle crosses the real (resistance) axis where $R = \vert Z_L \vert$, although we don't need to remember this value for the steps that follow.
 
-<div style= 'float:right'>
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModZ.PNG'>
-</div>
 
 ## Magnitude of the Reflection Coefficient
 Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs. These are, if we write VSWR as S: $R_a = S/Z_0$ and $R_b = Z_0S$ . These resistances are in inverse (reciprocal) proportion to each-other. So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR.
