@@ -22,9 +22,9 @@ $$\vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \ver
 
 So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR. Let's call these resistance values $R_a$ and $R_b$, and note that in normalised units $R_a = \frac{1}{S}$ and, simply, $R_b = S$. Using the equation for S gives these two resistances in terms of our measured  $\vert \Gamma \vert$:
 
-$$R_a = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}$$ and $$R_b=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
+$$R_a = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert} = \frac{1}{S}$$ and $$R_b=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}=S$$ 
 
-where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down.
+where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down, and again written VSWR as S.
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
 
@@ -59,11 +59,11 @@ $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L
 # Final Steps
 Look back to the diagram showing the triangle and the circles. We can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$ !
 
-So, can write the equation for $X_L^2$ above using the expressions we had above giving $R_a$ and $R_b$ in terms of $\vert \Gamma \vert$:
+And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so:
 
-$$X_L^2 = \frac{1}{4A^2}(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}+\vert Z_L \vert)(\frac{\vert \Gamma \vert-1}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}-\vert Z_L \vert) $$
+$$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(+\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
 
-This equation gives $X_L^2$ in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$, and rearranges nicely to:
+This equation gives $X_L^2$ in terms of only $\vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L^2 in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
 
 
 
