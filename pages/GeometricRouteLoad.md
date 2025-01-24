@@ -63,6 +63,9 @@ So, can write the equation for $X_L^2$ above using the expressions we had above 
 
 $$X_L^2 = \frac{1}{4A^2}(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}+\vert Z_L \vert)(\frac{\vert \Gamma \vert-1}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}-\vert Z_L \vert) $$
 
+This equation gives $X_L^2$ in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$, and rearranges nicely to:
+
+
 
 
 
