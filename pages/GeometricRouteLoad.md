@@ -62,7 +62,7 @@ Look back to the diagram showing the triangle and the circles. We can easily see
 
 So, can write the equation for $X_L^2$ above using the expressions we had for $R_a$ and $R_b$:
 
-$$X_L^2 = \frac{1}{4A^2}(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
+$$X_L^2 = \frac{1}{4A^2}(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}+\vert Z_L \vert)(\frac{\vert \Gamma \vert-1}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}-\vert Z_L \vert) $$
 
 
 
