@@ -21,11 +21,11 @@ Next, let's add a circle capturing all points that have the same magnitude of **
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModGamma.PNG'>
 
-In normalised units ($Z_0$ = 1 Ohm):
+<p>In normalised units ($Z_0$ = 1 Ohm):</p>
 
 $$ \vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
 
-We can use the equation for S to write our two resistances $R_a$ and $R_b$ in terms of our measured  $\vert \Gamma \vert$:
+<p>We can use the equation for S to write our two resistances $R_a$ and $R_b$ in terms of our measured  $\vert \Gamma \vert$:</p>
 
 $$R_a = \frac{1}{S} = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert} $$ and $$R_b=S=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
 
