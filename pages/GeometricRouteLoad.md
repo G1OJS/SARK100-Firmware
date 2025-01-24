@@ -36,7 +36,7 @@ Now, we know the distance from the origin to our load impedance is $\vert Z_L \v
 Now let's forget the circles and concentrate on the triangle. The lengths of the three sides are:
 |   |   |   |
 |---|---|---|
-|$\vert Z_L \vert$| $A=\frac{R_b+R_a}{2}$ |$B=\frac{R_b-R_a}{2}$ |
+|$\vert Z_L \vert$ | $A=\frac{R_b+R_a}{2}$ | $B=\frac{R_b-R_a}{2}$ |
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig4.PNG'>
 
@@ -71,9 +71,9 @@ or
 
 $$X_L = (\frac{1}{S+\frac{1}{S}})\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
 
-This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
+This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
 
-As we have $X_L$ and $ \vert Z_L \vert$, and $R_L=\sqrt{ \vert Z_L \vert-X_L}$, we have the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$.
+As we have $X_L$ and $\vert$ $Z_L$ $\vert$, and $R_L=\sqrt{ \vert Z_L \vert-X_L}$, we have the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$.
 
 # Numeric Examples
 The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various load impedances, and then calculation of the load impedance using only those 'measured' quantities. It is not a mathematical proof, but does give examples to show that the eqation above works.
