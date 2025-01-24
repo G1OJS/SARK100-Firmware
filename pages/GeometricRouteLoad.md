@@ -23,13 +23,16 @@ Next, let's add a circle capturing all points that have the same magnitude of **
 
 <div class='equation'>
 $$ \vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
-</div><br>
+</div>
+<div style='clear:both;'></div>
 
 <p>We can use the equation for S to write our two resistances $R_a$ and $R_b$ in terms of our measured  $\vert \Gamma \vert$:</p>
 
 <div class='equation'>
 $$R_a = \frac{1}{S} = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert} $$ and $$R_b=S=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
-</div><br>
+</div>
+<div style='clear:both;'></div>
+
 where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down, and again written VSWR as S.
 
 ## Three Distances
