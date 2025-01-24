@@ -14,11 +14,20 @@ Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on th
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig1.PNG'>
 
-Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs: $R = SZ_0$ and $R = Z_0 / S$ if we write VSWR as S. 
+Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs: $R = SZ_0$ and $R = Z_0 / S$ if we write VSWR as S. These resistances are in inverse (reciprocal) proportion to each-other.
 
 If we now think in terms of normalised impedances (or $Z_0$ = 1 Ohm) we recall that:
 
 $$\vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$
+
+So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR. Let's call these resistance values $R_a$ and $R_b$, and note that in normalised units $R_a = \frac{1}{S}$ and, simply, $R_b = S$. Using the equation for S gives these two resistances in terms of our measured  $\vert \Gamma \vert$:
+
+$$R_a = \frac{Z_L+1}{Z_L-1}$$ and = $$R_b=\frac{Z_L-1}{Z_L+1}$$ 
+
+where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down.
+
+
+The radius of this circle is $\frac{b-a}{2} $ and its centre lies at the arithmetic mean of the two resistance values 
 
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
