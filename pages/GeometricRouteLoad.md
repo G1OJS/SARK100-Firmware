@@ -26,13 +26,9 @@ $$R_a = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}$$ and $$R_b=\frac{1+\v
 
 where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down.
 
-The radius of this circle is $ \frac{b-a}{2} $ and its centre lies at the arithmetic mean of the two resistance values, which is
-
-$$R=\frac{}{2}$$ 
-
-
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
 
+Now, we know the distance from the origin to our load impedance is $\vert Z_L \vert$, and we also now know that the distance from the origin to the centre of the $\vert \Gamma \vert$ circle is $\frac{R_a+R_b}{2}$, and the distance from there to the load impedance is simply the radius of the $\vert \Gamma \vert$ circle. So we have the lengths of all three sides of a triangle:
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig3.PNG'>
 
