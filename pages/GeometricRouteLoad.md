@@ -71,10 +71,17 @@ $$X_L^2 = \frac{(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\ve
 
 or
 
-$$X_L = \frac{\sqrt{(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert)}}{S+\frac{1}{S}} $$
+$$X_L = \frac{\sqrt{(S+\vert Z_L \vert)(S-\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\vert Z_L \vert+\frac{1}{S})}}{S+\frac{1}{S}} $$
 
-This equation gives $X_L^2$ in terms of only $\vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L^2 in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
+This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
 
+As we have $X_L$ and $ \vert Z_L \vert$, noting that trivially:
+
+$$R_L=\sqrt{ \vert Z_L \vert-X_L}$$
+
+gives us the complex load impedance in terms of $\vert Z_L \vert$ and $\vert \Gamma \vert$.
+
+All that remains is to determine the sign of $X_L$ !
 
 
 
