@@ -61,12 +61,13 @@ And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$,
 
 $$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
 
-Finally, we can write the length A in terms of VSWR:
+Finally, we can write the length 2A in terms of VSWR:
 
-$$A=\frac{R_b+R_a}{2}=S+\frac{1}{S}$$
+$$2A=\frac{R_b+R_a}=S+\frac{1}{S}$$
 
 So 
 
+$$X_L^2 = \frac{(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert)}{(S+\frac{1}{S})^2} $$
 
 
 This equation gives $X_L^2$ in terms of only $\vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L^2 in terms of only $\vert Z_L \vert$ and $\vert \Gamma \vert$.
