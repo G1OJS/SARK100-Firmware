@@ -15,13 +15,13 @@ Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on th
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModZ.PNG'>
 
 ## Magnitude of the Reflection Coefficient
-Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs. These are, if we write VSWR as S: $R_a = S/Z_0$ and $R_b = Z_0S$ . These resistances are in inverse (reciprocal) proportion to each-other. So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR.
+Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs. These are, if we write VSWR as S: $R_a = S/Z_0$ and $R_b = Z_0S $ . These resistances are in inverse (reciprocal) proportion to each-other. So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR.
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModGamma.PNG'>
 
 <p>In units of normalised impedance </p>
 
-$$ \vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
+$$ | \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
 
 <p>We can use the equation for S to write our two resistances $R_a$ and $R_b$ in terms of our measured  $\vert \Gamma \vert$:</p>
 
