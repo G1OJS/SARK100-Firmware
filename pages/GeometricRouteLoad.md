@@ -32,5 +32,11 @@ Now, we know the distance from the origin to our load impedance is $\vert Z_L \v
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig3.PNG'>
 
+# Solving for X
+Now let's forget the circles and concentrate on the triangle. The lengths of the three sides are:
+|   |   |   |
+|---|---|---|
+|$\vert Z_L \vert$| $A=\frac{R_b+R_a}{2}$ |$B=\frac{R_b-R_a}{2}$ |
+
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig4.PNG'>
