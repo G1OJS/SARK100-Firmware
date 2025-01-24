@@ -41,7 +41,7 @@ Now, the area of this triangle is related to the reactance of the load, because 
 
 $$area=\frac{1}{2}AX_L$$
 
-We can find also find the area of this triangle from the three known side lengths using [Heron's formula](https://en.wikipedia.org/wiki/Heron%27s_formula). One way to write this formula is:
+We can also find the area of this triangle from the three known side lengths using [Heron's formula](https://en.wikipedia.org/wiki/Heron%27s_formula). One way to write this formula is:
 
 $$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
 
