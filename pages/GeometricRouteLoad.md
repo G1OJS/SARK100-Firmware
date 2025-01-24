@@ -19,7 +19,7 @@ Next, let's add a circle capturing all points that have the same magnitude of **
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModGamma.PNG'>
 
-<p>In normalised units ( $Z_0$ = 1 Ohm ), </p>
+<p>In normalised units - $ Z_0 $ = 1 Ohm - , </p>
 
 $$ \vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
 
@@ -62,14 +62,14 @@ Finally, we can write the length 2A in terms of VSWR:
 
 $$2A=R_b+R_a=S+\frac{1}{S}$$
 
-So 
+<p>So </p>
 
-$$X_L^2 = \frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
+$$ X_L^2 =\frac{(S+Z)(Z-\frac{1}{S})(\frac{1}{S}+Z)(S-Z)}{(S+\frac{1}{S})^2} $$
 
-or
+<p>or</p>
 
 <div class='HighlightBox'>
-$$X_L = (\frac{1}{S+\frac{1}{S}})\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
+$$X_L = \frac{1}{S+\frac{1}{S}}\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
 </div>
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
