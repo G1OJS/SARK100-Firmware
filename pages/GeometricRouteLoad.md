@@ -61,7 +61,7 @@ Looking back to the diagram showing the triangle and the circles, we can easily 
 
 And, we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so:
 
-$$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(+\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
+$$X_L^2 = \frac{1}{4A^2}(S+\vert Z_L \vert)(\vert Z_L \vert-\frac{1}{S})(\frac{1}{S}+\vert Z_L \vert)(S-\vert Z_L \vert) $$
 
 Finally, we can write the length A in terms of VSWR:
 
