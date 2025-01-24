@@ -32,7 +32,7 @@ Now, we know the distance from the origin to our load impedance is $\vert Z_L \v
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig3.PNG'>
 
-# Solving for X
+# The Triangle
 Now let's forget the circles and concentrate on the triangle. The lengths of the three sides are:
 |   |   |   |
 |---|---|---|
@@ -48,7 +48,6 @@ $$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
 
 Whare a,b and c are the three lengths of the triangle's sides. We can use this together with our equation for area using $X_L$ to write down an expression for $X_L^2$. 
 
-#### Step 1
 Let's substitute our known lengths for a,b,c, and get rid of the square root by squaring both expressions for area above to get:
 
 $$area^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) = \frac{1}{4}A^2X_L^2$$
@@ -57,10 +56,10 @@ so
 
 $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
-#### Step 2
+# Final Steps
 Look back to the diagram showing the triangle and the circles. We can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$ !
 
-So, can write the equation for $X_L^2$ above using the expressions we had for $R_a$ and $R_b$:
+So, can write the equation for $X_L^2$ above using the expressions we had above giving $R_a$ and $R_b$ in terms of $\vert \Gamma \vert$:
 
 $$X_L^2 = \frac{1}{4A^2}(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}+\vert Z_L \vert)(\frac{\vert \Gamma \vert-1}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}+\vert Z_L \vert)(\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}-\vert Z_L \vert) $$
 
