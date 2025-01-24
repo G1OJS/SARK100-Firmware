@@ -35,7 +35,9 @@ Now, we know the distance from the origin to our load impedance is $\vert Z_L \v
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteTriangle.PNG'>
 
-Now, the area of this triangle is related to the reactance of the load, because $X_L$ is simply the height of the triangle using side $A$ as the base: $area=\frac{1}{2}AX_L$.
+Now, the area of this triangle is related to the reactance of the load, because $X_L$ is simply the height of the triangle using side $A$ as the base: 
+
+$$area=\frac{1}{2}AX_L$$
 
 We can find also find the area of this triangle from the three known side lengths using [Heron's formula](https://en.wikipedia.org/wiki/Heron%27s_formula). One way to write this formula is:
 
