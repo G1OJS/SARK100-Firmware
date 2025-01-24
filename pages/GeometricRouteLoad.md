@@ -6,7 +6,7 @@ permalink: /GeometricRouteToLoadImpedance/
 ---
 
 # Introduction
-Calculating the complex load impedance from $\vert Z_L \vert$ and $\vert \Gamma \vert$ requires quite a bit of algebraic manipulation if done from scratch. The accademic level required is roughly that at which people learn about quadratic equations, but it is easy to drop a minus sign or lose track of the route to the solution. This page presents a graphical / geometric approach, which might be easier to follow.
+Calculating the complex load impedance from the quantities measured by a scalar network analyser or RF bridge, i.e. the magnitude of the impedance $\vert Z_L \vert$ and the magnitude of the complex reflection coefficient $\vert \Gamma \vert$ , requires quite a bit of algebraic manipulation if done from scratch. The accademic level required is roughly that at which people learn about quadratic equations, but it is easy to drop a minus sign or lose track of the route to the solution. This page presents a graphical / geometric approach, which might be easier to follow.
 
 # The Geometry
 ## Magnitude of the Load Impedance
