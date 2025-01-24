@@ -22,12 +22,13 @@ $$\vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \ver
 
 So, we can add a circle cutting through our load impedance and the two resistance values with the same VSWR. Let's call these resistance values $R_a$ and $R_b$, and note that in normalised units $R_a = \frac{1}{S}$ and, simply, $R_b = S$. Using the equation for S gives these two resistances in terms of our measured  $\vert \Gamma \vert$:
 
-$$R_a = \frac{Z_L+1}{Z_L-1}$$ and = $$R_b=\frac{Z_L-1}{Z_L+1}$$ 
+$$R_a = \frac{Z_L+1}{Z_L-1}$$ and $$R_b=\frac{Z_L-1}{Z_L+1}$$ 
 
 where we've got the reciprocal value for $R_a$ by simply flipping the usual fraction for VSWR upside down.
 
+The radius of this circle is $ \frac{b-a}{2} $ and its centre lies at the arithmetic mean of the two resistance values, which is
 
-The radius of this circle is $\frac{b-a}{2} $ and its centre lies at the arithmetic mean of the two resistance values 
+$$R=\frac{\frac{Z_L+1}{Z_L-1}+\frac{Z_L-1}{Z_L+1}}{2}$$ 
 
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
