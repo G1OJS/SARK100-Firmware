@@ -16,9 +16,9 @@ Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on th
 
 Next, let's add a circle capturing all points that have the same magnitude of **reflection coefficient**,  $\vert \Gamma \vert$, as our load. This circle clearly cuts through the point representing our load, but what other points? How do we find the unique circle that we need? The answer is quite straightforward; we know that it must cross the resistance axis at the place where a purely resistive load results in the the same magnitude of reflection coefficient, or same VSWR, as our load. There are two places where this occurs: $R = SZ_0$ and $R = Z_0 / S$ if we write VSWR as S. 
 
-If we now think in terms of normalised impedances (or Z_0 = 1 Ohm) we recall that:
+If we now think in terms of normalised impedances (or $Z_0$ = 1 Ohm) we recall that:
 
-$$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$
+$$\vert \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$
 
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig2.PNG'>
