@@ -37,7 +37,7 @@ Now, we know the distance from the origin to our load impedance is $\vert Z_L \v
 # The Triangle
 Now let's forget the circles and concentrate on the triangle. 
 
-<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig4.PNG'>
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig4b.PNG'>
 
 Now, the area of this triangle is related to the reactance of the load, because $X_L$ is simply the height of the triangle using side $A$ as the base: $area=\frac{1}{2}AX_L$.
 
