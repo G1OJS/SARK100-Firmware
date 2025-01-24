@@ -198,7 +198,6 @@ R and X can be calculated directly from the bridge voltage measurements as
 <p>Another alternative is to calculate the load reactance first, then get the resistance from the reactance and impedance magnitude, using the following equation, which is derived [here](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/GeometricRouteLoad):</p>
 
 $$X_L = (\frac{1}{S+\frac{1}{S}})\sqrt{(S+Z)(S-Z)(Z-\frac{1}{S})(Z+\frac{1}{S})}$$
-</div>
 
 This equation gives $X_L$ in terms of only $ \vert Z_L \vert$ and VSWR, and with $S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$ we have X_L in terms of only $\vert$ $Z_L$ $\vert$ and $\vert \Gamma \vert$.
 
