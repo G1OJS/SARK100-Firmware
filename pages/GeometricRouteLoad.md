@@ -53,11 +53,16 @@ Whare a,b and c are the three lengths of the triangle's sides.
 
 So **we can use the triangle's area to link mod(Z) and mod(Gamma) to our load reactance**. Let's substitute our known lengths for a,b,c, and get rid of the square root by squaring both expressions for area above to get:
 
+<div class='equation'>
 $$\frac{1}{4}A^2X_L^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
+</div>
+<div style='clear:both;'></div>
 
 so 
-
+<div class='equation'>
 $$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
+</div>
+<div style='clear:both;'></div>
 
 # Final Steps
 Looking back to the diagram showing the triangle and the circles, we can easily see that $A+B$ is $R_b$, and $A-B$ is $R_a$, and we've already noticed that $R_b$ is the VSWR and $R_a$ is $\frac{1}{VSWR}$, so, writing VSWR as S and $\vert$ $Z_L$ $\vert$ as Z :
