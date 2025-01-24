@@ -21,7 +21,9 @@ Next, let's add a circle capturing all points that have the same magnitude of **
 
 <p>In units of normalised impedance </p>
 
+<div class='equation'>
 $$ | \Gamma \vert = \frac{Z_L-1}{Z_L+1}$$ and $$S = \frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert} $$
+</div>
 
 <p>We can use the equation for S to write our two resistances $R_a$ and $R_b$ in terms of our measured  $\vert \Gamma \vert$:</p>
 
