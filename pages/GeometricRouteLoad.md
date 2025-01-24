@@ -10,7 +10,7 @@ Calculating the complex load impedance from the quantities measured by a scalar 
 
 # The Geometry
 ## Magnitude of the Load Impedance
-Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on the complex impedance plane, see diagram below. We can easily add a circle that captures all impedance values that have the same magnitude $\vert Z \vert$ as our unknown load. This circle crosses the real (resistance) axis where $R = \vert Z_L \vert$, although we don't need to remember this value for the steps that follow.
+Firstly, we set up the problem by plotting an unknown load impedance $Z_L$ on the complex impedance plane, see diagram below. We can easily add a circle that captures all impedance values that have the same magnitude $\vert Z \vert$ as our unknown load. This circle crosses the real, or resistance, axis where $R = \vert Z_L \vert$, although we don't need to remember this value for the steps that follow.
 
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteModZ.PNG'>
 
