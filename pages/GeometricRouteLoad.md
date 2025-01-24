@@ -38,5 +38,22 @@ Now let's forget the circles and concentrate on the triangle. The lengths of the
 |---|---|---|
 |$\vert Z_L \vert$| $A=\frac{R_b+R_a}{2}$ |$B=\frac{R_b-R_a}{2}$ |
 
-
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteFig4.PNG'>
+
+Now, the area of this triangle is related to the reactance of the load, because $X_L$ is simply the height of the triangle using side $A$ as the base: $area=\frac{1}{2}AX_L$.
+
+We can find also find the area of this triangle from the three known side lengths using [Heron's formula](https://en.wikipedia.org/wiki/Heron%27s_formula). One way to write this formula is:
+
+$$area = \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}$$
+
+We can use this together with our equation for area using $X_L$ to write down an expression for $X_L^2$. It's convenient to square both formulas to get:
+
+$$area^2 = \frac{\frac{1}{16}(a+b+c)(b+c-a)(a+c-b)(a+b-c)}{\frac{1}{4}AX_L}$$
+
+
+
+
+We can write $R_b+R_a$ and $R_b-R_a$ in terms of $\vert \Gamma \vert$, and the expressions simplify to:
+
+$$A = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}$$ and $$R_b=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
+
