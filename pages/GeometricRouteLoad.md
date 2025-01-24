@@ -55,11 +55,13 @@ $$area^2 = \frac{1}{16}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L 
 
 so
 
-$$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) = X_L$$
+$$X_L^2 = \frac{1}{4A^2}(A+B+\vert Z_L \vert)(B-A+\vert Z_L \vert)(A-B+\vert Z_L \vert)(A+B-\vert Z_L \vert) $$
 
 #### Step 2
 
-We can write $R_b+R_a$ and $R_b-R_a$ in terms of $\vert \Gamma \vert$, and the expressions simplify to:
+We can write $A+B$ and $A_B$ in terms of $\vert \Gamma \vert$ as follows:
+
+$$A+B = 
 
 $$A = \frac{1-\vert \Gamma \vert}{1+\vert \Gamma \vert}$$ and $$R_b=\frac{1+\vert \Gamma \vert}{1-\vert \Gamma \vert}$$ 
 
