@@ -94,7 +94,7 @@ The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various loa
 # Visualiser
 This is currently bare bones but here is a clickable visualiser for the geometry.
 
-<canvas id="graph" width="600" height="600" style="border: 2px solid black;"></canvas>
+<canvas id="graph" width="300" height="300" style="border: 2px solid black;"></canvas>
 <script src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/pages/modZmodGamma.js'></script>
 
 
