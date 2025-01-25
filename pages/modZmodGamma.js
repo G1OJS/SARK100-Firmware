@@ -104,6 +104,9 @@
       drawCircle(circle_modG);
     }
 
+
+// might beed to put the content in funcctions to economically link these to additional events
+// for ios: ontouchstart - a finger goes down. ontouchmove - a finger moves. ontouchend - a finger goes up.
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
       const { x, y } = toGraph(e.offsetX, e.offsetY);
