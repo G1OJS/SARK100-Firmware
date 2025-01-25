@@ -92,7 +92,7 @@
     function isNear(point, x, y) {
       const dx = point.x - x;
       const dy = point.y - y;
-      return Math.sqrt(dx * dx + dy * dy) < 10; // Threshold
+      return Math.sqrt(dx * dx + dy * dy) < 100; // Threshold
     }
 
     // Main draw function
@@ -117,7 +117,7 @@
         const { x, y } = toGraph(e.offsetX, e.offsetY);
         dragging.x = x;
         dragging.y = y;
-				Z = {x,y};
+	Z = {x,y};
         calculateAndDraw();
       }
     });
