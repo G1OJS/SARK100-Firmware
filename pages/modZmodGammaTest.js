@@ -109,6 +109,7 @@
     // Handle touch events
     canvas.addEventListener('touchstart', (e) => {
 	dragging=true;
+	    debug.innerText ="Drag";
     });
     // Handle touch events
     canvas.addEventListener('touchend', (e) => {
