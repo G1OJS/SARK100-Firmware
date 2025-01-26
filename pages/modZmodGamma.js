@@ -139,5 +139,9 @@
       }
     });
 
+    canvas.addEventListener('mouseup', (e) => {
+	dragging=null;
+    });
+
     draw();
   
