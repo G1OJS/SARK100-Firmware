@@ -16,7 +16,6 @@
     let circle_modG = { x: 150, y: 0, r: 1 }; // Second circle
     let dragging = null;
 	  calculateAndDraw();
-    
 	  function mod(Z) {
       return Math.sqrt(Z.x * Z.x + Z.y * Z.y)     
     }
@@ -62,8 +61,7 @@
     function calculateAndDraw() {
     	let modZ = mod(Z);
       let modG = Math.sqrt((Z.x-Z0.x)*(Z.x-Z0.x)+Z.y*Z.y)
-      					/ Math.sqrt((Z.x+Z0.x)*(Z.x+Z0.x)+Z.y*Z.y) ;
-
+      		/ Math.sqrt((Z.x+Z0.x)*(Z.x+Z0.x)+Z.y*Z.y) ;
       let S=(1+modG)/(1-modG);
       circle_modG.x=Z0.x*(S+1/S)/2;
       circle_modG.r=Z0.x*(S-1/S)/2;
@@ -81,7 +79,7 @@
         ctx.arc(x, y, 5, 0, 2 * Math.PI);
         ctx.fill();
         ctx.font = '20px Arial';
-			  ctx.fillText("ZL", x-10, y+25);
+	ctx.fillText("ZL", x-10, y+25);
         
         var { x, y } = toCanvas(Z.x, -Z.y);
         ctx.fillStyle = 'blue';
@@ -109,7 +107,7 @@
     // Handle touch events
     canvas.addEventListener('touchstart', (e) => {
 	dragging=true;
-	    debug.innerText ="touchstart";
+	//debug.innerText ="touchstart";
     });
     // Handle touch events
     canvas.addEventListener('touchend', (e) => {
@@ -120,29 +118,29 @@
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
 	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
-	debug.innerText = `${Z.x}, ${Z.y}`;
+	//debug.innerText = `${Z.x}, ${Z.y}`;
         calculateAndDraw();
       }
     });
 
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
-	     debug.innerText ="mousedown";
+      //debug.innerText ="mousedown";
       Z = toGraph(e.offsetX, e.offsetY);
-      dragging=true;
+      if(dragging) {dragging=null} else {dragging=true};
       calculateAndDraw();
     });
 
     canvas.addEventListener('mousemove', (e) => {
       if (dragging) {
 	Z = toGraph(e.offsetX, e.offsetY);
-	debug.innerText = `${e.offsetX}, ${e.offsetY}`;
+	//debug.innerText = `${e.offsetX}, ${e.offsetY}`;
         calculateAndDraw();
       }
     });
 
     canvas.addEventListener('mouseup', () => {
-	    debug.innerText ="mouseup";
+	// debug.innerText ="mouseup";
 //      dragging = null;
     });
 
