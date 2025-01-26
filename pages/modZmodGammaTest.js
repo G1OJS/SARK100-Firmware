@@ -1,6 +1,6 @@
- const canvas = document.getElementById('impedance');
+    const canvas = document.getElementById('impedance');
     const smith = document.getElementById('smith');
-    const ctx = impedance.getContext('2d');
+    const ctx = canvas.getContext('2d');
     const stx = smith.getContext('2d');
     const width = canvas.width;
     const height = canvas.height;
@@ -115,7 +115,7 @@
     // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
-				Z = toGraph(e.offsetX, e.offsetY);
+	Z = toGraph(e.offsetX, e.offsetY);
         calculateAndDraw();
       }
     });
@@ -124,7 +124,7 @@
     canvas.addEventListener('touchend', (e) => {
       dragging = null;
     });
-
+/*
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
       Z = toGraph(e.offsetX, e.offsetY);
@@ -134,7 +134,7 @@
 
     canvas.addEventListener('mousemove', (e) => {
       if (dragging) {
-				Z = toGraph(e.offsetX, e.offsetY);
+	Z = toGraph(e.offsetX, e.offsetY);
         calculateAndDraw();
       }
     });
@@ -142,6 +142,6 @@
     canvas.addEventListener('mouseup', () => {
       dragging = null;
     });
-
+*/
     draw();
   
