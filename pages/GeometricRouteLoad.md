@@ -94,8 +94,7 @@ The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various loa
 # Visualiser
 This is currently bare bones but here is a clickable visualiser for the geometry.
 
-- Mouse: Click to grab and move the impedance dot, click to release
-- Touch Screen: drag to move 
+Click / touch anywhere in the visual to set the red impedance point, or click / touch on it and drag it.
 
 <canvas id="impedance" width="300" height="300"></canvas>
 <canvas id="smith" width="300" height="300"></canvas>
