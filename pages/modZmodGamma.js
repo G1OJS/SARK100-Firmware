@@ -106,22 +106,17 @@
     }
     
     // Handle touch events
-//    canvas.addEventListener('touchstart', (e) => {
-//	dragging=true;
-//	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY - height/2);
-//	calculateAndDraw();
-//	//debug.innerText ="touchstart";
-//    });
-    // Handle touch events
+    canvas.addEventListener('touchstart', (e) => {
+	dragging=true;
+	//debug.innerText ="touchstart";
+    });
     canvas.addEventListener('touchend', (e) => {
 	dragging=null;
     });
-
-    // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
       e.preventDefault();
       if (dragging) {
-	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY  - height/2);
+	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY );
 	//debug.innerText = `${Z.x}, ${Z.y}`;
         calculateAndDraw();
       }
@@ -142,11 +137,6 @@
         calculateAndDraw();
       }
     });
-
-//    canvas.addEventListener('mouseup', () => {
-//	// debug.innerText ="mouseup";
-//      dragging = null;
-//    });
 
     draw();
   
