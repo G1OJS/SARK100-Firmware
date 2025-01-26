@@ -117,6 +117,7 @@
 
     // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
+      e.preventDefault();
       if (dragging) {
 	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
 	//debug.innerText = `${Z.x}, ${Z.y}`;
@@ -140,10 +141,10 @@
       }
     });
 
-    canvas.addEventListener('mouseup', () => {
-	// debug.innerText ="mouseup";
+//    canvas.addEventListener('mouseup', () => {
+//	// debug.innerText ="mouseup";
 //      dragging = null;
-    });
+//    });
 
     draw();
   
