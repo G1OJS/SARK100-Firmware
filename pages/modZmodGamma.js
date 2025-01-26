@@ -108,6 +108,8 @@
     // Handle touch events
     canvas.addEventListener('touchstart', (e) => {
 	dragging=true;
+	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
+	calculateAndDraw();
 	//debug.innerText ="touchstart";
     });
     // Handle touch events
