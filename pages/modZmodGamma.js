@@ -116,7 +116,8 @@
     canvas.addEventListener('touchmove', (e) => {
       e.preventDefault();
       if (dragging) {
-	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY );
+	let rect = impedance.getBoundingClientRect();
+	Z = toGraph(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top );
 	//debug.innerText = `${Z.x}, ${Z.y}`;
         calculateAndDraw();
       }
