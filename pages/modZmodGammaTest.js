@@ -109,7 +109,7 @@
     // Handle touch events
     canvas.addEventListener('touchstart', (e) => {
 	dragging=true;
-	    debug.innerText ="Drag";
+	    debug.innerText ="touchstart";
     });
     // Handle touch events
     canvas.addEventListener('touchend', (e) => {
@@ -127,6 +127,7 @@
 
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
+	     debug.innerText ="mousedown";
       Z = toGraph(e.offsetX, e.offsetY);
       dragging=true;
       calculateAndDraw();
@@ -141,7 +142,8 @@
     });
 
     canvas.addEventListener('mouseup', () => {
-      dragging = null;
+	    debug.innerText ="mouseup";
+//      dragging = null;
     });
 
     draw();
