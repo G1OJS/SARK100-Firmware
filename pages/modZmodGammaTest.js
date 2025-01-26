@@ -41,14 +41,18 @@ const canvas = document.getElementById('impedance');
     // Draw the axes
     function drawAxes() {
       ctx.strokeStyle = '#aaa';
+      ctx.font = '20px Arial';
+	  ctx.fillStyle='black'
+    
       ctx.beginPath();
       ctx.moveTo(0, origin.y);
       ctx.lineTo(width, origin.y); // X-axis
       ctx.moveTo(origin.x, 0);
       ctx.lineTo(origin.x, height); // Y-axis
       ctx.stroke();
+	  ctx.fillText("R", width-10, 25);
+	  ctx.fillText("X", 25, height);
       
-      ctx.fillStyle = 'black';
       ctx.beginPath();
       ctx.arc(Z0.x, Z0.y, 5, 0, 2 * Math.PI);
       ctx.fill();
