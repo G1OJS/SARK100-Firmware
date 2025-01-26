@@ -1,4 +1,4 @@
-    const canvas = document.getElementById('impedance');
+const canvas = document.getElementById('impedance');
     const smith = document.getElementById('smith');
     const debug = document.getElementById('debug');
     const ctx = canvas.getContext('2d');
@@ -109,15 +109,14 @@
 	dragging=true;
 	//debug.innerText ="touchstart";
     });
-    // Handle touch events
     canvas.addEventListener('touchend', (e) => {
 	dragging=null;
     });
-
-    // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
+      e.preventDefault();
       if (dragging) {
-	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
+	let rect = impedance.getBoundingClientRect();
+	Z = toGraph(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top );
 	//debug.innerText = `${Z.x}, ${Z.y}`;
         calculateAndDraw();
       }
@@ -139,10 +138,8 @@
       }
     });
 
-    canvas.addEventListener('mouseup', () => {
-	// debug.innerText ="mouseup";
-//      dragging = null;
+    canvas.addEventListener('mouseup', (e) => {
+	dragging=null;
     });
 
     draw();
-  
