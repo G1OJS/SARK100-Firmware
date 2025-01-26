@@ -111,7 +111,7 @@
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
 	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
-	debug.innerText = `${e.touches[0].clientX}, ${e.touches[0].clientY}`;
+//	debug.innerText = `${e.touches[0].clientX}, ${e.touches[0].clientY}`;
         calculateAndDraw();
       }
     });
