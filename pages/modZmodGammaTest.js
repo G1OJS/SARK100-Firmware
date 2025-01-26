@@ -109,7 +109,7 @@
     // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
-	Z = toGraph(e.offsetX, e.offsetY);
+	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
         calculateAndDraw();
       }
     });
