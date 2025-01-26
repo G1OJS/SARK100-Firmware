@@ -105,26 +105,15 @@
       drawCircle(circle_modG);
     }
     
-    // Handle touch events
-    canvas.addEventListener('touchstart', (e) => {
-      Z = toGraph(e.offsetX, e.offsetY);
-      dragging=true;
-      calculateAndDraw();
-    });
     
     // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
-//      if (dragging) {
+      if (dragging) {
 	Z = toGraph(e.offsetX, e.offsetY);
         calculateAndDraw();
-//      }
+      }
     });
-    
-    // Handle touch events
-    canvas.addEventListener('touchend', (e) => {
-      dragging = null;
-    });
-/*
+
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
       Z = toGraph(e.offsetX, e.offsetY);
@@ -142,6 +131,6 @@
     canvas.addEventListener('mouseup', () => {
       dragging = null;
     });
-*/
+
     draw();
   
