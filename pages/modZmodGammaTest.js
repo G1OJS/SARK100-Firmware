@@ -50,8 +50,8 @@ const canvas = document.getElementById('impedance');
       ctx.moveTo(origin.x, 0);
       ctx.lineTo(origin.x, height); // Y-axis
       ctx.stroke();
-	  ctx.fillText("R", width-10, 25);
-	  ctx.fillText("X", 25, height);
+	  ctx.fillText("R", 10, 25);
+	  ctx.fillText("X", 25, 0);
       
       ctx.beginPath();
       ctx.arc(Z0.x, Z0.y, 5, 0, 2 * Math.PI);
