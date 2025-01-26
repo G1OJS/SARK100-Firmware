@@ -106,11 +106,19 @@
       drawCircle(circle_modG);
     }
     
-    
+    // Handle touch events
+    canvas.addEventListener('touchstart', (e) => {
+	dragging=true;
+    });
+    // Handle touch events
+    canvas.addEventListener('touchend', (e) => {
+	dragging=null;
+    });
+
     // Handle touch events
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
-//	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
+	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
 	debug.innerText = `${Z.x}, ${Z.y}`;
         calculateAndDraw();
       }
