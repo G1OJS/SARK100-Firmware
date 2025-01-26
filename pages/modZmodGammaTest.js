@@ -126,6 +126,7 @@
     canvas.addEventListener('mousemove', (e) => {
       if (dragging) {
 	Z = toGraph(e.offsetX, e.offsetY);
+	debug.innerText = `${e.offsetX}, ${e.offsetY}`;
         calculateAndDraw();
       }
     });
