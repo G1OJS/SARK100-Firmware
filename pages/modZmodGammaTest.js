@@ -1,6 +1,6 @@
  const canvas = document.getElementById('impedance');
     const smith = document.getElementById('smith');
-    const ctx = canvas.getContext('2d');
+    const ctx = impedance.getContext('2d');
     const stx = smith.getContext('2d');
     const width = canvas.width;
     const height = canvas.height;
