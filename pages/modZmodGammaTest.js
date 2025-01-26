@@ -1,5 +1,6 @@
     const canvas = document.getElementById('impedance');
     const smith = document.getElementById('smith');
+    const smith = document.getElementById('debug');
     const ctx = canvas.getContext('2d');
     const stx = smith.getContext('2d');
     const width = canvas.width;
@@ -110,6 +111,7 @@
     canvas.addEventListener('touchmove', (e) => {
       if (dragging) {
 	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
+	debug.innerText = `${e.touches[0].clientX}, ${e.touches[0].clientY}`;
         calculateAndDraw();
       }
     });
