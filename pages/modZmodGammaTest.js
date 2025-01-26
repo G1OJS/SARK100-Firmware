@@ -1,4 +1,5 @@
-const canvas = document.getElementById('impedance');
+
+    const canvas = document.getElementById('impedance');
     const smith = document.getElementById('smith');
     const debug = document.getElementById('debug');
     const ctx = canvas.getContext('2d');
@@ -15,8 +16,10 @@ const canvas = document.getElementById('impedance');
     let circle_modZ = { x: 0, y: 0, r: 1 }; // Circle at origin
     let circle_modG = { x: 150, y: 0, r: 1 }; // Second circle
     let dragging = null;
-	  calculateAndDraw();
-	  function mod(Z) {
+	calculateAndDraw();
+    
+    
+	function mod(Z) {
       return Math.sqrt(Z.x * Z.x + Z.y * Z.y)     
     }
 
