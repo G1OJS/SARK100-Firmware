@@ -1,6 +1,9 @@
 
-    const canvas = document.getElementById('graph');
+    const canvas = document.getElementById('impedance');
+    const smith = document.getElementById('smith');
+    const debug = document.getElementById('debug');
     const ctx = canvas.getContext('2d');
+    const stx = smith.getContext('2d');
     const width = canvas.width;
     const height = canvas.height;
 
@@ -14,7 +17,6 @@
     let circle_modG = { x: 150, y: 0, r: 1 }; // Second circle
     let dragging = null;
 	  calculateAndDraw();
-    
 	  function mod(Z) {
       return Math.sqrt(Z.x * Z.x + Z.y * Z.y)     
     }
@@ -60,8 +62,7 @@
     function calculateAndDraw() {
     	let modZ = mod(Z);
       let modG = Math.sqrt((Z.x-Z0.x)*(Z.x-Z0.x)+Z.y*Z.y)
-      					/ Math.sqrt((Z.x+Z0.x)*(Z.x+Z0.x)+Z.y*Z.y) ;
-
+      		/ Math.sqrt((Z.x+Z0.x)*(Z.x+Z0.x)+Z.y*Z.y) ;
       let S=(1+modG)/(1-modG);
       circle_modG.x=Z0.x*(S+1/S)/2;
       circle_modG.r=Z0.x*(S-1/S)/2;
@@ -79,7 +80,7 @@
         ctx.arc(x, y, 5, 0, 2 * Math.PI);
         ctx.fill();
         ctx.font = '20px Arial';
-			  ctx.fillText("ZL", x-10, y+25);
+	ctx.fillText("ZL", x-10, y+25);
         
         var { x, y } = toCanvas(Z.x, -Z.y);
         ctx.fillStyle = 'blue';
@@ -92,7 +93,7 @@
     function isNear(point, x, y) {
       const dx = point.x - x;
       const dy = point.y - y;
-      return Math.sqrt(dx * dx + dy * dy) < 100; // Threshold
+      return Math.sqrt(dx * dx + dy * dy) < 10; // Threshold
     }
 
     // Main draw function
@@ -103,31 +104,46 @@
       drawLoadImpedance(Z);
       drawCircle(circle_modG);
     }
+    
+    // Handle touch events
+    canvas.addEventListener('touchstart', (e) => {
+	dragging=true;
+	//debug.innerText ="touchstart";
+    });
+    // Handle touch events
+    canvas.addEventListener('touchend', (e) => {
+	dragging=null;
+    });
 
+    // Handle touch events
+    canvas.addEventListener('touchmove', (e) => {
+      if (dragging) {
+	Z = toGraph(e.touches[0].clientX, e.touches[0].clientY);
+	//debug.innerText = `${Z.x}, ${Z.y}`;
+        calculateAndDraw();
+      }
+    });
 
-// might beed to put the content in funcctions to economically link these to additional events
-// for ios: ontouchstart - a finger goes down. ontouchmove - a finger moves. ontouchend - a finger goes up.
     // Handle mouse events
     canvas.addEventListener('mousedown', (e) => {
-      const { x, y } = toGraph(e.offsetX, e.offsetY);
-      Z = {x,y};
-      dragging=true;
+      //debug.innerText ="mousedown";
+      Z = toGraph(e.offsetX, e.offsetY);
+      if(dragging) {dragging=null} else {dragging=true};
       calculateAndDraw();
     });
 
     canvas.addEventListener('mousemove', (e) => {
       if (dragging) {
-        const { x, y } = toGraph(e.offsetX, e.offsetY);
-        dragging.x = x;
-        dragging.y = y;
-	Z = {x,y};
+	Z = toGraph(e.offsetX, e.offsetY);
+	//debug.innerText = `${e.offsetX}, ${e.offsetY}`;
         calculateAndDraw();
       }
     });
 
     canvas.addEventListener('mouseup', () => {
-      dragging = null;
+	// debug.innerText ="mouseup";
+//      dragging = null;
     });
 
     draw();
-
+  
