@@ -1,3 +1,4 @@
+
 // to do list
 
 // add legend for line colours
@@ -111,7 +112,7 @@ function init_canvas(canvasId){
     
     if (dragging) {
       let rect = canvasId.getBoundingClientRect();
-      Z=canvasId.getZ(e.touches[0].clientX / scale, 1+ (rect.top-e.touches[0].clientY)/ scale );
+      Z=canvasId.getZ(( e.touches[0].clientX - rect.left) / scale,  1-(e.touches[0].clientY-rect.top)/ scale );
                // debug.innerText = `${Z.x} ${Z.y}`;
       Draw(impXY,Z);
       Draw(smith,Z);
@@ -120,6 +121,7 @@ function init_canvas(canvasId){
 
   // Handle mouse events
   canvasId.addEventListener("mousedown", (e) => {
+    let rect = canvasId.getBoundingClientRect();
     Z=canvasId.getZ(e.offsetX/ scale, 1-e.offsetY/ scale );
     dragging = true;
     Draw(impXY,Z);
@@ -128,7 +130,7 @@ function init_canvas(canvasId){
 
   canvasId.addEventListener("mousemove", (e) => {
     if (dragging) {
-      Z=canvasId.getZ(e.offsetX / scale, 1-e.offsetY/ scale );
+      let rect = canvasId.getBoundingClientRect();                 Z=canvasId.getZ(e.offsetX/ scale, 1-e.offsetY/ scale );
       Draw(impXY,Z);
       Draw(smith,Z);    
     }
@@ -222,4 +224,3 @@ function drawText(canvasId,text,x,y){
   let ctx=canvasId.getContext('2d');
   ctx.fillText(text,x,y);
 }
-
