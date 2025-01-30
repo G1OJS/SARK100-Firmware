@@ -221,3 +221,5 @@ function drawMarker(canvasId, x, y, label) {
 function drawText(canvasId,text,x,y){
   let ctx=canvasId.getContext('2d');
   ctx.fillText(text,x,y);
+}
+
