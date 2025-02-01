@@ -94,7 +94,7 @@ The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various loa
 # Visualiser
 I wrote this visualiser to support this page, hosted on codepen:
 
-<p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="pvzqyod" data-pen-title="ModZmodGamma" data-user="DrAlan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="800" data-default-tab="result" data-slug-hash="pvzqyod" data-pen-title="ModZmodGamma" data-user="DrAlan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/DrAlan/pen/pvzqyod">
   ModZmodGamma</a> by Alan (<a href="https://codepen.io/DrAlan">@DrAlan</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
