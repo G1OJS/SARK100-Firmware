@@ -92,9 +92,7 @@ The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various loa
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/GeometricRouteExamples.PNG'>
 
 # Visualiser
-This is currently bare bones but here is a clickable visualiser for the geometry.
-
-Click / touch anywhere in the visual to set the red impedance point, or click / touch on it and drag it.
+I wrote this visualiser to support this page, hosted on codepen:
 
 <p class="codepen" data-height="700" data-default-tab="result" data-slug-hash="pvzqyod" data-pen-title="ModZmodGamma" data-user="DrAlan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/DrAlan/pen/pvzqyod">
