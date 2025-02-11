@@ -94,7 +94,7 @@ The table below shows $\vert Z_L \vert$ and $\vert \Gamma \vert$ for various loa
 
 # Visualiser
 <section id="visualiser">
-I wrote this visualiser to support this page, hosted on codepen:
+I wrote this visualiser to support this page, hosted on codepen. You can click and drag (or touch and drag) the load impedance point and see how the circles behave. Note that when the load is close to being purely resistive, any measurement errors resulting in a change to the relative radii of the two circles will produce a larger error in the load reactance than for load impedances away from the resistance axis. This seems to be a fundamental problem for this type of impedance measurement approach, tbc.
 
 <p class="codepen" data-height="800" data-default-tab="result" data-slug-hash="pvzqyod" data-pen-title="ModZmodGamma" data-user="DrAlan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/DrAlan/pen/pvzqyod">
