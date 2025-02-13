@@ -1,9 +1,10 @@
 
 ![2025-01-05 Welcome screen crop](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Welcome%20screen%20crop.png)
 
-## Key benefits of the latest version (G1OJS V02)
+## Key benefits of the latest version (G1OJS V03)
 - 60m band now included
 - Numeric power meter (mV and dBm) replaces the bar graph
+- VFO mode available
 - Calibration remains more accurate over a wider range of loads and frequencies
 - Calibration based on E12 resistor loads plus 50 ohms (10, 50, 220, 560).
 - Scan mode has automatic step size and searches up and down from minimum SWR (less likely to report on local minimum)
