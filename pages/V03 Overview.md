@@ -49,7 +49,7 @@ To be written
 - Press "UP" and "DOWN" together
     - Enter & exit increment-setting mode
  
-# Cumulative Notes on features introduced / removed / changed
+# Major features introduced / removed / changed
 ## Calibration
 - The loads needed are based on E12 resistors (plus 50 Ohms): 10, 50, 220, and 560 Ohms
 - Progress is indicated by the frequency displayed
@@ -70,37 +70,13 @@ Intended to produce a continuous output free from interference by periodic measu
     - Press Config to toggle between changing frequency and changing output level
 The range of output powers available is quite limited due to both memory and hardware limitations.
 
-# Changes from G1OJS V02
-
 ## Calculation / function changes
-1. Fixed power meter arithmetic error affecting dBm readings above ~0dBm
-2. DDS is now off in all situations except briefly around measurements and for VFO mode
-3. Main warning beeps replaced by morse code: U = uncalibrated, Err = error, SK = done
-4. Speeded up non-blocking (& not too important) text messages
-5. DDS Gain setting table recalculated to give 10~15dB range in DDS output level setting
-6. Revised calibration storage to fit in more calibration points across frequency
+- DDS is now off in all situations except briefly around measurements and for VFO mode
+- Main warning beeps replaced by morse code: U = uncalibrated, Err = error, SK = done
+- Speeded up non-blocking (& not too important) text messages
+- DDS Gain setting table recalculated to give 10~15dB range in DDS output level setting
+- Revised calibration storage to fit in more calibration points across frequency
 
-## UI changes
-1. Added VFO mode with power level control (press Config key once in VFO mode and then use up/down keys)
-2. Added config setting for CW notification / beep pitch
-
-## Code structure changes
-1. Refactoring to push low level calls out of higher level blocks
-2. Revision of function names to be more descriptive
-3. Revision of comments
-4. Review and revision of #include statements
-5. Developped sleep timer to handle all timing functions making Delay Timer redundant (& this module removed)
-6. 16 bit bridge ratios stored for calibration encoded into 8 bits for storage, doubling the max number of entries possible
-
-## Ideas for next version
-Display a brief message "Dizzling off"/"Dizzling on" when changing between the first two modes.
-(Is the 'no dizzling' mode needed now there is a VFO mode?)
-Dynamic DDS level control via finer control voltage?
-Replace 1/4 step msg with msg showing new step
-Add calibration routine for power level meter
-Auto frequency sweep to find max and min impedance (or simply Vf) to measure cable lengths
-Extra VFO functions - two tone generator? CW beacon? Sweep gen for filter measurements with SDR?
-See if adding back DDS output levelling works better with new cal scheme
 
 
 
