@@ -46,6 +46,29 @@ Ideas for next version
 - Argument for setmeasurecalcdisplay - use descriptive #defs rather than literals
 - Investigate adding a variable-output VFO mode.
 
+## Calculation changes
+ 1. New calibration routine with standard resistors (E12+50ohms): 10,50,220,560
+	- Removed G1OJS_V01 routine which was based on EA4FRB_V13
+	- Replaced with new routine which applies simple correction factors to the ratios Vr/Vf and Vz/Va
+	- Linearises a wider range of impedances
+	- Uses less memory (space for more features!)
+ 2. Refactored measurement routine to measure ratios rather than individual voltages
+	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
+	- Future version may revert to outputting all individual voltages as this is useful for development & debugging
+	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
+ 3. Added power (mV & dBm) display to Sig level mode
+ 4. Added message to Capacitance display when reactance is zero
+ 5. Tested with WinPCC-Sark100 V1.0.01_en_DH1KLM to verify backwards compatibility of Scan Raw output
+ 6. Dizzling offset now 10% of display frequency (was previously 1MHz)
+
+## UI changes
+1. Display changes to match changes above
+
+## Ideas for next version
+1. Add a VFO mode with variable output level
+2. Add calibration routine for power level meter
+3. Display a brief message "Dizzling off"/"Dizzling on" when changing between the first two modes.
+
 
 ## Calculation / function changes
 1. Fixed power meter arithmetic error affecting dBm readings above ~0dBm
