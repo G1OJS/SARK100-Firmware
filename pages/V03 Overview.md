@@ -10,6 +10,9 @@ permalink: /V03-Overview/
 ## One or more values over range
 ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Overrange.png)
 
+## New - Power Meter
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Power%20Meter.png)
+
 ## New VFO Mode
 To be written
 
