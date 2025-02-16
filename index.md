@@ -1,5 +1,5 @@
 
-![2025-01-05 Welcome screen crop](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-05%20Welcome%20screen%20crop.png)
+![2025-01-05 Welcome screen crop](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/G1OJS%20V03%20welcome%20crop%20640px%20wide.png)
 
 ## Key benefits of the latest version (G1OJS V03)
 - 60m band now included
