@@ -55,7 +55,7 @@ To be written
 - Progress is indicated by the frequency displayed
 - On completion, the unit automatically reboots
 
-The methodology for correcting measurement errors by using calibration data is described here: [Correcting measurement errors with calibration data](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/CorrectingMeasurementErrors/). This page covers both the techniques used in EA4FRB's V13, and my V01 and V02.
+The methodology for correcting measurement errors by using calibration data is described here: [Correcting measurement errors with calibration data](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/CorrectingMeasurementErrors/). This page covers both the techniques used in EA4FRB's V13, and my V1.0.
 
 ## Power Meter
 This mode displays mvRMS and dBm power as measured at the input port. The same internal code is used to display output power in VFO mode.
@@ -70,12 +70,20 @@ Intended to produce a continuous output free from interference by periodic measu
     - Press Config to toggle between changing frequency and changing output level
 The range of output powers available is quite limited due to both memory and hardware limitations.
 
+## Cable Length Measurement
+- To be written
+
 ## Calculation / function changes
 - DDS is now off in all situations except briefly around measurements and for VFO mode
 - Main warning beeps replaced by morse code: U = uncalibrated, Err = error, SK = done
 - Speeded up non-blocking (& not too important) text messages
 - DDS Gain setting table recalculated to give 10~15dB range in DDS output level setting
 - Revised calibration storage to fit in more calibration points across frequency
+- Removed saving band frequency on band change - saves memory
+- Added short press on config to exit increment setting mode
+
+
+
 
 
 
