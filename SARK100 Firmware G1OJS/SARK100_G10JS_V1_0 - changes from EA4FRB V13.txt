@@ -16,7 +16,7 @@ Calculation changes
   - Revised calibration storage to fit in more calibration points across frequency
   - Measurement routine now measures and corrects bridge ratios rather than individual voltages
 	- Uses less memory
-	- Backwards compatibility for Scan Raw maintained by outputting fixed Vf and Va values with recalculated Vr and Vz
+	- Backwards compatibility for Scan Raw maintained by outputting measured (uncorrected) Vf and Va values with recalculated Vr and Vz
 	- Removed averaging as it doesn't seem to help with measurement noise but removal means faster SWR scanning and pcLink scanning
   - Added screen for displaying power meter results
   - Added message to Capacitance display when reactance is zero
