@@ -18,8 +18,8 @@ permalink: /contents/
 - [Interpolation and DDS Gain Settings](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Interpolation-and-DDS-Gain-Settings)
 - [Va and Vz Rezeroing](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/ZerosAndInterpolation/)
 
-#### G1OJS V03
-- [V03 Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/V03-Overview/)
+# G1OJS Firmware Overview
+- [G1OJS Firmware Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/G1OJS-Firmware-Overview/)
 
 
 
