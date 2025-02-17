@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "V03 Overview"
-permalink: /V03-Overview/
+title: "G1OJS Firmware Overview"
+permalink: /G1OJS-Firmware-Overview/
 ---
 # Screenshots and Changes to Menus 
 ## A new main screen layout
