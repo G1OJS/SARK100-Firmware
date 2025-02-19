@@ -7,8 +7,6 @@
 ### Update calibration based on E12 resistor loads
 ### Cable length measurement scan
 
-![2025-01-05 Welcome screen crop](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/G1OJS%20V1.0%20welcome%20640.png)
-
 ## Motivation
 This [Github repository](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware) contains the results of a lot of work I've done investigating the [MR300 Antenna Analyser](http://www.lxqqfy.com/e/product.php?id=MR300)'s firmware (SARK100 firmware V13), mainly for my own education & fun. My motivation was:
 - Try to improve the calibration routine & see if I could:
