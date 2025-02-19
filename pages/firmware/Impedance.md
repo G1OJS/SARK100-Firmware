@@ -1,5 +1,5 @@
 ---
-layout: firmware
+layout: default
 title: "Impedance and SWR screens"
 permalink: /Impedance/
 ---
