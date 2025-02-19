@@ -1,9 +1,3 @@
----
-layout: default
-title: "SARK100 Firmware by G1OJS"
-permalink: /index/
----
-
 ### Band segment for 60m band
 ### Numeric power meter (mV and dBm) replaces the bar graph
 ### VFO mode with adjustable output level
