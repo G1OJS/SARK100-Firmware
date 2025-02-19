@@ -1,3 +1,4 @@
+### New features
 ### Band segment for 60m band
 ### Numeric power meter (mV and dBm) replaces the bar graph
 ### VFO mode with adjustable output level
