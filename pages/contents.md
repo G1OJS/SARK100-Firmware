@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Site Contents"
+layout: theory
+title: "Theory and references"
 permalink: /contents/
 ---
 
@@ -14,15 +14,4 @@ permalink: /contents/
 # References
 - [Links](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/cef5cb3e8d3c251d6a1fdb1c693a843bd263132f/pages/links.md)
   
-# Specific to Firmware Updates
-- [Editing PSoC Firmware on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/)
-- [Motivation for changes](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Motivation-for-changes/)
-- [Downloads](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/downloads/)
-- [Interpolation and DDS Gain Settings](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Interpolation-and-DDS-Gain-Settings)
-- [Va and Vz Rezeroing](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/ZerosAndInterpolation/)
-
-# G1OJS Firmware Overview
-- [G1OJS Firmware Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/G1OJS-Firmware-Overview/)
-
-
 
