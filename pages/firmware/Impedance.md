@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "G1OJS Firmware Overview"
-permalink: /G1OJS-Firmware-Overview/
+title: "Impedance and SWR screens"
+permalink: /Impedance/
 ---
 # Screenshots and Changes to Menus 
 ## A new main screen layout
