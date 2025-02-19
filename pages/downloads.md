@@ -16,3 +16,4 @@ If you want to revert to the EA4FRB firmware, simply download the .hex file from
 If you want to play with the source code, download the relevant .zip file and, if you need to, look at [how to update the firmware from source code on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/).
 
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fg1ojs.github.io%2FG1OJS-MR300-SARK100-Firmware%2Fdownloads%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
