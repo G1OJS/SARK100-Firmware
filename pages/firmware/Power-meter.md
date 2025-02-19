@@ -4,6 +4,8 @@ title: "Power Meter"
 permalink: /Power-meter/
 ---
 
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Power%20Meter.png)
+
 This mode displays mvRMS and dBm power as measured at the input port. The same internal code is used to display output power in VFO mode.
 
 - Due to memory limitations, the conversion between voltage and dBm is approximate. The voltage reading is derived directly from the internal ADC measurement.
