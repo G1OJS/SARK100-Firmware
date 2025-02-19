@@ -1,4 +1,9 @@
-This site hosts the G1OJS firmware for the SARK100 Antenna Analyser (and its clones).
+---
+layout: firmware
+title: "G1OJS Firmware Overview"
+permalink: /G1OJS-Firmware-Overview/
+
+---This site hosts the G1OJS firmware for the SARK100 Antenna Analyser (and its clones).
 
  
 
