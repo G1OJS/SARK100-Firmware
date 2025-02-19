@@ -9,9 +9,6 @@ This site hosts the G1OJS firmware for the SARK100 Antenna Analyser (and its clo
 
 Click on the menu buttons above to explore the new features, or click on the links to read about the theory and the development of the firmware.
 
- 
-
-
 ## Applicable Hardware
 I developed this update to EA4FRb's V13 SARK100 source code by testing on my "MR300" unit which uses the same firmware. This unit is produced by [LXQQFY.com](http://www.lxqqfy.com/e/product.php?id=MR300). The firmware should work on SARK100 as well as on MR100 and other variants of the SARK100 analyser, but I have no way of testing on these other devices.
 
