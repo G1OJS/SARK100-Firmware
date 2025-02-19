@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+header .inner {stye='margin-left: auto; margin-right:auto; }
+
 .page__title{
     font-size: 42px;
     font-weight: bold;
@@ -20,8 +22,8 @@ a {
   font-weight: bold;
 }
 
-a .menubutton {font-size: 2em; color: green; font-weight: bold;}
-
+a .toplink {font-size: 2em; color: white; font-weight: bold; text-align:centre;}
+a .menubutton {font-size: 2em; color: green; font-weight: bold; text-align:centre;}
 
 h1 {
     font-size: 24px;
