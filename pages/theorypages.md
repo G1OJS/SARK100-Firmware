@@ -1,7 +1,7 @@
 ---
 layout: theory
 title: "Theory and references"
-permalink: /contents/
+permalink: /theory-index/
 ---
 
 # Generically applicable material
