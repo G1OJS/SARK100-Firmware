@@ -3,16 +3,12 @@
 
 @import "{{ site.theme }}";
 
-header .inner .h1 {margin-left: auto; margin-right:auto; }
-
 
 .page__title{
     font-size: 42px;
     font-weight: bold;
     padding-bottom:0px;
     margin-bottom:0px;
-    margin-left:auto;
-    margin-right:auto;
 }
 .page__subtitle{
     font-size: 20px;
@@ -22,10 +18,10 @@ header .inner .h1 {margin-left: auto; margin-right:auto; }
 }
 
 a {font-weight: bold; }
-a .toplink {font-size: 1.2em; color: white;  }
-a .menubutton {font-size: 1.2em; color: lightgreen; }
-span .toplink {font-size: 1.2em; color: white;  }
-span .menubutton {font-size: 1.2em; color: lightgreen; }
+a .toplink {font-size: 1em; color: white;  }
+a .menubutton {font-size: 1em; color: lightgreen; }
+span .toplink {font-size: 1em; color: white;  }
+span .menubutton {font-size: 1em; color: lightgreen; }
 
 h1 {
     font-size: 24px;
