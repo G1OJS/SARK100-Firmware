@@ -21,9 +21,10 @@ header .inner {margin-left: auto; margin-right:auto; }
 }
 
 a {font-weight: bold; }
-
-a span .toplink {font-size: 1.2em; color: white;  }
-a span .menubutton {font-size: 1.2em; color: lightgreen; }
+a .toplink {font-size: 1.2em; color: white;  }
+a .menubutton {font-size: 1.2em; color: lightgreen; }
+span .toplink {font-size: 1.2em; color: white;  }
+span .menubutton {font-size: 1.2em; color: lightgreen; }
 
 h1 {
     font-size: 24px;
