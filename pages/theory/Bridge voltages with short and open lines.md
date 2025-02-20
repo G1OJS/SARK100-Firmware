@@ -4,7 +4,7 @@ mathjax: true
 title: "Bridge voltages with open and short lines"
 permalink: /BridgeVoltagesWithOpenAndShortLines/
 ---
-What are the bridge voltages $V_z$ and $V_a$ if the reflectometer is connected to an open or short circuit transmission line?
+What are the bridge voltages $V_z$ and $V_a$ if the reflectometer is connected to a lossles open or short circuit transmission line?
 
 Working in normalised units ($Z_0=1.0+j0.0$),
 
