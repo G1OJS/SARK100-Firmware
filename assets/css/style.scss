@@ -48,9 +48,9 @@ img {
 
 .navGrid {display:grid;}
 .navGrid > a {text-decoration: none; color: white; padding-left:2px; padding-right:2px; font-size:1em; line-height: 80%; font-weight:bold;}
-.navGrid > a .toplink .active {text-decoration:underline;}
+.navGrid > a .toplink.active {text-decoration:underline;}
 .navGrid > a .menubutton {color:light-green;}
-.navGrid > a .menubutton .active {text-decoration:underline;}
+.navGrid > a .menubutton.active {text-decoration:underline;}
 
 .image-left {
       display: block;
