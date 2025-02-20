@@ -10,6 +10,8 @@ header .inner {margin-left: auto; margin-right:auto; }
     font-weight: bold;
     padding-bottom:0px;
     margin-bottom:0px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .page__subtitle{
     font-size: 20px;
@@ -18,8 +20,7 @@ header .inner {margin-left: auto; margin-right:auto; }
     color:gray;
 }
 
-a .toplink {font-size: 1em; color: white;  font-weight: bold; }
-a .menubutton {font-size: 1em; color: green;  font-weight: bold; }
+a {font-weight: bold; }
 
 span .toplink {font-size: 1em; color: white;  font-weight: bold; }
 span .menubutton {font-size: 1em; color: lightgreen;  font-weight: bold; }
