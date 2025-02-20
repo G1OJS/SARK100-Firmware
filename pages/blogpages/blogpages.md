@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "Guides and history"
 permalink: /blogpages/
 ---
 
