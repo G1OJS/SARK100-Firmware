@@ -5,7 +5,7 @@ guide: true
 permalink: /Calibration/
 ---
 # How to calibrate the device
-<img src= 'https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5fa95c53aca7d9bc98567fb9e746c0f3d9e85b2d/assets/img/Calibration%20PL259s%20640px.png'></img>
+<img src= 'https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/assets/img/Calibration%20PL259s%20640px.png'></img>
 
 The procedure is very straightforward once you have the required calibration loads, which are:
   - open circuit (nothing connected)
