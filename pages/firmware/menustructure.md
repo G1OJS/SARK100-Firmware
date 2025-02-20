@@ -1,7 +1,7 @@
 ---
 layout: default
 guide: true
-title: 'menu'
+permalink: 'menus'
 ---
 
 
