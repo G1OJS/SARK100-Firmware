@@ -2,8 +2,7 @@
 guide: true
 layout: default
 ---
-
-Click on the menu buttons above to explore the new features, or click on the links to read about the theory and the development of the firmware.
+Welcome to my SARK100 firmware pages. Please click on the menu buttons below the LCD display to explore the new features, or click on the links above it read about the theory and the development of the firmware and to go to the downloads area.
 
 
 
