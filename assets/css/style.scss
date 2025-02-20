@@ -45,9 +45,10 @@ img {
 
 .navGrid {display:grid;}
 .navGrid > a {padding-left:2px; padding-right:2px; font-size: 1em; line-height: 80%; font-weight:bold;}
-a .toplink {color:grey;}
-a .menubutton {color:light-green;}
-a .active {text-decoration:underline;}
+.navGrid > a .toplink {color:grey;}
+.navGrid > a .toplink .active {text-decoration:underline;}
+.navGrid > a .menubutton {color:light-green;}
+.navGrid > a .menubutton .active {text-decoration:underline;}
 
 .image-left {
       display: block;
