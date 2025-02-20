@@ -19,9 +19,9 @@ img { max-width: 640px;}
 }
 
 
-#main_content_wrap {background-color:#212121;}
-#main_content_wrap .outer {background-color:#212121;}
-#main_content_wrap .inner {background-color:#F2F2F2;} 
+#main_content_wrap {background-color:#212121; border:none;}
+#main_content_wrap .outer {background-color:#212121; border:none;}
+#main_content_wrap .inner {background-color:#F2F2F2; border:none;} 
 
 .page__title{
     font-size: 42px;
