@@ -44,9 +44,6 @@
 
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <div style="display:grid; grid-columns-template auto max-width:640px auto;">
-          <div class = 'sidepadding'></div>
-          <div id='middle'>
             {% if page.title %}
               <p id="page-title" class="page__title" style="text-align:middle;" itemprop="headline">{{ page.title }}</p>
             {% endif %}
@@ -54,9 +51,6 @@
               <p id="page-subtitle" class="page__subtitle" itemprop="headline">{{ page.subtitle }}</p>
             {% endif %}
             {{ content }}
-          </div>
-          <div class = 'sidepadding'></div>
-        </div>
       </section>
     </div>
 
