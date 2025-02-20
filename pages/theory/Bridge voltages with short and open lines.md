@@ -18,7 +18,7 @@ permalink: /BridgeVoltagesWithOpenAndShortLines/
 </div>
 
 <div class='equation'>
-  <table style='border:none;'><tr><td style='border:none;'>$$\vert Z+1\vert }$$</td></tr></table>
+  <table style='border:none;'><tr><td style='border:none;'>$$\vert Z+1\vert = \vert 1 + j\tan(\beta l) \vert = \vert 1+ j \frac{\sin(\beta l)}{\cos(\beta l)} \vert $$</td></tr></table>
 </div>
 
 <div  style='clear:both'></div>
