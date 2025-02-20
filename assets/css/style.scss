@@ -46,6 +46,11 @@ img {
     color:gray;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .navGrid {display:grid;}
 .navGrid > a {padding-left:2px; padding-right:2px; font-size: 1em; line-height: 80%; font-weight:bold;}
 .navGrid > a .toplink {color:grey;}
