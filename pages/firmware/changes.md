@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Changes"
+guide: true
 permalink: /Changes/
 ---
 
