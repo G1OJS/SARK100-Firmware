@@ -51,6 +51,12 @@
           {{ page.title }}
           </p>
         {% endif %}
+
+        {% if page.smalltitle %}
+          <p id="page-title" class="page__title" itemprop="headline" style="font-size:50%">
+          {{ page.smalltitle }}
+          </p>
+        {% endif %}
         
         {% if page.subtitle %}
           <p id="page-subtitle" class="page__subtitle" itemprop="headline">
