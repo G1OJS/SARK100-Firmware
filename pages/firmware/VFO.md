@@ -5,7 +5,6 @@ guide: true
 permalink: /VFO-mode/
 ---
 
-assets/img/G1OJS%20V1.0%20welcome%20crop%20640.png
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VFO%20Mode%20640.png'>
 
 The VFO mode shown above is intended to produce a continuous output free from interference by periodic measurements. It is accessed via the main 'mode' menu key.
