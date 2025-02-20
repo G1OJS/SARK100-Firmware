@@ -20,12 +20,14 @@ permalink: /BridgeVoltagesWithOpenAndShortLines/
 So, $\vert Z \vert = 1$, and 
 
 <div class='equation'>
-  <table style='border:none;'><tr><td style='border:none;'>$$\vert Z+1\vert = \vert 1 + j\tan(\beta l) \vert $$</td></tr></table>
+  <table style='border:none;'><tr><td style='border:none;'>$$\vert Z+1\vert = \vert 1 + j\tan(\beta l) \vert  = \vert 1 + j\frac{\sin(\beta l)}{\cos(\beta l)} \vert = \frac{1}{\cos(\beta l)} \vert \cos(\beta l) + j\sin(\beta l) \vert = \frac{1}{\cos(\beta l)}$$</td></tr></table>
 </div>
 
-Hence, 
-<div class='equation'>
-  <table style='border:none;'><tr><td style='border:none;'>$$ Z = \vert 1+ j \frac{\sin(\beta l)}{\cos(\beta l)} \vert = \vert 1 + j\frac{1}{\cos(\beta l)} (\cos(\beta l) +j \sin(\beta l))$$
+Hence, $ V_a = \cos(\beta l) $ and $V_z = \sin(\beta l)$
+
 </div>
+
+
+= \vert 1 + j\frac{1}{\cos(\beta l)} (\cos(\beta l) +j \sin(\beta l))
 
 <div  style='clear:both'></div>
