@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}"; 
 
+<!-- Jekyll slate theme scss is here: https://github.com/pages-themes/slate/blob/master/_sass/jekyll-theme-slate.scss -->
+
 img {
     max-width: 640px;
     margin:0;
@@ -31,6 +33,14 @@ img {
 #main_content_wrap .inner {background-color:#F2F2F2; border:none;} 
 #main_content {
     padding-top: 10px
+}
+
+#project_title {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
 }
 
 .page__title{
