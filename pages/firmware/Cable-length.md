@@ -13,5 +13,5 @@ The graph below shows the bridge voltages Vz and Va against frequency for a samp
 
 To make use of this feature, first set the velocity factor of your transmission line via the Config menu, then connect your line and access the Cable Length scan again via the Config menu. Once the scan is done, press the up key to exit the routine, or press the down key to scan again. Scans automatically repeat every 30 seconds whilst in this menu item.
 
-
 ![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/assets/img/Cable%20length%20example%20640px.png)
+
