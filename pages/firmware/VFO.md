@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "VFO Mode"
+guide: true
 permalink: /VFO-mode/
 ---
 Intended to produce a continuous output free from interference by periodic measurements.
