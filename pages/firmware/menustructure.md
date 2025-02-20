@@ -1,3 +1,10 @@
+---
+layout: default
+guide: true
+title: 'menu'
+---
+
+
 ## “Mode”
 - Main screen
 - Measure Capacitance
