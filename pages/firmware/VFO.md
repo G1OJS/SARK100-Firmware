@@ -5,9 +5,10 @@ guide: true
 permalink: /VFO-mode/
 ---
 
-<img src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/c82b10cfee093ec723f146f2e4f9eaf9d003861b/assets/img/VFO%20Mode%20640.png'>
+assets/img/G1OJS%20V1.0%20welcome%20crop%20640.png
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VFO%20Mode%20640.png'>
 
-<img src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/c82b10cfee093ec723f146f2e4f9eaf9d003861b/assets/img/VFO%20Power%20Setting%20Mode%20640.png'>
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VFO%20Power%20Setting%20Mode%20640.png'>
 
 The VFO mode is intended to produce a continuous output free from interference by periodic measurements. 
     - Use arrow keys to change frequency and output level
