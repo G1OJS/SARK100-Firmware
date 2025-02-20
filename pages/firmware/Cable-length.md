@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Cable length Measurement"
+guide: true
 permalink: /Cable-length/
 ---
 
