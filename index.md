@@ -1,4 +1,5 @@
 ---
+guide: true
 layout: default
 ---
 
