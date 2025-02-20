@@ -9,15 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ 'assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
     {% seo %}
-    
     {% include head-custom.html %}
-
   </head>
 
-  <body>
-
+  <body>    
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -48,21 +44,19 @@
     
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-
-        {% if page.title %}
-          <p id="page-title" class="page__title" itemprop="headline">
-          {{ page.title }}
-          </p>
-        {% endif %}
-        
-        {% if page.subtitle %}
-          <p id="page-subtitle" class="page__subtitle" itemprop="headline">
-          {{ page.subtitle }}
-          </p>
-        {% endif %}
-        
-        {{ content }}
-        
+        <div style="display:grid; grid-columns-template auto max-width:640px auto;">
+          <div></div>
+          <div id='middle'>
+            {% if page.title %}
+              <p id="page-title" class="page__title" itemprop="headline">{{ page.title }}</p>
+            {% endif %}
+            {% if page.subtitle %}
+              <p id="page-subtitle" class="page__subtitle" itemprop="headline">{{ page.subtitle }}</p>
+            {% endif %}
+            {{ content }}
+          </div>
+          <div></div>
+        </div>
       </section>
     </div>
 
@@ -77,5 +71,8 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
+          
+
+      </div>
   </body>
 </html>
