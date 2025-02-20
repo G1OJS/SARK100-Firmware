@@ -13,8 +13,10 @@ title: ''
 - VFO Mode
     - Use arrow keys to change frequency and output level
     - Press Config to toggle between changing frequency and changing output level
+
 ## “Band”
 - Band advances to next band and cycles back from 6m to 160m
+
 ## “Config”
 - PC Link
 - Set Idle Timeout
