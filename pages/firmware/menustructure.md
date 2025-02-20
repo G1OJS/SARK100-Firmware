@@ -2,7 +2,7 @@
 layout: default
 guide: true
 permalink: menus
-title: ''
+title: "Menu Structure"
 ---
 
 ## “Mode”
