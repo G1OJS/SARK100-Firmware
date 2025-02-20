@@ -3,7 +3,9 @@
 
 @import "{{ site.theme }}";
 
+#main_content_wrap {background-color:#212121;}
 #main_content_wrap .outer {background-color:#212121;}
+#main_content_wrap .inner {background-color:#212121;}
 
 .page__title{
     font-size: 42px;
