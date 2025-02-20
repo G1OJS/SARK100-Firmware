@@ -17,13 +17,13 @@
 }
 
 a {font-weight: bold; }
-a .toplink {font-size: 1em; color: white;  }
-a .menubutton {font-size: 1em; color: lightgreen; }
-span .toplink {font-size: 1em; color: white;  }
-span .menubutton {font-size: 1em; color: lightgreen; }
+a .toplink {color: white;  }
+a .menubutton {color: lightgreen; }
+span .toplink {color: white;  }
+span .menubutton {color: lightgreen; }
 
 .navGrid {display:grid;}
-.navGrid > a {padding-left:5px; padding-right:5px;}
+.navGrid > a {padding-left:2px; padding-right:2px; font-size: 1em;}
 
 .image-left {
       display: block;
