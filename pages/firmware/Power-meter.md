@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Power Meter"
+guide: true
 permalink: /Power-meter/
 ---
 
