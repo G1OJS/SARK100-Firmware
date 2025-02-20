@@ -4,6 +4,8 @@ TO DO
    - Thorough cal test
    - L & C measurement tests (frequency scan and display) - can we detect & warn if we are near resonance?
    - Something on applicability limits for cable measurements
+   - make pc site look like mobile site
+
 
 IDEAS - theory
   - Maths for Va and Vz when connected to open/short line
