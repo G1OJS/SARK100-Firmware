@@ -22,7 +22,8 @@ a .menubutton {font-size: 1em; color: lightgreen; }
 span .toplink {font-size: 1em; color: white;  }
 span .menubutton {font-size: 1em; color: lightgreen; }
 
-.navGrid {padding-left:5px; padding-right:5px;}
+.navGrid {display:grid;}
+.navGrid > a {padding-left:5px; padding-right:5px;}
 
 .image-left {
       display: block;
