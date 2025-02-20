@@ -1,5 +1,5 @@
 ---
-layout: theory
+layout: default
 title: "Theory and references"
 permalink: /theory-index/
 ---
