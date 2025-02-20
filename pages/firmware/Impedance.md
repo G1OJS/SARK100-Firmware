@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Impedance and SWR screens"
+guide: true
 permalink: /Impedance/
 ---
 
