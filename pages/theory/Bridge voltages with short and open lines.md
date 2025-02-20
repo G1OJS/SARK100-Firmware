@@ -4,7 +4,9 @@ mathjax: true
 title: "Bridge voltages with open and short lines"
 permalink: /BridgeVoltagesWithOpenAndShortLines/
 ---
+What are the bridge voltages $V_z$ and $V_a$ if the reflectometer is connected to an open or short circuit transmission line?
 
+Working in normalised units ($Z_0=1.0+j0.0$),
 
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$V_a=\frac{1}{\vert Z+1\vert }$$</td></tr></table>
@@ -13,6 +15,7 @@ permalink: /BridgeVoltagesWithOpenAndShortLines/
   <table style='border:none;'><tr><td style='border:none;'>$$V_z=\frac{\vert Z\vert }{\vert Z+1\vert }$$</td></tr></table>
 </div>
 
+For a short-circuited transmission line, the input impedance is
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$Z=j\tan(\beta l)$$</td></tr></table>
 </div>
