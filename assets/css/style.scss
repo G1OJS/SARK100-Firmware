@@ -6,6 +6,7 @@
 img {
     max-width: 640px;
     margin:0;
+    padding:0;
     max-width: 100%; /* Makes sure the image never exceeds its container */
     height: auto; /* Keeps aspect ratio */
     display: block; /* Prevents inline spacing issues */
