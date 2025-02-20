@@ -4,6 +4,7 @@ title: "Calibration"
 guide: true
 permalink: /Calibration/
 ---
+<img src= 'https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5fa95c53aca7d9bc98567fb9e746c0f3d9e85b2d/assets/img/Calibration%20PL259s%20640px.png'></img>
 
 - The loads needed are based on E12 resistors (plus 50 Ohms): 10, 50, 220, and 560 Ohms
 - Progress is indicated by the frequency displayed
