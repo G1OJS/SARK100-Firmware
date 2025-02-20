@@ -1,7 +1,7 @@
 ---
 layout: guides
 title: "Guides and history"
-permalink: /guides-index/
+permalink: /guidepages/
 ---
 
 - [Editing PSoC Firmware on Windows 10](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/EditingOnWindows10/)
