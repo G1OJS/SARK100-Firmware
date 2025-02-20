@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Calibration"
+guide: true
 permalink: /Calibration/
 ---
 
