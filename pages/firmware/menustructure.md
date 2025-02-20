@@ -1,9 +1,9 @@
 ---
 layout: default
 guide: true
-permalink: 'menus'
+permalink: menus
+title:''
 ---
-
 
 ## “Mode”
 - Main screen
