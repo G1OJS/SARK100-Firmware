@@ -5,7 +5,6 @@ smalltitle: "Correcting Measurement Errors"
 permalink: /CorrectingMeasurementErrors/
 ---
 
-# Introduction
 The RF bridge voltages in the SARK100 and its clones are converted to DC voltages via diode detectors. The RF voltages are on the order of one or two volts peak to peak, and the diode response in this region is significantly nonlinear. Much of this nonlinearity can be removed by placing a matched diode in the feedback loop of the amplifier following the detector, and this technique is used to good effect. However, nonlinearities and offsets, both functions of frequency, remain in sufficient quantity to cause significant measurement errors if not further corrected numerically. 
 
 The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load impedances and frequencies, before any numeric correction, as measured by my MR300 analyser. In each graph, the measured ratio is plotted on the vertical axis and the true expected value on the horizontal axis. A total lack of measurement errors would result in points spaced along the line through the origin with a slope of 1.
