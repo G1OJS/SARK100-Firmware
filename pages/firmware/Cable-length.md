@@ -5,7 +5,7 @@ guide: true
 permalink: /Cable-length/
 --- 
 
-<img style="float:right;" src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0b800c54ec9a5caf6d4e163594cd8c29d0102546/assets/img/Line%20length%20screen%20crop%20640px.png'></img>
+<img style='float:right;' src='https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0b800c54ec9a5caf6d4e163594cd8c29d0102546/assets/img/Line%20length%20screen%20crop%20640px.png'>
   
 This feature of the firmware is not guaranteed to produce accurate results every time, but is an interesting use of the frequency scanning bridge and will undoubtedly be useful. It works by finding the frequencies at which the impedance seen at the input of an attached transmission line is at either a minimum or a maximum point. These minima and maxima occur regularly in frequency and by counting the number of them and recording the highest frequency at which one occurs, it is possible to get an accurate measurement of the frequency separation of these points. The longer the transmission line, the more minima and maxima there will be, and dividing the speed of the wave along the transmission line by that frequency period it's possible to calculate the length of the cable.
 
