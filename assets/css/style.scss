@@ -46,14 +46,8 @@ img {
     color:gray;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .navGrid {display:grid;}
-.navGrid > a {padding-left:2px; padding-right:2px; font-size: 1em; line-height: 80%; font-weight:bold;}
-.navGrid > a .toplink {color:grey;}
+.navGrid > a {text-decoration: none; color: white; padding-left:2px; padding-right:2px; font-size:1em; line-height: 80%; font-weight:bold;}
 .navGrid > a .toplink .active {text-decoration:underline;}
 .navGrid > a .menubutton {color:light-green;}
 .navGrid > a .menubutton .active {text-decoration:underline;}
