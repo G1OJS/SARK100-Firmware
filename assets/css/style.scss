@@ -18,6 +18,8 @@
 
 .navGrid {display:grid;}
 .navGrid > a {padding-left:2px; padding-right:2px; font-size: 1em; line-height: 80%; font-weight:bold;}
+a .toplink {color:grey;}
+a .menubutton {color:light-green;}
 
 .image-left {
       display: block;
