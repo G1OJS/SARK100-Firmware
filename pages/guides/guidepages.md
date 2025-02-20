@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: default
 title: "Guides and history"
 permalink: /guidepages/
 ---
