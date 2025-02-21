@@ -1,7 +1,7 @@
 ---
 layout: default
 mathjax: true
-title: "Converting Bridge Voltages to Load Impedance: Method 1"
+title: "Converting Bridge Voltages to Load Impedance: Method 2"
 permalink: /BridgeVoltagesToImpedance1/
 ---
 
