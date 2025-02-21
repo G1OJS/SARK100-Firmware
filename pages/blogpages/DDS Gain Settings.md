@@ -1,0 +1,38 @@
+---
+layout: default
+title: "DDS Gain Settings"
+permalink: /DDS-Gain-Settings/
+---
+## Measurement Artifacts
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20V13.png "Fig 1: Measurement of a test load using EA4FRB V13 firmware")
+
+The reason for the step artifacts shown above seems to be a combination of a) the way that the V13 firmware compensates for the DDS output falling with frequency, and b) the calibration methodology using stepwise changes in correction parameters with increasing frequency. Either of these features in isolation can cause the steps, and the effects are worse in combination. When present together, the correction parameters not only vary in a stepwise manner, but when the DDS gain setting changes (again, this is stepwise) the "next" set of correction parameters not only pertain to the next frequency but also to a different DDS output level. This causes the changes to reflect nonlinearities in the voltage measurement circuits in addition to the step change in parameters.
+
+## Changes Made
+I have made two changes to the way that the output level of the DDS is set.
+    1. Remove the code that sets the DDS level to a different level for each band
+    2. Rework the gain settings tables for the Programmable Gain Amplifiers that control the DDS output current
+    
+I also added frequency interpolation to the calibration routines to avoid step changes in calibration settings.
+
+## Results of Changes
+The graphs below show a measurements taken using the G1OJS V01 and EA4FRB V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X: [formulas](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltagesToImpedance/).
+
+![Graph showing Z,R,X and VSWR with step changes in VSWR and R eliminated](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20G1OJS%20V01.png "Fig 2: Measurement of a test load using G1OJS V01 firmware")
+
+It can be seen that the 'step' artifacts present in the V13 results are gone, mainly thanks to keeping the DDS PGA output constant rather than changing it once per band.
+
+It is hard to imagine an unwanted effect of these changes other than extra memory and processor usage, but noise is a concern if measured voltages drop too much without compensating with increased DDS gain.
+
+The graphs below show how the bridge supply voltage Vf (meaasured at the 'top' of the bridge) varies with frequency for a range of different load resistances. The vertical scales are in arbitrary units with 4 representing the maximum voltage that the ADC converers can measure, and are shown logarithmically. The first graph shows how the step changes in gain in the V13 software cause voltages to recover to higher values as they naturally fall with frequency. The lower graph shows the effect of removing these gain step changes, and roughly speaking the net effect is approximately 6dB lower output at the high frequency end. I have not yet noticed any effects on the quality of the measurements as a result of this, and feel that the benefits of removing the step artifacts favour keeping the gain flat across frequency.
+
+![image](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Vf_%20Stepped%20DDS%20Gain%20(V13).png)
+
+
+![image](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Vf_%20Flat%20DDS%20Gain%20(G1OJS%20V01).png)
+
+
+
+
+
+
