@@ -20,10 +20,10 @@ The equations for the bridge voltages that can be measured (see [Output Voltages
 
 
 ## Step 1 - three voltages to two voltage ratios
-<p>Looking at the equations for Vz and Va in [](/BridgeVoltages/), we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50}$which gives us the magnitude of the unknown impedance. </p>
+<p>Looking at the equations for $V_z$ and $V_a$, we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50}$which gives us the magnitude of the unknown impedance. </p>
 
 <p>To get the complex impedance, we need an equation that contains it directly rather than inside \vert mod\vert bars. 
-  If we look again at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:</p>
+  If we look at the equation for $V_r$ above, we can rearrange to get a single fraction as follows:</p>
 
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$\frac{V_r}{V_f} = \vert  2 \frac{Z_l}{Z_l+50} - 1 \vert  = \vert  \frac{2Z_l - (Z_l+50)}{Z_l+50}\vert  = \vert \frac{Z_l-50}{Z_l+50}\vert  $$</td></tr></table>
