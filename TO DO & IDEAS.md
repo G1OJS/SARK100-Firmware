@@ -1,5 +1,6 @@
 TO DO
-   - L & C measurement tests (frequency scan and display) - can we detect & warn if we are near resonance?
+   - Add a guide page for L and C measurement
+   -  L & C measurement tests (frequency scan and display) - can we detect & warn if we are near resonance?
    - Something on applicability limits for cable measurements
    - generalise PrintWdToSerial & refactor - this can be used in freq to LCD as well as pclink
    
