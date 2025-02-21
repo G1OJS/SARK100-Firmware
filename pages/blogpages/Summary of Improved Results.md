@@ -25,8 +25,7 @@ It can be seen that the 'step' artifacts present in the V13 results are gone (al
 ## 2. Accuracy
 In terms of practical spot measurements, the tables below show some example loads with the absolute results and percentage error (for reactance, which should be zero for the resistive loads, I've expressed the percent error as a percentage of the true resistance).
 
-
-
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Spot%20Accuracy%20Table.PNG)
 
 
 
