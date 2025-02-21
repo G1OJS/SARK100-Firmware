@@ -2,7 +2,7 @@
 layout: default
 mathjax: true
 title: "Converting Bridge Voltages to Load Impedance: Method 1"
-permalink: /BridgeVoltagesToImpedance2/
+permalink: /BridgeVoltagesToImpedance1/
 ---
 
 The equations for the bridge voltages that can be measured (see [Output Voltages on RF Wheatstone Bridges](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltages/) ) are:
