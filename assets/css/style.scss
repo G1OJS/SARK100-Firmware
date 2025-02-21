@@ -55,7 +55,15 @@
 .navGrid > a.menubutton {color:#CDEF3B;}
 .navGrid > a.menubutton.active {text-decoration:underline;}
 
-
+.sark_button {
+  background-color: #F2F2F2; 
+  border: none;
+  padding: 20px;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
 
 img {
     max-width: 640px;
