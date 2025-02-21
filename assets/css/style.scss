@@ -26,7 +26,6 @@
   background: linear-gradient(to top, #373737, #212121);
 }
 
-
 #main_content_wrap {background-color:#212121; border:none;}
 #main_content_wrap .outer {background-color:#212121; border:none;}
 #main_content_wrap .inner {background-color:#373737; border:none;} 
@@ -63,9 +62,9 @@
 .navGrid > a.menubutton.active {text-decoration:underline;}
 
 .sark_button {
-  background-color: #F8F8F8; 
+  background-color: #CDEF3B; 
   border: none;
-  padding: 5px;
+  padding: 5px 5px 10px 5px;
   display: inline-block;
   margin: 1px 1px;
   cursor: pointer;
