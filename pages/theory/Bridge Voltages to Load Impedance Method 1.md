@@ -5,6 +5,20 @@ title: "Converting Bridge Voltages to Load Impedance: Method 1"
 permalink: /BridgeVoltagesToImpedance1/
 ---
 
+The equations for the bridge voltages that can be measured (see [Output Voltages on RF Wheatstone Bridges](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltages/) ) are:
+
+  <div class='equation'>
+    <table style='border:none;'><tr><td style='border:none;'>$$V_a=2V_f\frac{50}{\vert Z_l+50\vert }$$</td></tr></table>
+  </div>
+  <div class='equation'>
+    <table style='border:none;'><tr><td style='border:none;'>$$V_z=2V_f\frac{\vert Z_l\vert }{\vert Z_l+50\vert }$$</td></tr></table>
+  </div>
+  <div class='equation'>
+    <table style='border:none;'><tr><td style='border:none;'>$$V_r = \vert  2V_f \frac{Z_l}{Z_l+50} - V_f\vert $$</td></tr></table>
+  </div>
+  <div  style='clear:both'></div>
+
+
 ## Step 1 - three voltages to two voltage ratios
 <p>Looking at the equations for Vz and Va in [](/BridgeVoltages/), we can see that they have the same denominator, and both share the multiplier $2V_f$ , so dividing one equation by the other will get rid of these quantities and leave us with $\frac{V_z}{V_a}=\frac{\vert Z_l\vert }{50}$which gives us the magnitude of the unknown impedance. </p>
 
