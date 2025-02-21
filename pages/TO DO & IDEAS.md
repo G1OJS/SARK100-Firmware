@@ -14,5 +14,6 @@ IDEAS - firmware
   - User choice of cal loads
   - User choice of cal frequencies
   - True ham band limits as well as HF dividers
+  - User choice of VSWR threshold
 
 
