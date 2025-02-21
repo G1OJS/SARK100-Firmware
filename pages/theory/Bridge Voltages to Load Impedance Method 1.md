@@ -72,7 +72,7 @@ R and X can be calculated directly from the bridge voltage measurements as
 </div>
 <div  style='clear:both'></div>
 
-<p>Now that we know $R$ as well as $\vert Z_l\vert $, we can use $ X=\sqrt(\vert Z_l\vert ^2-R^2) $ to get the complex impedance and VSWR.</p>
+<p>Now that we know $R$ as well as $\vert Z_l\vert $, we can use $ X=\sqrt{\vert Z_l\vert ^2-R^2} $ to get the complex impedance and VSWR.</p>
 
 <p>We can rewrite these equations to use the bridge voltages directly:</p>
 
