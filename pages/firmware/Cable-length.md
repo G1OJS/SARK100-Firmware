@@ -5,7 +5,7 @@ guide: true
 permalink: /Cable-length/
 --- 
 
-<img src="assets/img/Line%20length%20screen%20crop%20640px.png">
+<img src="/assets/img/Line%20length%20screen%20crop%20640px.png">
   
 This feature of the firmware is not guaranteed to produce accurate results every time, but is an interesting use of the frequency scanning bridge and will undoubtedly be useful. 
 
