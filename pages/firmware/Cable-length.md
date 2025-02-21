@@ -5,7 +5,7 @@ guide: true
 permalink: /Cable-length/
 --- 
 
-<img src="https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/assets/img/Line%20length%20screen%20crop%20640px.png">
+<img src="https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Line%20length%20screen%20crop%20640px.png">
   
 This feature of the firmware is not guaranteed to produce accurate results every time, but is an interesting use of the frequency scanning bridge and will undoubtedly be useful. 
 
@@ -17,5 +17,5 @@ To make use of this feature, first set the velocity factor of your transmission 
 
 Once the scan is done, press the up key to exit the routine, or press the DOWN or SCAN key to scan again. Scans automatically repeat every 30 seconds whilst in this menu item.
 
-![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/assets/img/Cable%20length%20example%20640px.png)
+![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Cable%20length%20example%20640px.png)
 
