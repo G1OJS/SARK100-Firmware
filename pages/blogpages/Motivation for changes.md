@@ -4,12 +4,8 @@ title: "Motivation for changes"
 permalink: /Motivation-for-changes/
 ---
 
-**It is possible that the issues discussed below are a result of EA4FRB's firmware being used on a device for which it was not designed. The analyser that I have is an 'MR300' which as I understand it is a clone of the original SARK100 device. It is also possible that the measurement quality effects discussed below are specific to the hardware that I have.**
-
-The changes I made to the menus and screens in the G1OJS 01 version is described here [V01-Overview](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware//V01-Overview/) together with a detailed list of changes made. The page below describes why I set out on this journey.
-
 # Artifacts in Frequency Sweeps
-The graph below shows a measurement taken using the V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X using [well-known formulas](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltagesToImpedance//). Both the VSWR and R curves show step changes that are clearly artifacts and not representative of the true test load impedance. 
+The graph below shows a measurement taken using the V13 firmware via the pcLink Configuration Menu item, using the "raw" command to export bridge voltages from my MR300 analyser. I converted these voltages to |Z|, VSWR, R and X: ['Converting Bridge Voltages to Impedance'](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/BridgeVoltagesToImpedance//). Both the VSWR and R curves show step changes that are clearly artifacts and not representative of the true test load impedance. 
    
 ![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20V13.png)
 
@@ -20,9 +16,7 @@ The graphs below show how Vf varies across a 10MHz frequency range when sampled 
 
 The other voltages do vary in proportion, which reduces the noise feeding through to the calculated quantities VSWR, mod Z, R and X, but some noise inevitably passes through due to non-linearities and calibration errors.
 
-The noise is quite repeatable, seeming to indicate that it originates in microcontroller noise and intermodulation between various harmonics of clock frequencies.
-
-I have yet to find a way to reduce this noise other than using brute force averaging. 
+The noise is quite repeatable, seeming to indicate that it originates in microcontroller noise and intermodulation between various harmonics of clock frequencies. In the MR300 clone, there is very little RF screening between the DDS chip & bridge voltage amplifiers and the microcontroller and the LCD module on the other side of the PCB. Adding some insulated copper strip behind the LCD has helped to reduce, but not eliminate this noise. The trick I use when making measurements is to select a step frequency such as 233 kHz, which means that measurement frequencies are unlikely to fall on whole multiples of clock frequencies.
 
 ![Vf 19 to 29 MHz noise](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Vf%20with%20274%20ohm%20load%20-%2010MHz.png)
 
