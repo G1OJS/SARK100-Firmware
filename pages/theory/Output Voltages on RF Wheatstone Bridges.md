@@ -20,9 +20,6 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
 **From here onwards, assume that all voltages are scalar quantities (i.e. refer to the magnitude of the complex voltage) unless stated otherwise.**
 
 # Bridge Voltage Magnitudes
-<details>
-  <summary>Explanation</summary>
-  
   We can calculate the expected magnitude of these voltages as follows.
   
   <p>$V_a$ and $V_z$ are voltages across the two impedances of a simple potential divider, albeit with one of the impedances potentially complex.</p>
@@ -51,6 +48,4 @@ magnitude of these quantities does not follow this rule if $Z_l$ is not a pure r
   </div>
   <div  style='clear:both'></div>
 
-  <p>so our three equations are:</p>
   
-</details>
