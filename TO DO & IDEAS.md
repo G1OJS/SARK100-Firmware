@@ -7,6 +7,7 @@ TO DO
    
 
 IDEAS - firmware
+  - Dizzling during PClink scan
   - Refactor scan routines
   - User choice of cal loads
   - User choice of cal frequencies
