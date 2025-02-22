@@ -31,14 +31,14 @@
           </div>
           {% if page.guide %}
             <div class='navGrid' style='display:grid; grid-template-columns:1fr 1fr 1fr 1fr; text-align:center; grid-template-rows: auto auto;'>
-             <a class="toplink {% if page.url contains '/Impedance' %}    active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Impedance">Impedance<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/LC' %}           active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/LC">L & C<br><button class='menubutton'></button></a>              
-             <a class="toplink {% if page.url contains '/VSWR' %}         active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/VSWR-scan">VSWR Scanning<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/Calibration' %}  active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Calibration">Calibration<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/Power' %}        active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Power-meter">Power Meter<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/VFO' %}          active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/VFO-mode">VFO Mode<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/Cable-length' %} active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Cable-length">Cable length<br><button class='menubutton'></button></a>
-             <a class="toplink {% if page.url contains '/menus' %}        active{% endif %}" href="https://g1ojs.github.io/{{ site.github.repository_name }}/menus">Menus<br><button class='menubutton'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Impedance">Impedance<br><button class='menubutton {% if page.url contains '/Impedance' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/LC">L & C<br><button class='menubutton {% if page.url contains '/LC' %}active{% endif %}'></button></a>              
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/VSWR-scan">VSWR Scanning<br><button class='menubutton {% if page.url contains '/VSWR' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Calibration">Calibration<br><button class='menubutton {% if page.url contains '/Calibration' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Power-meter">Power Meter<br><button class='menubutton {% if page.url contains '/Power' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/VFO-mode">VFO Mode<br><button class='menubutton {% if page.url contains '/VFO-mode' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/Cable-length">Cable length<br><button class='menubutton {% if page.url contains '/Cable length' %}active{% endif %}'></button></a>
+             <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/menus">Menus<br><button class='menubutton {% if page.url contains '/Menus' %}active{% endif %}'></button></a>
             </div>
   <!--          <div style="color:red; font-weight:bold">Site under construction</div> -->
           {% endif %}
