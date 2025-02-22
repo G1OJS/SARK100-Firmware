@@ -1,7 +1,7 @@
 ---
 layout: default
 mathjax: true
-smalltitle: "Correcting Measurement Errors"
+title: "Correcting Measurement Errors"
 permalink: /CorrectingMeasurementErrors/
 ---
 
