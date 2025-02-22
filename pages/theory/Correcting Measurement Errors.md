@@ -11,7 +11,7 @@ The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load imp
 
 |Vz/Va, uncorrected|Vr/Vf, uncorrected|
 |-------|-------|
-|![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0e01f88977a525f61c8561059428a4e6f317707d/assets/img/2025-02-22%20VzVa%20Uncorrected%20vs%20Expected%20V13.PNG)|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/833cb77d6125b6a87d8564a8c5d4092e05e95621/assets/img/VrVf%20Uncorrected%20vs%20Expected%20V13.PNG)|
+|![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0e01f88977a525f61c8561059428a4e6f317707d/assets/img/VzVa%20Uncorrected%20vs%20Expected%20V13.PNG)|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/833cb77d6125b6a87d8564a8c5d4092e05e95621/assets/img/VrVf%20Uncorrected%20vs%20Expected%20V13.PNG)|
 
 
 
@@ -32,7 +32,7 @@ However, the behaviours seen in the uncorrected graphs above remain, almost undi
 
 |Vz/Va, voltage correction|Vr/Vf, voltage correction|
 |-------|-------|
-|![image](https://github.com/user-attachments/assets/ead3a235-01b5-4da5-8569-2263d09c7d8b) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
+|![image](https://github.com/user-attachments/assets/ead3a235-01b5-4da5-8569-2263d09c7d8b) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/V02%20VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
 
 # Approach #2: Correcting bridge ratios
 Whilst I had a little success with offsets and frequency interpolation in my initial code, I was sure that something better could be done and my mind kept going back to the two required and independent paths from bridge voltages to complex load impedance: the ratio $V_z/V_a$ and the ratio $V_r/V_f$. I was drawn to the idea of correcting these ratios instead of the component voltages, firstly because that's two problems instead of three, and secondly because I realised that working with these ratios immediately eliminates a lot of the noise that is common to all four bridge voltages.
