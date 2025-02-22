@@ -4,7 +4,13 @@ title: "VSWR Scanner"
 guide: true
 permalink: /VSWR-scan/
 ---
+Scans the current band and shows, to the nearest 1kHz 
+  * Minimum SWR
+  * Minimum SWR frequency
+  * Lower limit frequency for SWR <2:1
+  * Upper limit frequency for SWR <2:1
 <img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/SWR%20Scan%20640px.png'>
+
 To activate the VSWR Scan, simply press the Scan button when in Impedance mode.
 
 The scan routine uses an internally-set step to find the minimum VSWR in the current band segment, then refines this to a resolution of 1 kHz, and displays an impedance display at that frequency. Exit the scan mode by pressing the UP key or waiting 30 seconds. On exit, the frequency is set to the frequency of minimum VSWR found.
