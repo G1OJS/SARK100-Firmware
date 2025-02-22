@@ -11,7 +11,8 @@ The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load imp
 
 |Vz/Va, uncorrected|Vr/Vf, uncorrected|
 |-------|-------|
-|![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Errors%20Uncorrected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Errors%20Uncorrected.PNG)|
+|![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0e01f88977a525f61c8561059428a4e6f317707d/assets/img/2025-02-22%20VzVa%20Uncorrected%20vs%20Expected%20V13.PNG)|![image](https://github.com/user-attachments/assets/ead3a235-01b5-4da5-8569-2263d09c7d8b)|
+
 
 
 The ratio Va/Vz, which gives us the normalised magnitude of the load impedance, falls significantly at higher frequencies and load resistances. Similarly the ratio increases significantly at lower frequencies and lower load resistances. The behaviour with Vr/Vf (which gives the magnitude of the reflection coefficient) is less in magnitude but slightly more complicated; there is an overall scale factor where Vr/Vf measured is less than expected, and some variations with load impedance and frequency.
