@@ -1,11 +1,9 @@
 ---
 layout: default
-title: "Summary of Improved Results"
-permalink: /Results-Artifacts/
+title: "Improved Measurement Artifacts"
+permalink: /Improved-Artifacts/
 ---
 
-
-## 1. Measurement Artifacts
 ![Graph showing Z,R,X and VSWR with step changes in VSWR and R visible](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/VSWR%2C%20_Z_%2C%20R%20and%20X%20Test%20Load%20V13.png)
 
 The reason for the step artifacts shown above seems to be a combination of 
