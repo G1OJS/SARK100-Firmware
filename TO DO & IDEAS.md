@@ -1,6 +1,7 @@
 TO DO
    - Add a guide page for L and C measurement
-   -  L & C measurement tests (frequency scan and display) - can we detect & warn if we are near resonance?
+   - L & C measurement tests (frequency scan and display) - compare with V13
+   - Look at dynamic range of Vz/Va error correction (high impedances >~1000R)
    - Something on applicability limits for cable measurements
    - generalise PrintWdToSerial & refactor - this can be used in freq to LCD as well as pclink
    
