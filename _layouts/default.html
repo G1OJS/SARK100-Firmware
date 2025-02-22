@@ -51,8 +51,7 @@
             {% for item in section_links %}
               {% assign parts = item | split: ":" %}
               <a class="toplink" href="https://g1ojs.github.io/{{ site.github.repository_name }}/{{ parts[1] }}">
-              {{ parts[0] }}<br>
-              <button class='menubutton {% if page.url contains parts[1] %}active{% endif %}'></button>
+              {{ parts[0] }}
               </a>
             {% endfor %}
           </div>
