@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Summary of Improved Results"
-permalink: /Results-Summary/
+permalink: /Results-Artifacts/
 ---
 
 
