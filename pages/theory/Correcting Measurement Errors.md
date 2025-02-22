@@ -30,6 +30,8 @@ These coefficients are applied to the three independent voltages $V_r$, $V_z$ an
 
 However, the behaviours seen in the uncorrected graphs above remain, almost undiminished, in the corrected versions outside of these ranges. This means that accuracy falls off somewhat for load resistances significantly below 50 Ohms and above about 200 Ohms, especially at the higher frequencies.
 
+**Note that in this method, three loads are used (the open circuit case is only for setting DDS output level), and only two of the three loads are used to set each linear correction (50 and 150 for Vz and Va, 150 and 274 for Vr).**
+
 |Vz/Va, voltage correction|Vr/Vf, voltage correction|
 |-------|-------|
 |![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/f5700f4238fada367cfd4dfb2e81d5ebdaa3a8b3/assets/img/VzVa%20Corrected%20vs%20Expected%20V13.PNG) | ![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/f5700f4238fada367cfd4dfb2e81d5ebdaa3a8b3/assets/img/VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
@@ -48,6 +50,8 @@ Where everything with a 1 or 2 in the subscript is a calibration measurement (m)
 Having said that the function is relatively simple, implementing it in integer arithmetic and being mindful of overflows and divide by zeros is all kinds of fun!
 
 The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown [here](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/cdd235863de5b0492756275f70d490023e1c8cdb/pages/blogpages/Improved-Accuracy.md)
+
+**Note that in this method, four loads are used (again, the open circuit case is only for setting DDS output level) and all four loads are used to set correction factors for both Vz/Va and Vr/Vf,**
 
 |Vz/Va, ratio correction|Vr/Vf, ratio correction|
 |-------|-------|
