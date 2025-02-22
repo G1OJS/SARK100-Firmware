@@ -22,12 +22,4 @@ The graph below shows a measurement taken using the G1OJS V1.0 firmware.
 
 It can be seen that the 'step' artifacts present in the V13 results are gone (although significant noise remains), mainly thanks to keeping the DDS PGA output constant rather than changing it once per band.
 
-## 2. Accuracy
-In terms of practical spot measurements, the tables below show some example loads with the absolute results and percentage error (for reactance, which should be zero for the resistive loads, I've expressed the percent error as a percentage of the true resistance).
-
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Spot%20Accuracy%20Table.PNG)
-
-It is possible to control the variation of accuracy with impedance to some extent, by chosing the number and value of calibration loads. A future version of firmware may allow this as a user setting, so for example an experimenter focussing on low impedance Yagi designs might chose to concentrate calibration loads in the 10 to 40 ohms region.
-
-
 
