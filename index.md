@@ -6,7 +6,8 @@ permalink: index
 The G1OJS firmware hosted on this site provides the following key updates:
  *  Power meter mode (mV RMS and dBm)
  *  VFO mode with power level control
- *  New calibration routine 
+ *  New calibration routine
+ *  Auto-step VSWR scan with 1kHz resolution
  *  Cable Length measurement
  *  0.1 ohm display resolution for values of R,X,Z below 10
  *  Revised capacitance and inductance calculations and displays
