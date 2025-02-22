@@ -9,7 +9,7 @@ The RF bridge voltages in the SARK100 and its clones are converted to DC voltage
 
 The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load impedances and frequencies, before any numeric correction, as measured by my MR300 analyser. In each graph, the measured ratio is plotted on the vertical axis and the true expected value on the horizontal axis. A total lack of measurement errors would result in points spaced along the line through the origin with a slope of 1.
 
-|Vz/Va|Vr/Vf|
+|Vz/Va, uncorrected|Vr/Vf, uncorrected|
 |-------|-------|
 |![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Errors%20Uncorrected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Errors%20Uncorrected.PNG)|
 
@@ -29,7 +29,7 @@ These coefficients are applied to the three independent voltages $V_r$, $V_z$ an
 
 However, the behaviours seen in the uncorrected graphs above remain, almost undiminished, in the corrected versions outside of these ranges. This means that accuracy falls off somewhat for load resistances significantly below 50 Ohms and above about 200 Ohms, especially at the higher frequencies.
 
-|Vz/Va|Vr/Vf|
+|Vz/Va, voltage correction|Vr/Vf, voltage correction|
 |-------|-------|
 |![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%20V13%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
 
@@ -48,7 +48,7 @@ Having said that the function is relatively simple, implementing it in integer a
 
 The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown in this [page to be written].
 
-|Vz/Va|Vr/Vf|
+|Vz/Va, ratio correction|Vr/Vf, ratio correction|
 |-------|-------|
 |![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected.PNG)|
 
