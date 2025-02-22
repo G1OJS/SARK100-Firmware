@@ -57,12 +57,10 @@
 
 .navGrid {display:grid;}
 .navGrid > a {text-decoration: none; color: white; padding-left:2px; padding-right:2px; font-size:1em; line-height: 80%; font-weight:bold;}
-.navGrid > a.toplink.active {text-decoration:underline;}
-.navGrid > a.menubutton {color:#CDEF3B;}
-.navGrid > a.menubutton.active {text-decoration:underline;}
+.navGrid > a.active {text-decoration:underline;}
 
-.sark_button {
-  background-color: #CDEF3B; 
+.menubutton {
+  background-color: white; 
   border: none;
   height: 20px;
   width: 30px;
@@ -71,6 +69,8 @@
   cursor: pointer;
   border-radius: 50%;
 }
+
+.menubutton.active {background-color:#CDEF3B;}
 
 img {
     max-width: 640px;
