@@ -32,7 +32,7 @@ However, the behaviours seen in the uncorrected graphs above remain, almost undi
 
 |Vz/Va, voltage correction|Vr/Vf, voltage correction|
 |-------|-------|
-|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5a00a354698d1b4c51932d5536ce5001f6380cf0/assets/img/VzVa%20Corrected%20vs%20Expected%20V13.PNG) | ![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5a00a354698d1b4c51932d5536ce5001f6380cf0/assets/img/VrVf%20Corrected%20vs%20Expected%20V13.PNG)|
+|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5e5a4ef3d39d5eeb468191bdce10c1b51fa9b2cd/assets/img/VzVa%20Corrected%20vs%20Expected%20V1.0.PNG) | ![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/5e5a4ef3d39d5eeb468191bdce10c1b51fa9b2cd/assets/img/VrVf%20Corrected%20vs%20Expected%20V1.0.PNG)|
 
 # Approach #2: Correcting bridge ratios
 Whilst I had a little success with offsets and frequency interpolation in my initial code, I was sure that something better could be done and my mind kept going back to the two required and independent paths from bridge voltages to complex load impedance: the ratio $V_z/V_a$ and the ratio $V_r/V_f$. I was drawn to the idea of correcting these ratios instead of the component voltages, firstly because that's two problems instead of three, and secondly because I realised that working with these ratios immediately eliminates a lot of the noise that is common to all four bridge voltages.
