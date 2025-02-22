@@ -10,7 +10,7 @@ Scans the current band and shows, to the nearest 1kHz
   * Lower limit frequency for SWR <2:1
   * Upper limit frequency for SWR <2:1
 
-<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/SWR%20Scan%20640px.png'>
+<img src='https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/SWR%20Scan%20640px.png' width=340px>
 
 To activate the VSWR Scan, simply press the Scan button when in Impedance mode.
 
