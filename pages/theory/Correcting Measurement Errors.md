@@ -46,45 +46,13 @@ Where everything with a 1 or 2 in the subscript is a calibration measurement (m)
 
 Having said that the function is relatively simple, implementing it in integer arithmetic and being mindful of overflows and divide by zeros is all kinds of fun!
 
-The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown in this [page to be written].
+The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown [here](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/cdd235863de5b0492756275f70d490023e1c8cdb/pages/blogpages/Improved-Accuracy.md)
 
 |Vz/Va, ratio correction|Vr/Vf, ratio correction|
 |-------|-------|
 |![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VzVa%20Corrected%20vs%20Expected%202.PNG) | ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20VrVf%20Corrected%20vs%20Expected.PNG)|
 
-# Approach 2 vs Approach 1: Effect on final results
-The graphs below show the final measured impedance results from V13 and G1OJS V02, obtained via the pcLink 'scan' command, which outputs VSWR, R, X and Z across the serial link. This gives an end-to-end comparison of the algorithms in V13 and G1OJS V02.
 
-The graphs show the percent error in the R and X measurement, calculated with reference to the magnitude of Z load. The load impedances here are 50, 5, 25, 150, 274, 560 and 1000 ohms.
-
-The steps visible in these graphs are a reflection of the output precision used by the pcLink 'scan' command for R and X, which is in whole numbers of Ohms.
-
-It can be seen that in most cases the percent error in the G1OJS V02 output is lower than that in the V13 output. However that's not true in all cases at all frequencies. To get a fuller assessment of the effect of using approach 2, it would be necessary to repeat this analysis at many more load resistances and probably reactances too. However, other trials I've done using pcLink's 'scanr' output - which provides raw voltages and allows external calculation of R and X with greater resolution, give me confidence that approach 2 gives better results overall (also note the improvements in measured vs true ratios described above for the two approaches).
-
-Of course, selection of the 'best' calibration approach and set of calibration loads depends on the use case; it makes a difference whether accuracy close to 50 ohms is important, or reasonable accuracy across a wide impedance range is needed, for example. 
-
-One thing to note is that the V13 code limits measured VSWR to 9.99 and Z to 2000 ohms before calculating R and X as a functions of VSWR and Z, which explains the relatively smooth and lower error result for the V13 reactance trace in the 1000 ohm graph; the V13 code is internally 'maxing out' on intermediate steps in the calculation of R and X.
-
-### Case 1: 50 Ohms (which is a calibration load in both versions)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%2050%20Ohms.PNG) 
-
-### Case 2: 5 Ohms
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%205%20Ohms.PNG) 
-
-### Case 3: 10 Ohms (which is a calibration load in G1OJS V02)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%2025%20Ohms.PNG) 
-
-### Case 4: 150 Ohms (which is a calibration load in V13)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%20150%20Ohms.PNG) 
-
-### Case 5: 274 Ohms (which is a calibration load in V13)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%20274%20Ohms.PNG) 
-
-### Case 6: 560 Ohms (which is a calibration load in G1OJS V02)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%20560%20Ohms.PNG) 
-
-### Case 7: 1000 Ohms (internal caps apply in V13)
-![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/2025-01-20%20V02%20Errors%20vs%20V13%201000%20Ohms.PNG) 
 
 
 
