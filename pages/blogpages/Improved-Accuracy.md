@@ -1,4 +1,9 @@
-## 2. Accuracy
+---
+layout: default
+title: "Improved Accuracy"
+permalink: /Improved-Accuracy/
+---
+
 In terms of practical spot measurements, the tables below show some example loads with the absolute results and percentage error (for reactance, which should be zero for the resistive loads, I've expressed the percent error as a percentage of the true resistance).
 
 ![](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/assets/img/Spot%20Accuracy%20Table.PNG)
