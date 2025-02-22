@@ -49,7 +49,7 @@ Where everything with a 1 or 2 in the subscript is a calibration measurement (m)
 
 Having said that the function is relatively simple, implementing it in integer arithmetic and being mindful of overflows and divide by zeros is all kinds of fun!
 
-The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown [here](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/Improved-Accuracy)
+The results of this approach are shown in the two graphs below; not perfect, but the measured values stay closer to the true values especially at the extremes of frequency and load resistance. What this means for residual errors in the parameters that matter (Z, SWR, R and X) is shown [here](https://g1ojs.github.io/G1OJS-MR300-SARK100-Firmware/Improved-Accuracy/)
 
 **Note that in this method, four loads are used (again, the open circuit case is only for setting DDS output level) and all four loads are used to set correction factors for both Vz/Va and Vr/Vf.** (Hence, the difference between the two methods may be more a result of using four loads consistently vs using two different pairs of loads for the different corrections, than a result of correcting voltage ratios vs voltages).
 
