@@ -11,7 +11,7 @@ The graphs below show the ratios $V_z/V_a$ and $V_r/V_f$ for a range of load imp
 
 |Vz/Va, uncorrected|Vr/Vf, uncorrected|
 |-------|-------|
-|![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0e01f88977a525f61c8561059428a4e6f317707d/assets/img/2025-02-22%20VzVa%20Uncorrected%20vs%20Expected%20V13.PNG)|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/474134d9a0115ded1c943e4666587499ce760c27/assets/img/2025-01-20%20V02%20VrVf%20Errors%20Uncorrected.PNG)|
+|![](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/0e01f88977a525f61c8561059428a4e6f317707d/assets/img/2025-02-22%20VzVa%20Uncorrected%20vs%20Expected%20V13.PNG)|![image](https://github.com/G1OJS/G1OJS-MR300-SARK100-Firmware/blob/833cb77d6125b6a87d8564a8c5d4092e05e95621/assets/img/VrVf%20Uncorrected%20vs%20Expected%20V13.PNG)|
 
 
 
