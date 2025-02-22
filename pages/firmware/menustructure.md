@@ -23,15 +23,15 @@ title: "Menu Structure"
 - Measure Cable Length
 - Calibrate
 - Load firmware
-# SCAN key
+## SCAN key
 - Scan the current band segment for minimum VSWR.
 - Also starts the scan in the Cable Length menu item.
-# UP key
+## UP key
 - Increase frequency, Increase frequency step, escape/back depending on context
 - Long press / hold down = increase frequency quickly without measuring
-# DOWN key
+## DOWN key
 - Decrease frequency, Decrease frequency step, or confirm depending on context
 - Long press / hold down = decrease frequency quickly without measuring
-# UP and DOWN together
+## UP and DOWN together
 - Enter & exit setting the frequency increment digit
 - Once in increment digit setting mode you can also press CONFIG once to get back to the normal mode
