@@ -8,7 +8,7 @@ The G1OJS firmware hosted on this site provides the following key updates:
  *  VFO mode with power level control
  *  New calibration routine
  *  Auto-step VSWR scan with 1kHz resolution
- *  Cable Length measurement
+ *  Cable Length measurement [video](https://www.instagram.com/p/DGOV3_aIqqs/)
  *  0.1 ohm display resolution for values of R,X,Z below 10
  *  Revised capacitance and inductance calculations and displays
 
