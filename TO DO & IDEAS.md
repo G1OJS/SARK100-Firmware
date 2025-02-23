@@ -9,6 +9,7 @@ TO DO
    - Something on applicability limits for cable measurements   
 
 IDEAS - firmware
+  - Convert spot freq measurement of L and C to scan and analysis
   - User choice of cal loads
   - User choice of cal frequencies
   - True ham band limits as well as HF dividers
@@ -19,5 +20,7 @@ IDEAS - firmware
   - User choice of VSWR threshold
   - Investigate cal which includes reactive loads - does it help?
   - Make use of sine fitting to Va and Vz for cable measurement? Can we measure cable loss?
+  - 
 
-
+Bigger Ideas
+ - Convert to WSPR beacon or FT8 transceiver or beacon
