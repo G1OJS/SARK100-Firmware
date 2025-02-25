@@ -66,7 +66,7 @@ The equations for the bridge voltages that can be measured (see [Output Voltages
   <p>VSWR is given by $\frac{1+\rho}{1-\rho}$ which can be combined with Eq4 to give</p>
 
   <div class='equation'>
-    <table style='border:none;'><tr><td style='border:none;'>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+    <table style='border:none;'><tr><td style='border:none;'>$$VSWR = \frac{V_f+V_r}{V_f-V_r}$$</td></tr></table>
   </div>
   <div  style='clear:both'></div>
 
@@ -82,7 +82,7 @@ The equations for the bridge voltages that can be measured (see [Output Voltages
 <p>where</p> 
 
 <div class='equation'>
-  <table style='border:none;'><tr><td style='border:none;'>$$VSWR = \frac{V_f-V_r}{V_f+V_r}$$</td></tr></table>
+  <table style='border:none;'><tr><td style='border:none;'>$$VSWR = \frac{V_f+V_r}{V_f-V_r}$$</td></tr></table>
 </div>
 <div class='equation'>
   <table style='border:none;'><tr><td style='border:none;'>$$X = \pm\sqrt{(50\frac{V_z}{V_a})^2 - R^2}$$</td></tr></table>
