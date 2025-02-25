@@ -24,3 +24,4 @@ IDEAS - firmware
 
 Bigger Ideas
  - Convert to WSPR beacon or FT8 transceiver or beacon
+ - Convert to station peak and average power monitor
